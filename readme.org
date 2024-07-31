@@ -1,0 +1,44 @@
+#+title: Sarjor and Lindoma's Excellent Adventure
+
+This is a set of org-mode documents to track a solo RPG game. This adventure is
+the journey through the region of Fosgi Coidwig by two cousins: Sarjor, an elven
+ranger, and Lindoma, a half-elf bard. This is fundamentally a Dungeons & Dragons
+4th Edition game. I've chosen D&D 4e mainly because I like the combat system and
+power cards. It feels more dynamic. The main point of this adventure is
+experience open-world, wilderness exploration.
+
+Solo RPG, you ask? Beware! This is a rabbit hole that's easy to fall into.
+There's quite a few gaming systems and adaptations to allow for solo table-top
+role playing games. In some ways, it's not too different than the old "choose
+your own adventure" novels: something happens, you decide how you want to
+respond, there's a mechanic for advancing the story.
+
+In this case, I'm making heavy use of random lookup tables coupled with the
+"mythic oracle" mechanic. The oracle answers yes or no questions with basically
+a flip of the coin. "Is this cave occupied?" Yes! "Do I see a settlement in the
+distance?" No.
+
+Here are the specific tools I'm using:
+
+ - [[https://www.dmsguild.com/product/252355/The-Solo-Adventurers-Toolbox][The Solo Adventurer's Toolbox]]
+ - [[https://www.drivethrurpg.com/en/product/422929/mythic-game-master-emulator-second-edition][Mythic Game Master Emulator 2nd Ed]]
+ - [[https://www.drivethrurpg.com/en/product/134163/UNE-The-Universal-NPC-Emulator-rev][UNE, The Universal NPC Emulator]]
+
+Of course, I'm also using the D&D 4e core rule books and suppliments: DMG, MM,
+PHB, PHB2, and MP2.
+
+I'm using [[https://orgmode.org/][Emacs' Org-Mode]] to keep all my notes as I play. Each time I play, I
+create a new session file where I track all my moves, questions, dice rolls,
+encounters, etc. I'm using [[https://github.com/lifelike/decide-mode][decide-mode]] to roll dice inline and insert the result.
+
+For instance, type `1d6+6??` and it inserts: [1d6+6] -> (2) +6 = 8
+
+It can also answer yes/no questions. Anything that ends in a "?" can be a question.
+
+Am I the kind of person who geeks out over this kind of stuff? [likely] -> YES+
+
+A key element of the game is that I randomly determine the map as I explore. I
+don't know the map in advance and roll it hex tile by hex tile by dungeon room
+by room. As I go, I draw the map on my iPad with [[https://notability.com/][Notability]]. I'm uploading the
+current state of the region after each play session. I'll also upload any
+dungeon or town maps as I go too.
