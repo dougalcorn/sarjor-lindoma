@@ -2,8 +2,481 @@
 
 | Class | Paragon Path | Epic Destiny |
 |-------+--------------+--------------|
-| Bard  |              |              |
+| [[http://iws.mx/dnd/?view=class104][Bard]]  |              |              |
 
 | Race     | Size | Age | Gender | Height | Weight | Align. | Deity  | Adv. Co. | XP | Next XP | Level |
 |----------+------+-----+--------+--------+--------+--------+--------+----------+----+---------+-------|
-| Half-Elf | M    |  20 | M      | 5' 9"  |    140 | Good   | Melora |          |  0 |    1000 |     1 |
+| [[http://iws.mx/dnd/?view=race6][Half-Elf]] | M    |  20 | M      | 5' 9"  |    140 | Good   | Melora |          |  0 |    1000 |     1 |
+
+| Max HP | Current HP | Bloodied | Healing Surge | Surges/Day | Surges Used |
+|--------+------------+----------+---------------+------------+-------------|
+|     28 |         28 |       14 |             7 |         10 |           1 |
+
+ - Second Wind [ ]
+ - Death ST Failed [ ] [ ] [ ]
+ - Action Points:
+
+| Initiative | Dex | 1/2 Level | Misc | Temp |
+|------------+-----+-----------+------+------|
+|          0 |   0 |         0 |    0 |    0 |
+#+TBLFM: $1=($2 + $3 + $4 + $5)
+
+| Speed | Base | Armor | Item | Temp |
+|-------+------+-------+------+------|
+|     6 |    6 |     0 |    0 |    0 |
+#+TBLFM: $1=($2 + $3 + $4 + $5)
+
+* Abilities
+| Ability | Score | Mod |
+|---------+-------+-----|
+| STR     |    10 |   0 |
+| CON     |    16 |  +3 |
+| DEX     |    10 |   0 |
+| INT     |    14 |  +2 |
+| WIS     |    11 |   0 |
+| CHA     |    18 |  +4 |
+
+
+* Defense
+| Total |      | 10 + 1/2 lvl | Arm. Abil. | Class | Feat | Enh. | Misc | Temp |
+|-------+------+--------------+------------+-------+------+------+------+------|
+|    13 | AC   |           10 |          3 |     0 |    0 |    0 |    0 |    0 |
+|    14 | FORT |           10 |          3 |     1 |    0 |    0 |    0 |    0 |
+|    11 | REF  |           10 |          0 |     1 |    0 |    0 |    0 |    0 |
+|    14 | WILL |           10 |          4 |     0 |    0 |    0 |    0 |    0 |
+#+TBLFM: $1=($3 + $4 + $5 + $6 + $7 + $8 + $9)
+
+| Armor Bonus | Shield Bonus | Check Penalty | Speed Penalty | Heavy? |
+|-------------+--------------+---------------+---------------+--------|
+|           3 |            0 |             0 |             0 | [ ]    |
+
+
+* Quick Look Up
+| Weapon/Power        | Type      | vs   | Attack  | Bonus  |
+|---------------------+-----------+------+---------+--------|
+| [[Melee Basic Attack]]  | At-Will   | AC   | 1d20 +4 | 1d8    |
+| [[Ranged Basic Attack]] | At-Will   | AC   | 1d20 +4 | 1d10   |
+| [[Guiding Strike]]      | At-Will   | AC   | 1d20 +8 | 1d8 +4 |
+| [[War Song Srike]]      | At-Will   | AC   | 1d20 +8 | 1d8 +4 |
+| [[Shout of Triumph]]    | Encounter | Fort | 1d20 +4 | 1d8 +4 |
+| [[Slayer's Song]]       | Daily     | AC   | 1d20 +4 | 2d8 +4 |
+
+** Attack Workspace
+| Weapon/Power        | Attack | 1/2 Level | Ability  | Class | Prof | Feat | Enh | Misc |
+|---------------------+--------+-----------+----------+-------+------+------+-----+------|
+| [[Melee Basic Attack]]  |     +4 |         0 | 0 (STR)  |     0 |    3 |    1 |   0 |    0 |
+| [[Ranged Basic Attack]] |     +4 |         0 | 0 (DEX)  |     0 |    3 |    1 |   0 |    0 |
+| [[Guiding Strike]]      |     +8 |         0 | +4 (CHA) |     0 |    3 |    1 |   0 |    0 |
+| [[War Song Strike]]     |     +8 |         0 | +4 (CHA) |     0 |    3 |    1 |   0 |    0 |
+| [[Shout of Triump]]     |     +4 |         0 | +4 (CHA) |     0 |    0 |    0 |   0 |    0 |
+#+TBLFM: $2='(concat "+" (int-to-string (-sum '($3 $4 $5 $6 $7 $8 $9))));N
+
+** Damage Workspace
+| Weapon/Power        | Bonus | Ability | Feat | Enh | Misc | Misc |
+|---------------------+-------+---------+------+-----+------+------|
+| [[Melee Basic Attack]]  |    +0 |       0 |    0 |   0 |    0 |    0 |
+| [[Ranged Basic Attack]] |    +0 |       0 |    0 |   0 |    0 |    0 |
+| [[Guiding Strike]]      |    +4 |      +4 |    0 |   0 |    0 |    0 |
+| [[War Song Strike]]     |    +4 |      +4 |    0 |   0 |    0 |    0 |
+| [[Slayer's Song]]       |    +4 |      +4 |    0 |   0 |    0 |    0 |
+#+TBLFM: $2='(concat "+" (int-to-string (-sum '($3 $4 $5 $6))));N
+
+
+* Skills
+| Mod | Name          | Abil. | Train | Mod | 1/2 Lvl | Armor | Misc | Temp |
+|-----+---------------+-------+-------+-----+---------+-------+------+------|
+|  +1 | Acrobatics    | Dex   |       |     |         |       |    1 |      |
+|  +7 | Arcana        | Int   |     1 |   2 |         |       |      |      |
+|  +1 | Athletics     | Str   |       |     |         |       |    1 |      |
+|  +4 | Bluff         | Cha   |       |   4 |         |       |      |      |
+| +11 | Diplomacy     | Cha   |     1 |   4 |         |       |    2 |      |
+|  +1 | Dungeoneering | Wis   |       |     |         |       |    1 |      |
+|  +4 | Endurance     | Con   |       |   3 |         |       |    1 |      |
+|  +1 | Heal          | Wis   |       |     |         |       |    1 |      |
+|  +7 | History       | Int   |     1 |   2 |         |       |      |      |
+|  +7 | Insight       | Wis   |     1 |     |         |       |    2 |      |
+|  +1 | Nature        | Wis   |       |     |         |       |    1 |      |
+|  +6 | Perception    | Wis   |     1 |     |         |       |    1 |      |
+|  +3 | Religion      | Int   |       |   2 |         |       |    1 |      |
+|  +1 | Stealth       | Dex   |       |     |         |       |    1 |      |
+|  +5 | Streetwise    | Cha   |       |   4 |         |       |    1 |      |
+|  +1 | Theivery      | Dex   |       |     |         |       |    1 |      |
+#+TBLFM: $1='(concat "+" (int-to-string (+ $5 $6 $7 $8 $9 (if (eql $4 1) 5 0))));N
+ - [[Skill Versatility]]: gain a +1 bonus to untrained skill checks
+ - Group Awareness from Sarjor grants allies a +1 racial bonus to Perception
+ - Bard class feature adds +2 Diplomacy and +2 Insight
+
+
+* Powers
+:PROPERTIES:
+:COLUMNS: %ITEM %POWERTYPE(Type) %ATTACK %HIT %RANGE %TARGET
+:END:
+** Melee Basic Attack
+:PROPERTIES:
+:LEVEL: basic
+:FLAVORTEXT:
+:POWERTYPE: At-Will
+:KEYWORDS: Melee Weapon
+:ACTIONTYPE: Standard
+:ATTACKTYPE: melee
+:RANGE: weapon
+:TARGET: One creature
+:ATTACK: STR vs AC
+:HIT: 1[W] + STR
+:END:
+ - Special: Unarmed attacking counts as a weapon when making a melee basic attack.
+ - Hit: Increase damage to 2[W] + Strength modifier at 21st level.
+ - The melee basic attack is an at-will power available to all characters. It can be performed as part of a basic attack action or a number of other actions, such as charge, coup de grace, or opportunity attack.
+ - Certain at-will powers count as melee basic attacks. They can be used any time a melee basic attack could be used, and are affected by modifiers to melee basic attacks.
+ - A number of other powers can be used in place of the melee basic attack portion of a charge.
+
+** Ranged Basic Attack
+:PROPERTIES:
+:LEVEL: basic
+:FLAVORTEXT:
+:POWERTYPE: At-Will
+:KEYWORDS: Ranged Weapon
+:ACTIONTYPE: Standard
+:ATTACKTYPE: Ranged
+:RANGE: weapon
+:TARGET: One creature
+:ATTACK: DEX vs AC
+:HIT: 1[W] + DEX
+:END:
+ - Special: Heavy thrown weapons use Strength instead of Dexterity for both attack and damage rolls for ranged basic attacks.
+ - Hit: Increase damage to 2[W] + Dexterity modifier at 21st level.
+
+** Words of Friendship
+:PROPERTIES:
+:LEVEL: Bard Feature
+:FLAVORTEXT: You infuse your words with arcane power, turning even the simplest speech into a compelling oration.
+:POWERTYPE: Encounter
+:KEYWORDS: Arcane Charm
+:ACTIONTYPE: Minor
+:ATTACKTYPE: Personal
+:URL: http://iws.mx/dnd/?view=power2887
+:END:
+ - Effect: You gain a +5 power bonus to the next Diplomacy check you make before the end of your next turn.
+
+** Majestic Word
+:PROPERTIES:
+:LEVEL: Bard Feature
+:FLAVORTEXT: You utter words laden with preternatural inspiration, restoring your ally's stamina and making wounds seem insignificant
+:POWERTYPE: Encounter (Special)
+:KEYWORDS: Arcane, Healing
+:ACTIONTYPE: Minor
+:ATTACKTYPE: Close burst 5
+:TARGET: You or one ally in the burst
+:URL: http://iws.mx/dnd/?view=power2339
+:END:
+ - Effect: The target can spend a healing surge and regain additional hit points equal to your Charisma modifier. You also slide the target 1 square.
+ - Special: You can use this power twice per encounter, but only once per round. At 16th level, you can use this power three times per encounter, but only once per round.
+
+** Guiding Strike
+:PROPERTIES:
+:LEVEL: Bard Attack 1
+:FLAVORTEXT:
+:POWERTYPE: At-Will
+:KEYWORDS: Arcaen, Weapon
+:ACTIONTYPE: Standard
+:ATTACKTYPE: Melee
+:RANGE: weapon
+:TARGET: One creature
+:ATTACK: CHA vs AC
+:HIT: 1[W] + CHA*
+:URL: http://iws.mx/dnd/?view=power4987
+:END:
+ - Hit: and the target takes a -2 penalty to the defense of your choice until the end of your next turn.
+
+** War Song Strike
+:PROPERTIES:
+:LEVEL: Bard Attack 1
+:FLAVORTEXT: You sing a song of war and victory, invigorating your allies as they press the attack
+:POWERTYPE: At-Will
+:KEYWORDS: Arcane, Weapon
+:ACTIONTYPE: Standard
+:ATTACKTYPE: Melee
+:RANGE: weapon
+:TARGET: One creature
+:ATTACK: CHA vs AC
+:HIT: 1[W] + CHA*
+:URL: http://iws.mx/dnd/?view=power4988
+:END:
+ - Hit: any ally who hits the target before the end of your next turn gains temporary hit points equal to your Constitution modifier.
+
+** Shout of Triumph
+:PROPERTIES:
+:LEVEL: Bard Attack 1
+:FLAVORTEXT: You unleash a mighty call of battle, scattering your enemies while urging your allies forward.
+:POWERTYPE: Encounter
+:KEYWORDS: Arcane, Implement, Thunder
+:ACTIONTYPE: Standard
+:ATTACKTYPE: Close blast 3
+:RANGE: weapon
+:TARGET: Each enemy in the blast
+:ATTACK: CHA vs FORT*
+:HIT: 1d6 + CHA thunder*
+:END:
+ - Hit: push the target 1 square
+ - Effect: You slide each ally in the blast 1 square
+ - Virtue of Valor: The number of squares you push the target and slide allies equals your Constitution modifier.
+** Slayer's Song
+:PROPERTIES:
+:LEVEL: Bard Attack 1
+:FLAVORTEXT: You sing a tune of war that diminishes your foes' defenses with each blow you strike
+:POWERTYPE: Daily
+:KEYWORDS: Arcane, Weapon
+:ACTIONTYPE: Standard
+:ATTACKTYPE: Melee
+:RANGE: weapon
+:TARGET: One creature
+:ATTACK: CHA vs AC
+:HIT: 2[W] + CHA*
+:URL: http://iws.mx/dnd/?view=power2350
+:END:
+ - Hit: and the target grants combat advantage to you and your allies (save ends)
+ - Miss: Half damage.
+ - Effect: Until the end of the encounter, whenever you hit an enemy, that enemy
+   grants combat advantage to you and your allies until the end of your next
+   turn.
+
+** Knack for Success
+:PROPERTIES:
+:LEVEL: Half-Elf Racial Power
+:FLAVORTEXT: Your mere presence is enough to tip the balance of fortune for you and your allies
+:POWERTYPE: Encounter
+:KEYWORDS: Arcane, Implement, Thunder
+:ACTIONTYPE: Minor Action
+:ATTACKTYPE: Close blast 5
+:TARGET: You or one ally in the burst
+:URL: http://iws.mx/dnd/?view=race6
+:END:
+ - Effect: Choose one of the following:
+   - The target makes a saving throw.
+   - The target shifts up to 2 squares as a free action.
+   - The target gains a +2 power bonus to their next attack roll made before the EoTNT
+   - The target gains a +4 power bonus to their next skill check made before the EoTNT
+
+
+* Features
+** Bardic Virtue
+:PROPERTIES:
+:LEVEL: Bard
+:URL: http://iws.mx/dnd/?view=class104
+:END:
+ - You gain the Ritual Caster feat as a bonus feat, allowing you to use magical
+ - Bards praise many virtues in their stories, telling tales of people whose
+   particular qualities set them above common folk. The valor of dauntless
+   heroes and the cunning of great minds are among these virtues, and a bard can
+   choose to emphasize either quality.
+ - Choose one of the following options: Virtue of Cunning, Virtue of Prescience,
+   Virtue of Valor. The choice you make gives you the benefit described below
+   and also provides bonuses to certain bard powers, as detailed in those
+   powers.
+** Multiclass Versatility
+:PROPERTIES:
+:LEVEL: Bard
+:URL: http://iws.mx/dnd/?view=class104
+:END:
+ - You can choose class-specific multiclass feats from more than one class.
+** Skill Versatility
+:PROPERTIES:
+:LEVEL: Bard
+:URL: http://iws.mx/dnd/?view=class104
+:END:
+ - You gain a +1 bonus to untrained skill checks.
+
+** Virtue of Valor
+:PROPERTIES:
+:LEVEL: Bard
+:URL: http://iws.mx/dnd/?view=class104
+:END:
+ - Once per round, when any ally within 5 squares of you reduces an enemy to 0
+   hit points or bloodies an enemy, you can grant temporary hit points to that
+   ally as a free action.
+ - The number of temporary hit points equals 1 + your Constitution modifier at 1st level
+ - 3 + your Constitution modifier at 11th level
+ - 5 + your Constitution modifier at 21st level
+
+** Song of Rest
+:PROPERTIES:
+:LEVEL: Bard
+:URL: http://iws.mx/dnd/?view=class104
+:END:
+ - When you play an instrument or sing during a short rest, you and each ally
+   who can hear you are affected by your Song of Rest. When an affected
+   character spends healing surges at the end of the rest, that character
+   regains additional hit points equal to your Charisma modifier with each
+   healing surge. A character can be affected by only one Song of Rest at a
+   time.
+
+** Bardic Training
+:PROPERTIES:
+:LEVEL: Bard
+:URL: http://iws.mx/dnd/?view=class104
+:END:
+ - You gain the Ritual Caster feat as a bonus feat, allowing you to use magical
+   rituals. You own a ritual book, and it contains two rituals of your choice
+   that you have mastered: one 1st-level ritual that has bard as a prerequisite
+   and another 1st-level ritual.
+ - In addition, you can perform one bard ritual per day of your level or lower
+   without expending components, although you must pay any other costs and use
+   any focus required by the ritual. At 11th level, you can perform two bard
+   rituals per day of your level or lower without expending components; at 21st
+   level, you can perform three.
+
+** Dual Heritage
+:PROPERTIES:
+:LEVEL: Half-Elf Feature
+:URL: http://iws.mx/dnd/?view=race6
+:END:
+ - You can take feats that have either elf or human as a prerequisite (as well
+   as those specifically for half-elves), as long as you meet any other
+   requirements.
+
+** Group Diplomacy
+:PROPERTIES:
+:LEVEL: Half-Elf Feature
+:URL: http://iws.mx/dnd/?view=race6
+:END:
+ - You grant allies within 10 squares of you a +1 racial bonus to Diplomacy checks.
+
+
+* Rituals
+:PROPERTIES:
+:COLUMNS: %ITEM %TIME %DURATION %KEYSKILL %COMPONENTCOST
+:END:
+** Glib Limrick
+:PROPERTIES:
+:FLAVORTEXT: You recite a short rhyme and feel your tongue loosen to the lies can flow freely.
+:LEVEL: 1
+:CATEGORY: Deception
+:TIME: 1 minute
+:DURATION: 10 minutes
+:COMPONENTCOST: 10 gp, plus a focus worth 5gp
+:KEYSKILL: Arcana (no check)
+:URL: http://iws.mx/dnd/?view=ritual197
+:END:
+ - Prerequisite: Bard
+ - Focus: A musical instrument you play as part of performing the ritual.
+ - For the ritual's duration, whenever you make a Bluff check, you can roll
+   twice and use either result. The ritual's effect automatically ends when you
+   roll initiative.
+
+** Traveler's Camouflage
+:PROPERTIES:
+:FLAVORTEXT: You and your allies take on the textures and colors of the world around you
+:LEVEL: 1
+:CATEGORY: Deception
+:TIME: 10 minute
+:DURATION: 10 hours
+:COMPONENTCOST: 10 gp
+:KEYSKILL: Nature
+:URL: http://iws.mx/dnd/?view=ritual291
+:END:
+ - Focus: A musical instrument you play as part of performing the ritual.
+ - For the ritual's duration, whenever you make a Bluff check, you can roll
+   twice and use either result. The ritual's effect automatically ends when you
+   roll initiative.
+ - You cloak yourself and any allies present for the ritual in a camouflaging
+   shroud. The subjects of this ritual gain a bonus to Stealth checks while
+   traveling, and other creatures take a penalty when using Perception to find
+   your tracks.
+ - This camouflage protects you and your allies as you travel, but not during
+   battle. Any subject who rolls initiative or makes an attack roll loses the
+   benefit of this ritual until the end of the encounter. If a subject is hidden
+   when he or she makes an attack, that subject loses the bonus before making
+   the attack roll, which could cause him or her to lose the benefit of being
+   hidden for that attack.
+ - Your Nature check determines the bonus you and your allies gain and the
+   penalty others take.
+
+| Nature Check Result | Bonus to Stealth | Penalty to Find Tracks |
+|---------------------+------------------+------------------------|
+| 19 or lower         |               +2 |                     -2 |
+| 20-29               |               +5 |                     -5 |
+| 30 or higher        |              +10 |                    -10 |
+
+
+
+* Feats
+** Weapon Expertise: Longsword
+:PROPERTIES:
+:LEVEL: free
+:URL: http://iws.mx/dnd/?view=feat1032
+:END:
+  - Benefit: Choose a weapon group. You gain a +1 feat bonus to attack rolls
+    with any weapon power you use with a weapon from that group. The bonus
+    increases to +2 at 11th level and +3 at 21st level.
+  - Special: You can take this feat more than once. Each time you select this
+    feat, choose another weapon group.
+
+** Weapon Expertise: Longbow
+:PROPERTIES:
+:LEVEL: free
+:URL: http://iws.mx/dnd/?view=feat1032
+:END:
+  - Benefit: Choose a weapon group. You gain a +1 feat bonus to attack rolls
+    with any weapon power you use with a weapon from that group. The bonus
+    increases to +2 at 11th level and +3 at 21st level.
+  - Special: You can take this feat more than once. Each time you select this
+    feat, choose another weapon group.
+
+** Ritual Caster
+:PROPERTIES:
+:URL: http://iws.mx/dnd/?view=feat159
+:END:
+ - Prerequisite: Trained in Arcana or Religion
+ - Benefit: You can master and perform rituals of your level or lower. See
+   Chapter 10 for information on acquiring, mastering, and performing rituals.
+   Even though some rituals use the Heal skill or the Nature skill, the Arcana
+   skill or the Religion skill is required to understand how to perform rituals.
+
+** Strength of Valor
+:PROPERTIES:
+:LEVEL: Feat
+:URL: http://iws.mx/dnd/?view=feat470
+:END:
+ - Prerequisite: Bard, Virtue of Valor class feature
+ - Benefit: When you grant an ally temporary hit points with your Virtue of
+   Valor, that ally also gains a +2 bonus to the next damage roll he or she
+   makes before the end of his or her next turn.
+
+
+* Proficiencies
+  | Languages | Tools | Armor         | Weapons         |
+  |-----------+-------+---------------+-----------------|
+  | Common    | Flute | Cloth         | Simple          |
+  | Elf       |       | Leather       | Military ranged |
+  | one-more  |       | Light Shields | Longsword       |
+  |           |       | Cloth         | Scimitar        |
+  |           |       | Chainmail     | Short Sword     |
+  |           |       |               |                 |
+
+* Items
+
+** Equipment
+  | Name               | Quantity | Cost (gp) | Weight (lbs) | Total Weight (lbs) | Total Cost (gp) |
+  |--------------------+----------+-----------+--------------+--------------------+-----------------|
+  | Longbow            |        1 |        50 |            2 |                  2 |              50 |
+  | Longsword          |        1 |        15 |            4 |                  4 |              15 |
+  | Backpack           |        1 |         2 |            5 |                  5 |               2 |
+  | Bedroll            |        1 |        .1 |            2 |                  2 |             0.1 |
+  | Tinderbox          |        1 |        .5 |            1 |                  1 |             0.5 |
+  | Ration             |       10 |        .5 |            1 |                 10 |              5. |
+  | Waterskin          |        1 |        .2 |            5 |                  5 |             0.2 |
+  | Hempen Rope (50ft) |        1 |         1 |           10 |                 10 |               1 |
+  | Arrows             |       60 |       .05 |           .1 |                 6. |              3. |
+  | Hide Armor         |        1 |        30 |           25 |                 25 |              30 |
+  |--------------------+----------+-----------+--------------+--------------------+-----------------|
+  | Carry Capacity     |      100 |           |              |                70. |           106.8 |
+  #+TBLFM: $5=($2 * $4)
+  #+TBLFM: $6=($2 * $3)
+  #+TBLFM: @>$5=vsum(@<<$5..@>>$5)
+  #+TBLFM: @>$6=vsum(@<<$6..@>>$6)
+
+** Money
+   | Copper | Silver | Electrum | Gold | Platinum | Total (Gold) |
+   |--------+--------+----------+------+----------+--------------|
+   |      7 |     12 |          |    8 |          |         9.27 |
+   #+TBLFM: $6=(($1 / 100) + ($2 / 10) + ($3 / 2) + $4 + ($5 * 10));N
