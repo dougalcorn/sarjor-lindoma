@@ -1,0 +1,251 @@
+#+title: Blank Character Sheet
+
+| Class | Paragon Path | Epic Destiny |
+|-------+--------------+--------------|
+|       |              |              |
+
+| Race | Size | Age | Gender | Height | Weight | Align. | Deity | Adv. Co. | XP | Next XP | Level |
+|------+------+-----+--------+--------+--------+--------+-------+----------+----+---------+-------|
+|      |      |     |        |        |        |        |       |          |    |         |       |
+
+| Max HP | Current HP | Bloodied | Healing Surge | Surges/Day | Surges Used |
+|--------+------------+----------+---------------+------------+-------------|
+|        |            |          |               |            |             |
+
+ - Second Wind [ ]
+ - Death ST Failed [ ] [ ] [ ]
+ - Action Points:
+
+| Initiative | Dex | 1/2 Level | Misc | Temp |
+|------------+-----+-----------+------+------|
+|          0 |   0 |         0 |    0 |    0 |
+#+TBLFM: $1=($2 + $3 + $4 + $5)
+
+| Speed | Base | Armor | Item | Temp |
+|-------+------+-------+------+------|
+|     5 |    5 |     0 |    0 |    0 |
+#+TBLFM: $1=($2 + $3 + $4 + $5)
+
+* Abilities
+| Ability | Score | Mod |
+|---------+-------+-----|
+| STR     |    10 |   0 |
+| CON     |    16 |  +3 |
+| DEX     |    10 |   0 |
+| INT     |    14 |  +2 |
+| WIS     |    11 |   0 |
+| CHA     |    18 |  +4 |
+
+
+* Defense
+| Total |      | 10 + 1/2 lvl | Arm. Abil. | Class | Feat | Enh. | Misc | Temp |
+|-------+------+--------------+------------+-------+------+------+------+------|
+|    13 | AC   |           10 |          3 |       |      |      |      |      |
+|    14 | FORT |           10 |          3 |       |      |      |      |      |
+|    11 | REF  |           10 |          0 |       |      |      |      |      |
+|    14 | WILL |           10 |          0 |       |      |      |      |      |
+#+TBLFM: $1=($3 + $4 + $5 + $6 + $7 + $8 + $9)
+
+| Armor Bonus | Shield Bonus | Check Penalty | Speed Penalty | Heavy? |
+|-------------+--------------+---------------+---------------+--------|
+|           3 |            0 |             0 |             0 | [ ]    |
+
+
+* Quick Look Up
+| Weapon/Power        | Type      | vs   | Attack  | Bonus  |
+|---------------------+-----------+------+---------+--------|
+| [[Melee Basic Attack]]  | At-Will   | AC   | 1d20 +4 | 1d8    |
+| [[Ranged Basic Attack]] | At-Will   | AC   | 1d20 +4 | 1d10   |
+|                     |           |      |         |        |
+
+** Attack Workspace
+| Weapon/Power        | Attack | 1/2 Level | Ability | Class | Prof | Feat | Enh | Misc |
+|---------------------+--------+-----------+---------+-------+------+------+-----+------|
+| [[Melee Basic Attack]]  |     +4 |         0 | 0 (STR) |     0 |    3 |    1 |   0 |    0 |
+| [[Ranged Basic Attack]] |     +4 |         0 | 0 (DEX) |     0 |    3 |    1 |   0 |    0 |
+|                     |        |           |         |       |      |      |     |      |
+#+TBLFM: $2='(concat "+" (int-to-string (-sum '($3 $4 $5 $6 $7 $8 $9))));N
+
+** Damage Workspace
+| Weapon/Power        | Bonus | Ability | Feat | Enh | Misc | Misc |
+|---------------------+-------+---------+------+-----+------+------|
+| [[Melee Basic Attack]]  |    +0 |       0 |    0 |   0 |    0 |    0 |
+| [[Ranged Basic Attack]] |    +0 |       0 |    0 |   0 |    0 |    0 |
+|                     |       |         |      |     |      |      |
+#+TBLFM: $2='(concat "+" (int-to-string (-sum '($3 $4 $5 $6))));N
+
+
+* Skills
+| Mod | Name          | Abil. | Train | Mod | 1/2 Lvl | Armor | Misc | Temp |
+|-----+---------------+-------+-------+-----+---------+-------+------+------|
+|  +1 | Acrobatics    | Dex   |       |     |         |       |    1 |      |
+|  +7 | Arcana        | Int   |     1 |   2 |         |       |      |      |
+|  +1 | Athletics     | Str   |       |     |         |       |    1 |      |
+|  +4 | Bluff         | Cha   |       |   4 |         |       |      |      |
+| +11 | Diplomacy     | Cha   |     1 |   4 |         |       |    2 |      |
+|  +1 | Dungeoneering | Wis   |       |     |         |       |    1 |      |
+|  +4 | Endurance     | Con   |       |   3 |         |       |    1 |      |
+|  +1 | Heal          | Wis   |       |     |         |       |    1 |      |
+|  +7 | History       | Int   |     1 |   2 |         |       |      |      |
+|  +7 | Insight       | Wis   |     1 |     |         |       |    2 |      |
+|  +1 | Nature        | Wis   |       |     |         |       |    1 |      |
+|  +6 | Perception    | Wis   |     1 |     |         |       |    1 |      |
+|  +3 | Religion      | Int   |       |   2 |         |       |    1 |      |
+|  +1 | Stealth       | Dex   |       |     |         |       |    1 |      |
+|  +5 | Streetwise    | Cha   |       |   4 |         |       |    1 |      |
+|  +1 | Theivery      | Dex   |       |     |         |       |    1 |      |
+#+TBLFM: $1='(concat "+" (int-to-string (+ $5 $6 $7 $8 $9 (if (eql $4 1) 5 0))));N
+ - [[Skill Versatility]]: gain a +1 bonus to untrained skill checks
+ - Group Awareness from Sarjor grants allies a +1 racial bonus to Perception
+ - Bard class feature adds +2 Diplomacy and +2 Insight
+
+
+* Powers
+:PROPERTIES:
+:COLUMNS: %ITEM %POWERTYPE(Type) %ATTACK %HIT %RANGE %TARGET
+:END:
+** Melee Basic Attack
+:PROPERTIES:
+:LEVEL: basic
+:FLAVORTEXT:
+:POWERTYPE: At-Will
+:KEYWORDS: Melee Weapon
+:ACTIONTYPE: Standard
+:ATTACKTYPE: melee
+:RANGE: weapon
+:TARGET: One creature
+:ATTACK: STR vs AC
+:HIT: 1[W] + STR
+:END:
+ - Special: Unarmed attacking counts as a weapon when making a melee basic attack.
+ - Hit: Increase damage to 2[W] + Strength modifier at 21st level.
+ - The melee basic attack is an at-will power available to all characters. It can be performed as part of a basic attack action or a number of other actions, such as charge, coup de grace, or opportunity attack.
+ - Certain at-will powers count as melee basic attacks. They can be used any time a melee basic attack could be used, and are affected by modifiers to melee basic attacks.
+ - A number of other powers can be used in place of the melee basic attack portion of a charge.
+
+** Ranged Basic Attack
+:PROPERTIES:
+:LEVEL: basic
+:FLAVORTEXT:
+:POWERTYPE: At-Will
+:KEYWORDS: Ranged Weapon
+:ACTIONTYPE: Standard
+:ATTACKTYPE: Ranged
+:RANGE: weapon
+:TARGET: One creature
+:ATTACK: DEX vs AC
+:HIT: 1[W] + DEX
+:END:
+ - Special: Heavy thrown weapons use Strength instead of Dexterity for both attack and damage rolls for ranged basic attacks.
+ - Hit: Increase damage to 2[W] + Dexterity modifier at 21st level.
+
+
+* Features
+** Bardic Virtue
+:PROPERTIES:
+:LEVEL: Bard
+:URL: http://iws.mx/dnd/?view=class104
+:END:
+ - You gain the Ritual Caster feat as a bonus feat, allowing you to use magical
+ - Bards praise many virtues in their stories, telling tales of people whose
+   particular qualities set them above common folk. The valor of dauntless
+   heroes and the cunning of great minds are among these virtues, and a bard can
+   choose to emphasize either quality.
+ - Choose one of the following options: Virtue of Cunning, Virtue of Prescience,
+   Virtue of Valor. The choice you make gives you the benefit described below
+   and also provides bonuses to certain bard powers, as detailed in those
+   powers.
+
+** Dual Heritage
+:PROPERTIES:
+:LEVEL: Half-Elf Feature
+:URL: http://iws.mx/dnd/?view=race6
+:END:
+ - You can take feats that have either elf or human as a prerequisite (as well
+   as those specifically for half-elves), as long as you meet any other
+   requirements.
+
+* Rituals
+:PROPERTIES:
+:COLUMNS: %ITEM %TIME %DURATION %KEYSKILL %COMPONENTCOST
+:END:
+** Glib Limrick
+:PROPERTIES:
+:FLAVORTEXT: You recite a short rhyme and feel your tongue loosen to the lies can flow freely.
+:LEVEL: 1
+:CATEGORY: Deception
+:TIME: 1 minute
+:DURATION: 10 minutes
+:COMPONENTCOST: 10 gp, plus a focus worth 5gp
+:KEYSKILL: Arcana (no check)
+:URL: http://iws.mx/dnd/?view=ritual197
+:END:
+ - Prerequisite: Bard
+ - Focus: A musical instrument you play as part of performing the ritual.
+ - For the ritual's duration, whenever you make a Bluff check, you can roll
+   twice and use either result. The ritual's effect automatically ends when you
+   roll initiative.
+
+
+* Feats
+** Weapon Expertise: Longsword
+:PROPERTIES:
+:LEVEL: free
+:URL: http://iws.mx/dnd/?view=feat1032
+:END:
+  - Benefit: Choose a weapon group. You gain a +1 feat bonus to attack rolls
+    with any weapon power you use with a weapon from that group. The bonus
+    increases to +2 at 11th level and +3 at 21st level.
+  - Special: You can take this feat more than once. Each time you select this
+    feat, choose another weapon group.
+
+** Weapon Expertise: Longbow
+:PROPERTIES:
+:LEVEL: free
+:URL: http://iws.mx/dnd/?view=feat1032
+:END:
+  - Benefit: Choose a weapon group. You gain a +1 feat bonus to attack rolls
+    with any weapon power you use with a weapon from that group. The bonus
+    increases to +2 at 11th level and +3 at 21st level.
+  - Special: You can take this feat more than once. Each time you select this
+    feat, choose another weapon group.
+
+
+
+* Proficiencies
+  | Languages | Tools | Armor         | Weapons         |
+  |-----------+-------+---------------+-----------------|
+  | Common    | Flute | Cloth         | Simple          |
+  | Elf       |       | Leather       | Military ranged |
+  | Orc       |       | Light Shields | Longsword       |
+  |           |       | Cloth         | Scimitar        |
+  |           |       | Chainmail     | Short Sword     |
+  |           |       |               |                 |
+
+* Items
+
+** Equipment
+  | Name               | Quantity | Cost (gp) | Weight (lbs) | Total Weight (lbs) | Total Cost (gp) |
+  |--------------------+----------+-----------+--------------+--------------------+-----------------|
+  | Longbow            |        1 |        50 |            2 |                  2 |              50 |
+  | Longsword          |        1 |        15 |            4 |                  4 |              15 |
+  | Backpack           |        1 |         2 |            5 |                  5 |               2 |
+  | Bedroll            |        1 |        .1 |            2 |                  2 |             0.1 |
+  | Tinderbox          |        1 |        .5 |            1 |                  1 |             0.5 |
+  | Ration             |       10 |        .5 |            1 |                 10 |              5. |
+  | Waterskin          |        1 |        .2 |            5 |                  5 |             0.2 |
+  | Hempen Rope (50ft) |        1 |         1 |           10 |                 10 |               1 |
+  | Arrows             |       60 |       .05 |           .1 |                 6. |              3. |
+  | Hide Armor         |        1 |        30 |           25 |                 25 |              30 |
+  |--------------------+----------+-----------+--------------+--------------------+-----------------|
+  | Carry Capacity     |      100 |           |              |                70. |           106.8 |
+  #+TBLFM: $5=($2 * $4)
+  #+TBLFM: $6=($2 * $3)
+  #+TBLFM: @>$5=vsum(@<<$5..@>>$5)
+  #+TBLFM: @>$6=vsum(@<<$6..@>>$6)
+
+** Money
+   | Copper | Silver | Electrum | Gold | Platinum | Total (Gold) |
+   |--------+--------+----------+------+----------+--------------|
+   |        |        |          |      |          |            0 |
+   #+TBLFM: $6=(($1 / 100) + ($2 / 10) + ($3 / 2) + $4 + ($5 * 10));N
