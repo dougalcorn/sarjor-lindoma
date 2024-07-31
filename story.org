@@ -1,11 +1,15 @@
 # -*- mode: org; eva: (decide-mode); org-d20-party: (("Sarjor" . 7) ("Lindoma" . 0)); -*-
 #+title: Sarjor and Lindoma
 
+* Player Characters
+- [[file:sarjor.org][Sarjor]]
+- [[file:lindoma.org][Lindoma]]
+
 * Themes
 - [ ] Avoid Lindoma's enemy
 - [ ] Explore Goblin Lair @1508
 
-* Characters
+* NPC Characters
 - Lindoma's enemy
 - King Hugo
 - Amathahu
