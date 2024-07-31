@@ -43,4 +43,4 @@ by room. As I go, I draw the map on my iPad with [[https://notability.com/][Nota
 current state of the region after each play session. I'll also upload any
 dungeon or town maps as I go too.
 
-./Fosgi-Coidwig.png
+[[./Fosgi-Coidwig.png]]
