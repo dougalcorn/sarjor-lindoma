@@ -1,0 +1,69 @@
+#+title: Wilderness
+
+* Random Wilderness Generation
+
+Using a combination of [[https://www.drivethrurpg.com/en/product/252355/the-solo-adventurer-s-toolbox][The Solo Adventurer's Toolbox]] (SAT) and The Welsh Piper [[https://welshpiper.com/hex-based-campaign-design-part-1/][Hex-based Campaign Design]].
+
+An atlas level hex is 25 miles and has a overarching terrain:
+1. Water – lake, sea, or ocean; may be ice-covered in arctic/sub-arctic, or seaweed-choked in tropical/sub-tropical areas
+2. Swamp – marsh, bog, fen, or moor; will be partially frozen most or all of the year in arctic/sub-arctic climes
+3. Desert – arid land; sandy in tropical/sub-tropical, barrens in temperate, or snowfield in arctic/sub-arctic
+4. Plains – grassland, savannah, heath, or scrub; this is farmland in settled hexes, tundra in arctic
+5. Forest – woodland; mixed deciduous/evergreen in temperate, conifers in sub-arctic, or jungle in tropical/sub-tropical
+6. Hills – rocky ground, rough or broken land (up to 1,000′ above sea level)
+7. Mountains – peaks, ridges, and mesas (1,001′ or more above sea level)
+
+Each terrain type has a secondary, tertiary, and wild terrain type that possible to be adjacent.
+
+|           | Water | Swamp | Desert | Plains | Forest | Hills | Mountains |
+|-----------+-------+-------+--------+--------+--------+-------+-----------|
+| Water     | P     | W     | W      | W      | W      | W     | -         |
+| Swamp     | W     | P     | -      | W      | W      | -     | -         |
+| Desert    | W     | -     | P      | W      | -      | W     | W         |
+| Plains    | S[1]  | S     | T      | P[4]   | S      | T     | -         |
+| Forest    | T[2]  | T     | -      | S      | P[5]   | W[8]  | T[11]     |
+| Hills     | W     | -     | S[3]   | T      | T[6]   | P[9]  | S         |
+| Mountains | W     | -     | W      | -      | W[7]   | S[10] | P[12]     |
+
+1. Treat as coastal (beach or scrub) if adjacent to water
+2. 66% light forest
+3. 33% rocky desert or high sand dunes
+4. Treat as farmland in settled hexes
+5. 33% heavy forest
+6. 66% forested hills
+7. 66% forested mountains
+8. 33% forested hills
+9. 20% canyon or fissure
+10. 40% chance of a pass
+11. 33% forested mountains
+12. 20% chance of a dominating peak; 10% chance of a mountain pass; 5% volcano
+
+First, determine which adjacent hex tile to reference from (a la Scarlet Heroes,
+below). Roll 1d8 counting from the top and going clockwise. Use the tile tolled
+as the primary terrain type and then roll 1d12 below to determine the new
+terrain type.
+
+| d12 Result | Adjacent Hex Terrain |
+|------------+----------------------|
+|        1-6 | Primary              |
+|        7-9 | Secondary            |
+|      10-11 | Tertiary             |
+|         12 | Wildcard             |
+
+Within each 25-mile atlas tile, there are 5-mile local tiles. Use SAT to
+determine the minor feature for that overarching terrain type.
+
+* Travel and Time Tracking
+
+According to 4e PHB, base overland speed is 25 miles/day. That would be 5 hexes
+per day. Base overland speed assume relatively clear terrain. Based on the type
+of terrain, there is a distance multiplier:
+
+| Multiplier | Terrain                                                                                     |
+|------------+---------------------------------------------------------------------------------------------|
+| x 1/2      | Mostly difficult terrain: dense forests, mountains, deep swamps, rubble-choked ruins        |
+| x 3/4      | Extensive difficult terrain: forests, hills, swamps, crumbling ruins, natural caves, cities |
+| x 1        | Very little difficult terrain: open fields, plains, roads, clear dungeon corridors          |
+
+Most difficult terrain would reduce to 2 hexes per day. Extensive difficult
+terrain would be 3 hexes per day.

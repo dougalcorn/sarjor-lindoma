@@ -1,0 +1,9 @@
+#+title: Lindoma
+
+| Class | Paragon Path | Epic Destiny |
+|-------+--------------+--------------|
+| Bard  |              |              |
+
+| Race     | Size | Age | Gender | Height | Weight | Align. | Deity  | Adv. Co. | XP | Next XP | Level |
+|----------+------+-----+--------+--------+--------+--------+--------+----------+----+---------+-------|
+| Half-Elf | M    |  20 | M      | 5' 9"  |    140 | Good   | Melora |          |  0 |    1000 |     1 |

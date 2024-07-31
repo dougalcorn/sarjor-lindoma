@@ -1,0 +1,107 @@
+#+title: 2024 07 30
+
+* Session 2 - <2024-07-30 Tue 21:23> 1.5 hr world building, 2.5 hr play
+
+*Betlahya* is an old, old god largely forgotten. He tried to influence the nature
+of the world, but the other gods saw this as corruption. Playing the victim, he
+fought against them and lost. He was exiled to a lost and barrn plane almost
+completely forgotten in the world of men. A lone mage, *Amathahu*, found reference
+to him in a solitary tome. Seeing this as an opportunity to gain further power,
+he managed to form a link to Betlahya's prison plane. This was enough for
+Betlahya to exert influence again on the material plane. Thus the cult of
+Betlahya began as an attempt to return to the "purity" of creation's original
+state as Betlahya intended.
+
+The cult has infiltrated many of the settlements. Blood is required to open the
+rift between planes. Some cultist are open and some are hidden. People are
+fearful and suspicious of what's happening around them.
+
+*King Hugo* is not a strong ruler. His carlessness is what allowed the cult to
+perpetrate these attrocities. Sensing his people's mood, the king is now trying
+to get the cult under control and diminish its power. His hope is to redeem his
+legacy.
+
+<2024-07-30 Tue 23:00>
+
+** exploration starting in 1511 - <2024-07-30 Tue 23:30>
+*** day 1
+Atlas terrain type: [1d7] -> = 4, plains
+minor feature @1511: [1d100] -> = 33, grassland
+minor feature @1611: [1d100] -> = 100, interesting landscape feature, [1d20] -> = 16, creature shaped rocks. basilisk victims?
+Sarjor searches the area for evidence of creatures. Does he find any? [unlikely] -> NO+
+minor feature @1510: [1d100] -> = 48, grassland
+encounter: [1d100] -> = 35, no
+minor feature @1509: [1d100] -> = 60, hills, [1d100] -> = 54, rocky hills abundant with caves
+Are their inhabited caves? [likely] -> NO
+clue: [1d100] -> = 56
+Sarjor searches the area for signs of settlements. Does he find any? -> NO
+minor feature @1610: [1d100] -> = 85, small mountain range, foothills
+encounter: [1d100] -> = 63
+unmarked settlement: [1d4-1] -> (4) -1 = 3 rolls, [3d100] -> (67 21 80) = none found
+
+*** day 2
+minor feature @1609: [1d100] -> = 31, grassland
+minor feature @1508: [1d100] -> = 97, monster lair! (I'm going to decide this is a goblin lair)
+**** Goblin Lair
+    - Size: [1d20] -> = 6, small [1d6+4] -> (2) +4 = 6 rooms
+    - Starting area: [1d10] -> = 1, passage
+    - passage: [1d20] -> = 11, passage ends in an open entrance to a room
+    - room 1: [1d20] -> = 2, rectangular [1d4] -> = 3 * 10' wide, [1d4] -> = 3 * 10' long, [1d6] -> = 6 exits
+      - doors: [5d100] -> (40 21 41 95 33)
+        1. Iron door, locked. dc 14 theives tools to check, opens onto [1d4] -> = room [2]
+        2. Iron porcullis, [1d4] -> = 1, locked. opens to room [3]
+        3. locked and trapped stone door. dc 15 perception to find trap. [1d4] -> = 2 stairs on other side
+        4. Heavy stone door, requires athletics check to open (DC 16). -1 HP for
+           every 2 failed str checks, opens to room [4]
+        5. Wooden door, locked. DC 15 theives tools check, or it will have to be
+           smashed. Door has AC 12 and 20 HP. opens to room [5]
+      - contents: [1d100] -> = 17, dungeon hazard [1d6] -> = 4, collapsing masonry
+      - is this room occupied? -> NO
+      - purpose: [1d20] -> = 19
+      - Sarjor perception check [1d20+10] -> (19) +10 = 29, notices trapped door 3
+      - Sarjor athletics check [1d20+5] -> (7) +5 = 12, [1d20+5] -> (16) +5 = 21, opens door 4 second try
+    - room 3: [1d20] -> = 17, hexagonal
+    - room 4: [1d20] -> = 13, circular [1d4] -> = 1 * 10' diameter, [1d4] -> = 4, exits
+      - doors: [3d100] -> (9 90 14)
+        1. standard wooden door, braced with metal, unlocked. opens onto [1d4] -> = 2, stairs
+        2. door composed of fire elemental energy. You can move through it, but you will take 3d8 fire damage
+        3. standard wooden door, braced with metal, unlocked. opens onto [1d4] -> = 1 passage
+      - contents: [1d100] -> = 40, a previously triggered trap is in this room,
+        with a level appropriate hard enemy caught in it/victim to it. enemy
+        alive [1d100] -> = 53, no. loot [1d100] -> = 85, no
+        - trap [1d100] -> = 89, spiked gate dropped
+        - goblin hexer
+      - search for keys? [likely] -> NO-, there's no keys but...
+      - do i find something to disable the flame door? [likely] -> YES+ and there's a clue here
+      - the goblin hexer has a rune stone that fits into a keyhole near the flaming door
+      - clue [1d100] -> = 26, a mage's journal with entries that stop abruptly
+      - cryptic message: [4d100] -> (10 33 81 30) = Bizarre Fight Reassuring Failure
+      - does the journal belong to the mage who created this door? -> YES+
+      - The mage who created this door journals a battle with [1d100] -> = 60,
+        giant wolf spiders trying to take over this lair. Much to everyone's
+        relief, the spiders were defeated
+      - do i have a random encounter? [likely] -> YES. difficulty [1d3] -> = 1, easy
+      - encounter: 2 Goblin Cutters
+        - initative:
+          - sarjor: [1d20+7] -> (19) +7 = 26
+          - lindoma: [1d20] -> = 18
+          - goblin 1: [1d20+3] -> (1) +3 = 4
+          - golbin 2: [1d20+3] -> (4) +3 = 7
+          - goblin blackblade 17, 29 max, 10 current, prone, bloodied
+        - round 1
+          - sarjor shifts 2 and uses hunter's pounce on g1 [1d20+9] -> (9) +9 = 18, hits: [2d8+5] -> (8 6) +5 = 19 killing
+          - lindoma moves 2 and uses guiding strike on g2 [1d20+8] -> (10) +8 = 18, hits: [1d8+4] -> (1) +4 = 5, killing
+          - do reinforcements come? [likely] -> YES-,
+          - Goblin Blackblade initiative [1d20+7] -> (10) +7 = 17
+          - enter's through room 1's door 2 (unlocking the portcullis)
+        - round 2
+          - sarjor takes aspect of the charging ram and charges the blackblade [1d20+10] -> (17) +10 = 27, hit: [1d8+7] -> (7) +7 = 14, knocks him prone
+          - lindoma moves in and attacks with guiding strike with combat advantage: [1d20+10] -> (13) +10 = 23, hit: [1d8+4] -> (1) +4 = 5, and -2 to AC until EoYNT
+          - GB stands up and attacks lindoma: [1d20+5] -> (7) +5 = 12, hits: [1d6+2] -> (6) +2 = 8
+        - round 3
+          - sarjor makes a MBA: [1d20+9] -> (17) +9 = 26, hits: [1d8+5] -> (3) +5 = 8, DWA: [1d20+9] -> (16) +9 = 25, hit: [1d6+5] -> (6) +5 = 11, killing him
+        - total XP: 75 each
+        - coin: [3d100] -> (34 31 25) = [8d6] -> (4 5 4 5 4 1 1 1) = 25 silver and [5d6] -> (1 1 2 5 4) = 13 copper
+        - search GB for key? [likely] -> NO-
+
+<2024-07-31 Wed 02:00>

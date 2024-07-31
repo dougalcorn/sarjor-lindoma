@@ -1,0 +1,44 @@
+# -*- mode: org; eva: (decide-mode); org-d20-party: (("Sarjor" . 7) ("Lindoma" . 0)); -*-
+#+title: Sarjor and Lindoma
+
+* Themes
+- [ ] Avoid Lindoma's enemy
+- [ ] Explore Goblin Lair @1508
+
+* Characters
+- Lindoma's enemy
+- King Hugo
+- Amathahu
+- Goblin Lair Mage
+
+* Region - Fosgi Coidwig
+- Temperate climate
+- Human kingdom, lawful, civilized, unsafe, contested
+
+* Background
+
+*Betlahya* is an old, old god largely forgotten. He tried to influence the nature
+of the world, but the other gods saw this as corruption. Playing the victim, he
+fought against them and lost. He was exiled to a lost and barrn plane almost
+completely forgotten in the world of men. A lone mage, *Amathahu*, found reference
+to him in a solitary tome. Seeing this as an opportunity to gain further power,
+he managed to form a link to Betlahya's prison plane. This was enough for
+Betlahya to exert influence again on the material plane. Thus the cult of
+Betlahya began as an attempt to return to the "purity" of creation's original
+state as Betlahya intended.
+
+The cult has infiltrated many of the settlements. Blood is required to open the
+rift between planes. Some cultist are open and some are hidden. People are
+fearful and suspicious of what's happening around them.
+
+*King Hugo* is not a strong ruler. His carlessness is what allowed the cult to
+perpetrate these attrocities. Sensing his people's mood, the king is now trying
+to get the cult under control and diminish its power. His hope is to redeem his
+legacy.
+
+* Sessions
+- [[file:sessions/2024-07-29.org][Session 1 - <2024-07-29> In which we learn more about our heroes]]
+- [[file:sessions/2024-07-30.org][Session 2 - <2024-07-30>]]
+
+Our heroes enter Fosgi Coidwig in search of a settlement. After a day and a
+half, they find a Goblin Lair instead.
