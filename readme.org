@@ -42,3 +42,5 @@ don't know the map in advance and roll it hex tile by hex tile by dungeon room
 by room. As I go, I draw the map on my iPad with [[https://notability.com/][Notability]]. I'm uploading the
 current state of the region after each play session. I'll also upload any
 dungeon or town maps as I go too.
+
+./Fosgi-Coidwig.png
