@@ -1,4 +1,5 @@
 #+title: Blank Character Sheet
+#+STARTUP: overview
 
 | Class | Paragon Path | Epic Destiny |
 |-------+--------------+--------------|
@@ -38,6 +39,9 @@
 
 
 * Defense
+:PROPERTIES:
+:VISIBILITY: all
+:END:
 | Total |      | 10 + 1/2 lvl | Arm. Abil. | Class | Feat | Enh. | Misc | Temp |
 |-------+------+--------------+------------+-------+------+------+------+------|
 |    13 | AC   |           10 |          3 |       |      |      |      |      |
@@ -52,6 +56,9 @@
 
 
 * Quick Look Up
+:PROPERTIES:
+:VISIBILITY: children
+:END:
 | Weapon/Power        | Type      | vs   | Attack  | Bonus  |
 |---------------------+-----------+------+---------+--------|
 | [[Melee Basic Attack]]  | At-Will   | AC   | 1d20 +4 | 1d8    |
@@ -103,8 +110,13 @@
 * Powers
 :PROPERTIES:
 :COLUMNS: %ITEM %POWERTYPE(Type) %ATTACK %HIT %RANGE %TARGET
+:VISIBILITY: children
 :END:
-** Melee Basic Attack
+** Attack
+:PROPERTIES:
+:VISIBILITY: children
+:END:
+*** Melee Basic Attack
 :PROPERTIES:
 :LEVEL: basic
 :FLAVORTEXT:
@@ -123,7 +135,7 @@
  - Certain at-will powers count as melee basic attacks. They can be used any time a melee basic attack could be used, and are affected by modifiers to melee basic attacks.
  - A number of other powers can be used in place of the melee basic attack portion of a charge.
 
-** Ranged Basic Attack
+*** Ranged Basic Attack
 :PROPERTIES:
 :LEVEL: basic
 :FLAVORTEXT:
@@ -139,6 +151,44 @@
  - Special: Heavy thrown weapons use Strength instead of Dexterity for both attack and damage rolls for ranged basic attacks.
  - Hit: Increase damage to 2[W] + Dexterity modifier at 21st level.
 
+** Utility
+:PROPERTIES:
+:VISIBILITY: children
+:END:
+*** Utility Power Here
+:PROPERTIES:
+:LEVEL: Ranger Utility
+:FLAVORTEXT: You barrel past your foes with such speed and strength that they are unable to react to your assault.
+:POWERTYPE: At-Will
+:KEYWORDS: Primal, Stance
+:ACTIONTYPE: Minor Action
+:ATTACKTYPE: Personal
+:URL: http://iws.mx/dnd/?view=class790
+:END:
+  - Effect: ...
+
+
+
+* Rituals
+:PROPERTIES:
+:COLUMNS: %ITEM %TIME %DURATION %KEYSKILL %COMPONENTCOST
+:END:
+** Glib Limrick
+:PROPERTIES:
+:FLAVORTEXT: You recite a short rhyme and feel your tongue loosen to the lies can flow freely.
+:LEVEL: 1
+:CATEGORY: Deception
+:TIME: 1 minute
+:DURATION: 10 minutes
+:COMPONENTCOST: 10 gp, plus a focus worth 5gp
+:KEYSKILL: Arcana (no check)
+:URL: http://iws.mx/dnd/?view=ritual197
+:END:
+ - Prerequisite: Bard
+ - Focus: A musical instrument you play as part of performing the ritual.
+ - For the ritual's duration, whenever you make a Bluff check, you can roll
+   twice and use either result. The ritual's effect automatically ends when you
+   roll initiative.
 
 * Features
 ** Bardic Virtue
@@ -164,28 +214,6 @@
  - You can take feats that have either elf or human as a prerequisite (as well
    as those specifically for half-elves), as long as you meet any other
    requirements.
-
-* Rituals
-:PROPERTIES:
-:COLUMNS: %ITEM %TIME %DURATION %KEYSKILL %COMPONENTCOST
-:END:
-** Glib Limrick
-:PROPERTIES:
-:FLAVORTEXT: You recite a short rhyme and feel your tongue loosen to the lies can flow freely.
-:LEVEL: 1
-:CATEGORY: Deception
-:TIME: 1 minute
-:DURATION: 10 minutes
-:COMPONENTCOST: 10 gp, plus a focus worth 5gp
-:KEYSKILL: Arcana (no check)
-:URL: http://iws.mx/dnd/?view=ritual197
-:END:
- - Prerequisite: Bard
- - Focus: A musical instrument you play as part of performing the ritual.
- - For the ritual's duration, whenever you make a Bluff check, you can roll
-   twice and use either result. The ritual's effect automatically ends when you
-   roll initiative.
-
 
 * Feats
 ** Weapon Expertise: Longsword

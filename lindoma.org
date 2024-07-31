@@ -1,4 +1,5 @@
 #+title: Lindoma
+#+STARTUP: overview
 
 | Class | Paragon Path | Epic Destiny |
 |-------+--------------+--------------|
@@ -38,6 +39,9 @@
 
 
 * Defense
+:PROPERTIES:
+:VISIBILITY: all
+:END:
 | Total |      | 10 + 1/2 lvl | Arm. Abil. | Class | Feat | Enh. | Misc | Temp |
 |-------+------+--------------+------------+-------+------+------+------+------|
 |    13 | AC   |           10 |          3 |     0 |    0 |    0 |    0 |    0 |
@@ -52,6 +56,9 @@
 
 
 * Quick Look Up
+:PROPERTIES:
+:VISIBILITY: children
+:END:
 | Weapon/Power        | Type      | vs   | Attack  | Bonus  |
 |---------------------+-----------+------+---------+--------|
 | [[Melee Basic Attack]]  | At-Will   | AC   | 1d20 +4 | 1d8    |
@@ -111,8 +118,13 @@
 * Powers
 :PROPERTIES:
 :COLUMNS: %ITEM %POWERTYPE(Type) %ATTACK %HIT %RANGE %TARGET
+:VISIBILITY: children
 :END:
-** Melee Basic Attack
+** Attack
+:PROPERTIES:
+:VISIBILITY: children
+:END:
+*** Melee Basic Attack
 :PROPERTIES:
 :LEVEL: basic
 :FLAVORTEXT:
@@ -131,7 +143,7 @@
  - Certain at-will powers count as melee basic attacks. They can be used any time a melee basic attack could be used, and are affected by modifiers to melee basic attacks.
  - A number of other powers can be used in place of the melee basic attack portion of a charge.
 
-** Ranged Basic Attack
+*** Ranged Basic Attack
 :PROPERTIES:
 :LEVEL: basic
 :FLAVORTEXT:
@@ -147,33 +159,7 @@
  - Special: Heavy thrown weapons use Strength instead of Dexterity for both attack and damage rolls for ranged basic attacks.
  - Hit: Increase damage to 2[W] + Dexterity modifier at 21st level.
 
-** Words of Friendship
-:PROPERTIES:
-:LEVEL: Bard Feature
-:FLAVORTEXT: You infuse your words with arcane power, turning even the simplest speech into a compelling oration.
-:POWERTYPE: Encounter
-:KEYWORDS: Arcane Charm
-:ACTIONTYPE: Minor
-:ATTACKTYPE: Personal
-:URL: http://iws.mx/dnd/?view=power2887
-:END:
- - Effect: You gain a +5 power bonus to the next Diplomacy check you make before the end of your next turn.
-
-** Majestic Word
-:PROPERTIES:
-:LEVEL: Bard Feature
-:FLAVORTEXT: You utter words laden with preternatural inspiration, restoring your ally's stamina and making wounds seem insignificant
-:POWERTYPE: Encounter (Special)
-:KEYWORDS: Arcane, Healing
-:ACTIONTYPE: Minor
-:ATTACKTYPE: Close burst 5
-:TARGET: You or one ally in the burst
-:URL: http://iws.mx/dnd/?view=power2339
-:END:
- - Effect: The target can spend a healing surge and regain additional hit points equal to your Charisma modifier. You also slide the target 1 square.
- - Special: You can use this power twice per encounter, but only once per round. At 16th level, you can use this power three times per encounter, but only once per round.
-
-** Guiding Strike
+*** Guiding Strike
 :PROPERTIES:
 :LEVEL: Bard Attack 1
 :FLAVORTEXT:
@@ -189,7 +175,7 @@
 :END:
  - Hit: and the target takes a -2 penalty to the defense of your choice until the end of your next turn.
 
-** War Song Strike
+*** War Song Strike
 :PROPERTIES:
 :LEVEL: Bard Attack 1
 :FLAVORTEXT: You sing a song of war and victory, invigorating your allies as they press the attack
@@ -205,23 +191,7 @@
 :END:
  - Hit: any ally who hits the target before the end of your next turn gains temporary hit points equal to your Constitution modifier.
 
-** Shout of Triumph
-:PROPERTIES:
-:LEVEL: Bard Attack 1
-:FLAVORTEXT: You unleash a mighty call of battle, scattering your enemies while urging your allies forward.
-:POWERTYPE: Encounter
-:KEYWORDS: Arcane, Implement, Thunder
-:ACTIONTYPE: Standard
-:ATTACKTYPE: Close blast 3
-:RANGE: weapon
-:TARGET: Each enemy in the blast
-:ATTACK: CHA vs FORT*
-:HIT: 1d6 + CHA thunder*
-:END:
- - Hit: push the target 1 square
- - Effect: You slide each ally in the blast 1 square
- - Virtue of Valor: The number of squares you push the target and slide allies equals your Constitution modifier.
-** Slayer's Song
+*** Slayer's Song
 :PROPERTIES:
 :LEVEL: Bard Attack 1
 :FLAVORTEXT: You sing a tune of war that diminishes your foes' defenses with each blow you strike
@@ -240,8 +210,53 @@
  - Effect: Until the end of the encounter, whenever you hit an enemy, that enemy
    grants combat advantage to you and your allies until the end of your next
    turn.
+*** Shout of Triumph
+:PROPERTIES:
+:LEVEL: Bard Attack 1
+:FLAVORTEXT: You unleash a mighty call of battle, scattering your enemies while urging your allies forward.
+:POWERTYPE: Encounter
+:KEYWORDS: Arcane, Implement, Thunder
+:ACTIONTYPE: Standard
+:ATTACKTYPE: Close blast 3
+:RANGE: weapon
+:TARGET: Each enemy in the blast
+:ATTACK: CHA vs FORT*
+:HIT: 1d6 + CHA thunder*
+:END:
+ - Hit: push the target 1 square
+ - Effect: You slide each ally in the blast 1 square
+ - Virtue of Valor: The number of squares you push the target and slide allies equals your Constitution modifier.
+** Utility
+:PROPERTIES:
+:VISIBILITY: children
+:END:
+*** Words of Friendship
+:PROPERTIES:
+:LEVEL: Bard Feature
+:FLAVORTEXT: You infuse your words with arcane power, turning even the simplest speech into a compelling oration.
+:POWERTYPE: Encounter
+:KEYWORDS: Arcane Charm
+:ACTIONTYPE: Minor
+:ATTACKTYPE: Personal
+:URL: http://iws.mx/dnd/?view=power2887
+:END:
+ - Effect: You gain a +5 power bonus to the next Diplomacy check you make before the end of your next turn.
 
-** Knack for Success
+*** Majestic Word
+:PROPERTIES:
+:LEVEL: Bard Feature
+:FLAVORTEXT: You utter words laden with preternatural inspiration, restoring your ally's stamina and making wounds seem insignificant
+:POWERTYPE: Encounter (Special)
+:KEYWORDS: Arcane, Healing
+:ACTIONTYPE: Minor
+:ATTACKTYPE: Close burst 5
+:TARGET: You or one ally in the burst
+:URL: http://iws.mx/dnd/?view=power2339
+:END:
+ - Effect: The target can spend a healing surge and regain additional hit points equal to your Charisma modifier. You also slide the target 1 square.
+ - Special: You can use this power twice per encounter, but only once per round. At 16th level, you can use this power three times per encounter, but only once per round.
+
+*** Knack for Success
 :PROPERTIES:
 :LEVEL: Half-Elf Racial Power
 :FLAVORTEXT: Your mere presence is enough to tip the balance of fortune for you and your allies
@@ -346,6 +361,7 @@
 * Rituals
 :PROPERTIES:
 :COLUMNS: %ITEM %TIME %DURATION %KEYSKILL %COMPONENTCOST
+:VISIBILITY: children
 :END:
 ** Glib Limrick
 :PROPERTIES:
@@ -455,7 +471,9 @@
   |           |       |               |                 |
 
 * Items
-
+:PROPERTIES:
+:VISIBILITY: all
+:END:
 ** Equipment
   | Name               | Quantity | Cost (gp) | Weight (lbs) | Total Weight (lbs) | Total Cost (gp) |
   |--------------------+----------+-----------+--------------+--------------------+-----------------|
