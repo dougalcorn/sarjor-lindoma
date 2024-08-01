@@ -21,3 +21,60 @@ using an abbreviation to link to the PDF on my local hard drive.
   - [[https://www.drivethrurpg.com/en/product/407161/the-perilous-wilds-revised-edition][The Perilous Wilds, Revised Edition]] - [[file:~/Library/CloudStorage/Dropbox/RPGs/The_Perilous_Wilds_Revised_-_interactive_(44669716).pdf][PW]]
   - [[https://www.drivethrurpg.com/en/product/127180/scarlet-heroes][Scarlet Heroes]] - [[file:~/Library/CloudStorage/Dropbox/RPGs/ScarletHeroes030914.pdf][SH]]
   - [[https://marketplace.dndbeyond.com/category/xanathars-guide-to-everything?pid=SRC-00027][Xanathar's Guide to Everything]] - [[file:~/Library/CloudStorage/Dropbox/RPGs/5e/Xanathar's Guide to Everything.pdf][XGtE]]
+
+* NPC Generation
+
+Largely take from UNE. I Like this method because it's quick and gives pretty interesting results.
+
+- Determine any pre-conceived facts
+- Determine what the NPC is using the [[file:~/Library/CloudStorage/Dropbox/RPGs/UNE_The_Universal_NPC_Emulator_(rev).pdf:14][UNE NPC Verb and Noun]] tables. Optionally find the relative power level.
+  - Example: [2d100] -> (70 69) = "uneducated" "gunman"
+  - Example: [2d100] -> (74 92) = "revolting" "sniper"
+- Determine the NPC's Motivation using [[file:~/Library/CloudStorage/Dropbox/RPGs/UNE_The_Universal_NPC_Emulator_(rev).pdf::15][UNE Motivation Verb and Noun]] tables. You may need more than one pair of motivations.
+  - Example: [2d100] -> (56 39) = "assist" "military"
+  - Example: [2d100] -> (65 41) = "learn" "dreams"
+
+Alteratively, there is a [[file:~/Library/CloudStorage/Dropbox/RPGs/The_Solo_Adventurers_Toolbox_(44655684).pdf:98][TSAT NPC Generator]]. This method largely lacks flavor.
+Adding character elements from Mythic below would provide this color.
+
+- Determine race, gender, alignment and profession. The profession is weighted towards either commoners or tradesperson.
+- Determine the [[file:~/Library/CloudStorage/Dropbox/RPGs/The_Solo_Adventurers_Toolbox_(44655684).pdf:100][profession]].
+- Determine the [[file:~/Library/CloudStorage/Dropbox/RPGs/The_Solo_Adventurers_Toolbox_(44655684).pdf::101][class and level]] if they are an adventurer.
+- Finally determine the [[file:~/Library/CloudStorage/Dropbox/RPGs/The_Solo_Adventurers_Toolbox_(44655684).pdf::102][disposition and economic status]]
+
+Lastly, there is the [[file:~/Library/CloudStorage/Dropbox/RPGs/MythicGME2eV2.pdf::200][Mythic Meaning Tables]]. These are much more broad and could
+be used in conjunction with one of the above methods.
+
+ - Meaning [[file:~/Library/CloudStorage/Dropbox/RPGs/MythicGME2eV2.pdf:200][Actions]] and [[file:~/Library/CloudStorage/Dropbox/RPGs/MythicGME2eV2.pdf::201][Descriptors]] are typically used for events.
+ - [[file:~/Library/CloudStorage/Dropbox/RPGs/MythicGME2eV2.pdf::203][Character Elements]]
+   - Example: [2d100] -> (14 79) = "cautious" "questioning"
+   - Example: [2d100] -> (54 24) = "innocent" "defiant"
+ - [[file:~/Library/CloudStorage/Dropbox/RPGs/MythicGME2eV2.pdf::204][Character Appearance]]
+   - Example: [2d100] -> (36 20) = "festive" "dainty"
+   - Example: [2d100] -> (70 63) = "powerful" "neat"
+ - [[file:~/Library/CloudStorage/Dropbox/RPGs/MythicGME2eV2.pdf::205][Character Background]]
+   - Example: [2d100] -> (53 54) = "harsh" "heal"
+   - Example: [2d100] -> (69 76) = "nature" "priviledge"
+ - [[file:~/Library/CloudStorage/Dropbox/RPGs/MythicGME2eV2.pdf::205][Character Descriptors]]
+   - Example: [2d100] -> (68 33) = "loud" "commanding"
+   - Example: [2d100] -> (65 52) = "intimidating" "frightened"
+ - [[file:~/Library/CloudStorage/Dropbox/RPGs/MythicGME2eV2.pdf:206][Character Identity]]
+   - Example: [2d100] -> (55 23) = "leader" "driver/pilot"
+   - Example: [2d100] -> (46 88) = "innocent" "socialite"
+ - [[file:~/Library/CloudStorage/Dropbox/RPGs/MythicGME2eV2.pdf:206][Character Motivations]]
+   - Example: [2d100] -> (89 75) = "search" "physical"
+   - Example: [2d100] -> (16 73) = "deceive" "path"
+ - [[file:~/Library/CloudStorage/Dropbox/RPGs/MythicGME2eV2.pdf::206][Character Personality]]
+   - Example: [2d100] -> (16 86) = "brave" "selfish"
+   - Example: [2d100] -> (4 34) = "agreeable" "disagreeable" <== ha, ha
+ - [[file:~/Library/CloudStorage/Dropbox/RPGs/MythicGME2eV2.pdf::207][Character Skills]]
+   - Example: [2d100] -> (11 49) = "balance" "inspect"
+   - Example: [2d100] -> (5 100) = "art" "wounds"
+ - [[file:~/Library/CloudStorage/Dropbox/RPGs/MythicGME2eV2.pdf::207][Character Traits & Flaws]]
+   - Example: [2d100] -> (27 62) = "enemy" "multi"
+   - Example: [2d100] -> (17 6) = "criminal" "beautiful"
+
+
+ - [[file:~/Library/CloudStorage/Dropbox/RPGs/MythicGME2eV2.pdf::212][Names]] has fragments of names that can be combined in interesting ways
+   - Example: [3d100] -> (61 28 15) = "military" "Est" "Color"
+   - Example: [3d100] -> (83 85 99) = "Th" "Ti" "Yuh"
