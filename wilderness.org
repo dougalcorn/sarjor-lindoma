@@ -2,7 +2,11 @@
 
 * Random Wilderness Generation
 
-Using a combination of [[https://www.drivethrurpg.com/en/product/252355/the-solo-adventurer-s-toolbox][The Solo Adventurer's Toolbox]] (SAT) and The Welsh Piper [[https://welshpiper.com/hex-based-campaign-design-part-1/][Hex-based Campaign Design]].
+Using a combination of [[https://www.drivethrurpg.com/en/product/252355/the-solo-adventurer-s-toolbox][The Solo Adventurer's Toolbox]] (TSAT) and The Welsh Piper
+[[https://welshpiper.com/hex-based-campaign-design-part-1/][Hex-based Campaign Design]]. Since I'm publishing these org documents on Github, I
+should make clear that most of this file is ripped off completely from The Welsh
+Piper. Originally, this was just a notes file I had to get all the information
+in one place. I had no intention of expressing ownership of the content.
 
 An atlas level hex is 25 miles and has a overarching terrain:
 1. Water – lake, sea, or ocean; may be ice-covered in arctic/sub-arctic, or seaweed-choked in tropical/sub-tropical areas
@@ -12,6 +16,9 @@ An atlas level hex is 25 miles and has a overarching terrain:
 5. Forest – woodland; mixed deciduous/evergreen in temperate, conifers in sub-arctic, or jungle in tropical/sub-tropical
 6. Hills – rocky ground, rough or broken land (up to 1,000′ above sea level)
 7. Mountains – peaks, ridges, and mesas (1,001′ or more above sea level)
+
+TSAT also includes an eighth terrain type of arctic. I chose not to include it
+because The Welsh Piper didn't.
 
 Each terrain type has a secondary, tertiary, and wild terrain type that possible to be adjacent.
 
@@ -50,7 +57,7 @@ terrain type.
 |      10-11 | Tertiary             |
 |         12 | Wildcard             |
 
-Within each 25-mile atlas tile, there are 5-mile local tiles. Use SAT to
+Within each 25-mile atlas tile, there are 5-mile local tiles. Use TSAT to
 determine the minor feature for that overarching terrain type.
 
 * Travel and Time Tracking
