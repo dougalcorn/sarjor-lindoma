@@ -2,12 +2,13 @@
 
 * Random Wilderness Generation
 
-Using a combination of [[https://www.drivethrurpg.com/en/product/252355/the-solo-adventurer-s-toolbox][The Solo Adventurer's Toolbox]] (TSAT) and The Welsh Piper
+Using a combination of [[https://www.drivethrurpg.com/en/product/252355/the-solo-adventurer-s-toolbox][The Solo Adventurer's Toolbox]] ([[file:~/Library/CloudStorage/Dropbox/RPGs/The_Solo_Adventurers_Toolbox_(44655684).pdf][]]) and The Welsh Piper
 [[https://welshpiper.com/hex-based-campaign-design-part-1/][Hex-based Campaign Design]]. Since I'm publishing these org documents on Github, I
 should make clear that most of this file is ripped off completely from The Welsh
 Piper. Originally, this was just a notes file I had to get all the information
 in one place. I had no intention of expressing ownership of the content.
 
+** Atlas Level Hex Terrain Type
 An atlas level hex is 25 miles and has a overarching terrain:
 1. Water – lake, sea, or ocean; may be ice-covered in arctic/sub-arctic, or seaweed-choked in tropical/sub-tropical areas
 2. Swamp – marsh, bog, fen, or moor; will be partially frozen most or all of the year in arctic/sub-arctic climes
@@ -57,8 +58,48 @@ terrain type.
 |      10-11 | Tertiary             |
 |         12 | Wildcard             |
 
+** Local 5-mil Hex Terrain
+
+*** Overarching Terrain Tables
+
 Within each 25-mile atlas tile, there are 5-mile local tiles. Use TSAT to
 determine the minor feature for that overarching terrain type.
+
+Step 1: Roll 1d100 on the [[file:~/Library/CloudStorage/Dropbox/RPGs/The_Solo_Adventurers_Toolbox_(44655684).pdf::59][TSAT Overarching Terrain Tables]] to lookup the minor
+feature for the local hex:
+
+- [[file:~/Library/CloudStorage/Dropbox/RPGs/The_Solo_Adventurers_Toolbox_(44655684).pdf::60][Coastal]]
+- [[file:~/Library/CloudStorage/Dropbox/RPGs/The_Solo_Adventurers_Toolbox_(44655684).pdf::60][Desert]]
+- [[file:~/Library/CloudStorage/Dropbox/RPGs/The_Solo_Adventurers_Toolbox_(44655684).pdf::61][Forest/Jungle]]
+- [[file:~/Library/CloudStorage/Dropbox/RPGs/The_Solo_Adventurers_Toolbox_(44655684).pdf::61][Grassland]]
+- [[file:~/Library/CloudStorage/Dropbox/RPGs/The_Solo_Adventurers_Toolbox_(44655684).pdf::62][Hills]]
+- [[file:~/Library/CloudStorage/Dropbox/RPGs/The_Solo_Adventurers_Toolbox_(44655684).pdf::62][Mountains]]
+- [[file:~/Library/CloudStorage/Dropbox/RPGs/The_Solo_Adventurers_Toolbox_(44655684).pdf::63][Swamp]]
+
+*** Minor Feature Tables
+
+There's a 50/50 chance that the terrain type of the local hex is the same as the overarching altas hex terrain type. Beyond that, each individual overarching terrain types have lookup tables for minor features that could occur in that overarching terrain.
+
+Step 2: Roll either a 1d00 or 1d20 (depending on the table) for the specifics of the minor feature:
+
+- [[file:~/Library/CloudStorage/Dropbox/RPGs/The_Solo_Adventurers_Toolbox_(44655684).pdf::63][Clearfelled Area]]
+- [[file:~/Library/CloudStorage/Dropbox/RPGs/The_Solo_Adventurers_Toolbox_(44655684).pdf::64][Clearing]]
+- [[file:~/Library/CloudStorage/Dropbox/RPGs/The_Solo_Adventurers_Toolbox_(44655684).pdf::64][Gully]]
+- [[file:~/Library/CloudStorage/Dropbox/RPGs/The_Solo_Adventurers_Toolbox_(44655684).pdf::65][Hills]]
+- [[file:~/Library/CloudStorage/Dropbox/RPGs/The_Solo_Adventurers_Toolbox_(44655684).pdf::66][Interesting Landscape Feature]]
+- [[file:~/Library/CloudStorage/Dropbox/RPGs/The_Solo_Adventurers_Toolbox_(44655684).pdf::67][Lake]]
+- [[file:~/Library/CloudStorage/Dropbox/RPGs/The_Solo_Adventurers_Toolbox_(44655684).pdf::67][Monument]]
+- [[file:~/Library/CloudStorage/Dropbox/RPGs/The_Solo_Adventurers_Toolbox_(44655684).pdf::69][Oasis]]
+- [[file:~/Library/CloudStorage/Dropbox/RPGs/The_Solo_Adventurers_Toolbox_(44655684).pdf::69][Rocky Outcrop]]
+- [[file:~/Library/CloudStorage/Dropbox/RPGs/The_Solo_Adventurers_Toolbox_(44655684).pdf::70][Small Mountain Range/Foothills]]
+- [[file:~/Library/CloudStorage/Dropbox/RPGs/The_Solo_Adventurers_Toolbox_(44655684).pdf::71][Small Wood]]
+- [[file:~/Library/CloudStorage/Dropbox/RPGs/The_Solo_Adventurers_Toolbox_(44655684).pdf::71][Structure]]
+- [[file:~/Library/CloudStorage/Dropbox/RPGs/The_Solo_Adventurers_Toolbox_(44655684).pdf::73][Swamp]]
+- [[file:~/Library/CloudStorage/Dropbox/RPGs/The_Solo_Adventurers_Toolbox_(44655684).pdf::73][Unmarked Settlement]]
+- [[file:~/Library/CloudStorage/Dropbox/RPGs/The_Solo_Adventurers_Toolbox_(44655684).pdf::74][Waterway]]
+
+Once the minor feature is determined, resolve any open questions, events, or
+encounters as needed.
 
 * Travel and Time Tracking
 
