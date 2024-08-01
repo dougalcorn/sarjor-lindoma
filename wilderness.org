@@ -102,6 +102,30 @@ Step 2: Roll either a 1d00 or 1d20 (depending on the table) for the specifics of
 Once the minor feature is determined, resolve any open questions, events, or
 encounters as needed.
 
+
+*** Adding character
+
+Mythic has some element meaning lookup tables that could be used in conjunction with the above:
+
+- [[file:~/Library/CloudStorage/Dropbox/RPGs/MythicGME2eV2.pdf::216][Terrain Descriptors]]
+  - Example: [2d100] -> (75 87) = "river" "threatning"
+  - Example: [2d100] -> (48 73) = "lovely" "resourceful"
+- [[file:~/Library/CloudStorage/Dropbox/RPGs/MythicGME2eV2.pdf::207][City Descriptors]]
+  - Example: [2d100] -> (73 72) = "protected" "powerful"
+  - Example: [2d100] -> (13 5) = "cold" "beautiful"
+- [[file:~/Library/CloudStorage/Dropbox/RPGs/MythicGME2eV2.pdf::208][Civilization Descriptors]]
+  - Example: [2d100] -> (43 19) = "expanding" "cautious"
+  - Example: [2d100] -> (64 48) = "mighty" "free"
+- [[file:~/Library/CloudStorage/Dropbox/RPGs/MythicGME2eV2.pdf::209][Domicile Descriptors]]
+  - Example: [2d100] -> (69 17) = "poor" "common"
+  - Example: [2d100] -> (52 29) = "mechanical" "disagreeable"
+- [[file:~/Library/CloudStorage/Dropbox/RPGs/MythicGME2eV2.pdf::210][Forest Descriptions]]
+  - Example: [2d100] -> (32 35) = "environment" "fierce"
+  - Example: [2d100] -> (1 77) = "advresity" "remarkable"
+- [[file:~/Library/CloudStorage/Dropbox/RPGs/MythicGME2eV2.pdf::211][Locations]]
+  - Example: [2d100] -> (24 72) = "delightful" "protected"
+  - Example: [2d100] -> (41 29) = "frightning" "enormous"
+
 * Travel and Time Tracking
 
 According to 4e PHB, base overland speed is 25 miles/day. That would be 5 hexes
