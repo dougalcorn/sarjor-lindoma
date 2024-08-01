@@ -78,3 +78,8 @@ be used in conjunction with one of the above methods.
  - [[file:~/Library/CloudStorage/Dropbox/RPGs/MythicGME2eV2.pdf::212][Names]] has fragments of names that can be combined in interesting ways
    - Example: [3d100] -> (61 28 15) = "military" "Est" "Color"
    - Example: [3d100] -> (83 85 99) = "Th" "Ti" "Yuh"
+
+* Scene Elements
+
+Mythic has lots and lots of scene element meaning tables. Here's a clickable
+list of all the [[file:~/Library/CloudStorage/Dropbox/RPGs/MythicGME2eV2.pdf::86][tables at a glance]].
