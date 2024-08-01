@@ -2,11 +2,12 @@
 
 * Random Wilderness Generation
 
-Using a combination of [[https://www.drivethrurpg.com/en/product/252355/the-solo-adventurer-s-toolbox][The Solo Adventurer's Toolbox]] ([[file:~/Library/CloudStorage/Dropbox/RPGs/The_Solo_Adventurers_Toolbox_(44655684).pdf][]]) and The Welsh Piper
-[[https://welshpiper.com/hex-based-campaign-design-part-1/][Hex-based Campaign Design]]. Since I'm publishing these org documents on Github, I
-should make clear that most of this file is ripped off completely from The Welsh
-Piper. Originally, this was just a notes file I had to get all the information
-in one place. I had no intention of expressing ownership of the content.
+Using a combination of [[https://www.drivethrurpg.com/en/product/252355/the-solo-adventurer-s-toolbox][The Solo Adventurer's Toolbox]] ([[file:~/Library/CloudStorage/Dropbox/RPGs/The_Solo_Adventurers_Toolbox_(44655684).pdf::59][Chapter 9: Random
+Wilderness Generation]]) and The Welsh Piper [[https://welshpiper.com/hex-based-campaign-design-part-1/][Hex-based Campaign Design]]. Since I'm
+publishing these org documents on Github, I should make clear that most of this
+file is ripped off completely from The Welsh Piper. Originally, this was just a
+notes file I had to get all the information in one place. I had no intention of
+expressing ownership of the content.
 
 ** Atlas Level Hex Terrain Type
 An atlas level hex is 25 miles and has a overarching terrain:
