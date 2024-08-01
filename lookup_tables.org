@@ -1,0 +1,23 @@
+#+title: Lookup Tables
+
+* Library
+
+Here are the PDF books in my library. I'm linking to an external source and then
+using an abbreviation to link to the PDF on my local hard drive.
+
+- Dungeons & Dragons 4th Edition Rule Books
+  - [[https://a.co/d/0fOntfQ][Dungeon Master's Guide]] - [[file:Books/Core Rules/DMG - Dungeon Master's Guide.pdf][DMG]]
+  - [[https://a.co/d/5Ox1O2V][Player's Handbook]] - [[file:Books/Core Rules/PHB - Player's Handbook.pdf][PHB]]
+  - [[https://a.co/d/gebJQWv][Player's Handbook 2]] - [[file:Books/Core Rules/phb2 - player's handbook 2.pdf][PHB2]]
+  - [[https://a.co/d/1uEmQLI][Monster Manual]] - [[file:Books/Core Rules/MM - Monster Manual.pdf][MM]]
+  - [[https://a.co/d/0nE9spD][Monster Manual 2]] - [[file:Books/Core Rules/MM2 - Monster Manual 2.pdf][MM2]]
+  - [[https://a.co/d/aYO0n5w][Martial Power]] - [[file:Books/Supplements/Martial Power.pdf][MP]]
+  - [[https://a.co/d/bnqeu9T][Martial Power 2]] - [[file:Books/Supplements/Martial Power 2.pdf][MP2]]
+
+- Suppliments
+  - [[https://www.drivethrurpg.com/en/product/422929/Mythic-Game-Master-Emulator-Second-Edition][Mythic Game Master Emulator 2nd Ed]] - [[file:~/Library/CloudStorage/Dropbox/RPGs/MythicGME2eV2.pdf][MythGM2]]
+  - [[https://www.dmsguild.com/product/252355/The-Solo-Adventurers-Toolbox][The Solo Adventurer's Toolbox]] - [[file:~/Library/CloudStorage/Dropbox/RPGs/The_Solo_Adventurers_Toolbox_(44655684).pdf][TSAT]]
+  - [[https://www.drivethrurpg.com/en/product/134163/UNE-The-Universal-NPC-Emulator-rev][The Universal NPC Emulator Revised]] - [[file:~/Library/CloudStorage/Dropbox/RPGs/UNE_The_Universal_NPC_Emulator_(rev).pdf][UNE]]
+  - [[https://www.drivethrurpg.com/en/product/407161/the-perilous-wilds-revised-edition][The Perilous Wilds, Revised Edition]] - [[file:~/Library/CloudStorage/Dropbox/RPGs/The_Perilous_Wilds_Revised_-_interactive_(44669716).pdf][PW]]
+  - [[https://www.drivethrurpg.com/en/product/127180/scarlet-heroes][Scarlet Heroes]] - [[file:~/Library/CloudStorage/Dropbox/RPGs/ScarletHeroes030914.pdf][SH]]
+  - [[https://marketplace.dndbeyond.com/category/xanathars-guide-to-everything?pid=SRC-00027][Xanathar's Guide to Everything]] - [[file:~/Library/CloudStorage/Dropbox/RPGs/5e/Xanathar's Guide to Everything.pdf][XGtE]]
