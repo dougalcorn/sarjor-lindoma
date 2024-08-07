@@ -1,0 +1,157 @@
+#+title: Making Camp
+
+
+A system for campaigns which have a major focus on dangerous wilderness
+exploration and where the normal resting rules, Gritty Realism or throwing a
+dozen wolves at the party every night don't provide the right balance for feel
+and diversity for your campaign.
+
+
+* Step One: Camp Setup Check
+To set up camp, one or more characters in the party must make a *Survival* check
+against a DC determined by the hostility of the environment (see the Camp Setup
+Table) and count the number of successful rolls out of the number of attempts.
+Those characters must all actively contribute in setting the camp, like finding
+a suitable location, building a shelter, preparing the campfire, etc.
+
+The Dungeon Master may elect to give some bonuses or advantage to this check,
+depending on the situation. For example, instead of making a Camp Setup check
+themselves, a character may elect to take the Help action to support another
+character making the check. Similarly, a Ranger within his favored terrain may
+roll the Camp Setup check with advantage.
+
+** Camp Setup Table
+| Survival DC | Camp Environment                                          |
+|-------------+-----------------------------------------------------------|
+|           0 | Inn or home at a well established settlement              |
+|           5 | Peaceful countryside with bountyful resources             |
+|          10 | Tamed wilderness, or the streets of an urban setting      |
+|          15 | Untamed wilderness of hazardous or unknown terrain        |
+|          20 | Deadly wilderness or caves infested by dangerous monsters |
+|          25 | Utterly inhospitable wilderness untraveled by most        |
+|          30 | Alien planes of unspeakable horror                        |
+
+* Step Two: Camping Score
+
+Add together all the applicable bonus and penalties from the following tables,
+taking note if the bonus or penalty applies to the entire party or a single
+character, to get the Camping Score for each character.
+
+Adapt or add to those tables as appropriate. For example, the Dungeon Master may
+consider that using the *alarm* spell or asking a familiar to stand watch
+contribute toward obtaining the *Guards* bonus.
+
+* Step Three: Camping Outcome
+
+Compare the Camping Score for each character to the Camping Outcome table below
+to obtain the result of that night's camping.
+
+** Camp Setup Check Results
+Select one from the table below.
+
+| Bonus or Penalty | Description                                                             | Type         |
+|------------------+-------------------------------------------------------------------------+--------------|
+|               +2 | *Everyone* attempting the Camp Setup check succeeds.                    | Entire party |
+|               +0 | *Half or more* party members succeed at their Camp Setup check.         | Entire party |
+|               -2 | *Less than half* of the party members succeed their Camp Setup check.   | Entire party |
+
+** General Camp Location
+Select one from the table below (mutually exclusive).
+
+| Bonus or Penalty | Description                                                                                                      | Type         |
+|------------------+------------------------------------------------------------------------------------------------------------------+--------------|
+|               +3 | *Safe Location:* The party makes camp in a very safe location, such as an inn or warm homestead.                 | Entire party |
+|               +0 | *Magical Dome:* The party sleeps within a *tiny hut* or any similar magically created barrier.                   | Entire party |
+|               -3 | *Dangerous Location:* The party makes camp in a dangerous location, such as the wilderness or a hostile dungeon. | Entire party |
+
+** Weather Impacts
+Select one from the table below (mutually exclusive).
+
+| Bonus | Type         | Description                                                                                                                               |
+|-------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------|
+|    +1 | Entire party | *Permanent Structure:* The party makes camp in a fixed structure, like a sturdy cabin or a cave offering protection against the elements. |
+|    -1 | Entire party | *Bad Weather:* The party makes camp without proper shelter while the weather is windy, cold or rainy.                                     |
+|    -2 | Entire party | *Extreme Weather:* The party makes camp without proper shelter while the weather is extreme, such as blizzard or magical storm.           |
+
+
+* Sources
+ - Original idea found in *"Making Camp" - An Alternative to Gritty Realism
+   Resting*, by [[https://www.reddit.com/r/DnDBehindTheScreen/comments/qap84a/making_camp_an_alternative_to_gritty_realism/][u/Dreadful_Aardvark]] on reddit (posted October 18th, 2021).
+ - Campfire image from [[https://abstract.desktopnexus.com/wallpaper/1736197/][Desktop Nexus]] "Dark Camp Site"
+ - GM Binder version by [[https://www.gmbinder.com/profile/phixium][phixium]]
+ - This org-file was converted from the markdown of [[https://www.gmbinder.com/share/-MmKzM9-KS2KZLQBcGsZ][Making Camp]] on GM Binder by
+   phixium. That version looks much better than the plain text of org-mode. :)
+
+* Other Camping Conditions
+Select all that apply from the table below.
+
+| Bonus or Penalty | Description                                                                                 | Type         |
+|------------------+---------------------------------------------------------------------------------------------+--------------|
+|               +1 | *Proper Camp:* The party makes camp before twilight hours or uses an already existing camp. | Entire party |
+|               +1 | *Guards:* The party sleeps with at least two guard animals or hired men on watch.           | Entire party |
+|               +1 | *Hidden:* The campsite is naturally or magically hidden from view or easy detection.        | Entire party |
+
+** Personal Events of the Day
+Select all that apply from the table below.
+
+| Bonus or Penalty | Description                                                                                                    | Type      |
+|------------------+----------------------------------------------------------------------------------------------------------------+-----------|
+|               +2 | *Inspired:* The character overcame a difficult challenge the previous day without suffering any major setback. | Character |
+|               +1 | *Uninjured:* The character goes to sleep at full hit points.                                                   | Character |
+|               -2 | *Defeated:* The character dropped to 0 hit point the previous day.                                             | Character |
+|               +1 | *Satiated:* The character eats twice the amount of daily rations.                                              | Character |
+|               -1 | *Hungry:* The character does not eat the required amount of daily rations.                                     | Character |
+|               -1 | *On Watch:* The character takes a turn watching during the long rest.                                          | Character |
+|               -1 | *Disturbed Slumber:* The character' sleep is interrupted by streneous activity.                                | Character |
+
+** Camping Outcome Table
+| Camping Score | Description                                                                            | Effect                                                                 |
+|---------------+----------------------------------------------------------------------------------------+------------------------------------------------------------------------|
+| 5 of more     | The night was beneficial and you had a great sleep. You feel invigorated.              | You gain *inspiration* and the benefits of a *long rest*.              |
+| 0 to 4        | The camp was acceptable, the night pleasant and the sleep satisfying. You feel rested. | You gain the benefits of a *long rest*.                                |
+| -1 to -4      | The camp was poor and you had a restless night. You feel tired                         | You gain the benefits of a *short rest*.                               |
+| -5 or less    | The night was long and weary, and you barely slept. You feel weakened.                 | You gain one level of *exhaustion* and the benefits of a *short rest*. |
+
+* Example
+
+** Step One - Camp Setup Check
+A party of 4 decides to make camp into a dangerous wilderness they are
+exploring. The DC for this Camp Setup check is 20. Two members attempt the Camp
+Setup check, with the third member using the Help action to aid one of these
+checks. The fourth party member rests (having been reduced to 0 hp). In the end,
+only one of checks succeeds (one success out of two attempts).
+
+** Step Two: Camping Score
+
+The camp is in an area known to be patrolled by gnolls, but the party finds an
+abandoned cabin before twilight which they successfully camouflage with tree
+branches and other natural components. The day was a difficult one, each party
+member suffering wounds in battle, one one character suffering from a near death
+experience (reduced to 0 hp). They don't lack food and water but still limit
+their consumption since they are running low, and take turns to watch for gnoll
+patrols but otherwise have an uneventful night.
+
+*** Total for all party members
+| Bonus or Penalty | Description                                    |
+|------------------+------------------------------------------------|
+|               +0 | Half or more succeeded in the Camp Setup check |
+|               -3 | Dangerous Location                             |
+|               +1 | Permanent Structure                            |
+|               +1 | Proper Camp                                    |
+|               +1 | Hidden                                         |
+|               -1 | On Watch (each takes turn)                     |
+|             *-1* | *Party Total*                                  |
+
+** Total for character reduced to 0 hp
+| Bonus or Penalty | Description       |
+|------------------+-------------------|
+|               -1 | Party Total       |
+|               -2 | Defeated          |
+|             *-3* | *Character Total* |
+
+** Step Three: Camping Outcome
+
+The Party Total for the Camping Score is *-1*, while the total for the
+character who was reduced to 0 hp is *-3*. While they have found a suitable
+camping location, the night is stressful and all characters only get the benefit
+of a *short rest*.
