@@ -1,0 +1,140 @@
+# -*- mode: org; ord-d20-party: (("Sarjor" . 4) ("Lindoma" . 0))
+#+title: Play Session 2024-08-06
+
+* Session 3 - <2024-08-06 Tue 21:40> 3 hours play time
+
+When last we left our pair, they were in the Goblin Lair. They had found what appears to be an antechamber for a Wizard's study when attacked by Goblins. The fight drew them back out into the main entry room. A Goblin Blackblade had opened the portcullis to enter the fight.
+
+** Room 3
+- [1d100] -> = 31, Level Appropriate Hard Encounter ([[file:~/Library/CloudStorage/Dropbox/RPGs/The_Solo_Adventurers_Toolbox_(44655684).pdf:47][TSAT Room Table]] )
+*** encounter
+- Bugbear Warrior + 2x Goblin Cutter ([[file:~/Library/CloudStorage/Dropbox/RPGs/4e/Books/Core Rules/MM - Monster Manual.pdf:136][MM Goblin]])
+- Sarjor [1d20] -> = 3
+- Lindoma [1d20] -> = 1
+
+
+Round of combat: 9
+| Turn | Creature            | Mod | Init | HP | Damage | Status   |        |
+|------+---------------------+-----+------+----+--------+----------+--------|
+| >>>> | ~Bugbear Warrior 1~ |  +5 |   16 | 76 |     76 | bloodied | 1d20+7 |
+|      | ~Goblin Cutter 1~   |  +3 |   10 |  1 |      9 |          |        |
+|      | ~Goblin Cutter 2~   |  +3 |   10 |  1 |      3 |          |        |
+|      | ~Sarjor~            |  +4 |    7 | 26 |     27 | bloodied |        |
+|      | Lindoma             |  +0 |    1 | 28 |     20 | bloodied |        |
+
+**** round 1
+ - Bugbear [1d20+7] -> (18) +7 = 25, hits Sarjor [1d12+6] -> (2) +6 = 8 damage
+ - Goblin 1 [1d20+5] -> (14) +5 = 19, hits Sarjor 4 damage
+ - Goblin 2 moves to flank Lindoma, provokes opportunity attack from L. [1d20+4] -> (20) +4 = 24, hits and kills [1d8] -> = 3
+ - Sarjor Scything Blow, first BB, second G [1d20+8] -> (4) +8 = 12, elven accuracy [1d20+8] -> (9) +8 = 17,
+ - [1d20+8] -> (2) +8 = 10 miss Goblin
+ - Lindoma War Song Strike vs BB, [1d20+8] -> (17) +8 = 25, hits. [1d8+4] -> (8) +4 = 12 damage
+   - ally who hits BB gains 3 temp HP
+**** round 2
+ - Bugbear [1d20+7] -> (1) +7 = 8 misses Sarjor
+ - Goblin 1 [1d20+5] -> (19) +5 = 24, hits Sarjor for 4 damage
+ - Sarjor MBA vs BB [1d20+8] -> (10) +8 = 18, hits for [1d8+5] -> (2) +5 = 7 damage
+   - Power Strike: [1d8] -> = 6 damage
+   - DWA [1d20+8] -> (11) +8 = 19, hits for [1d6+5] -> (1) +5 = 6 damage
+ - Lindoma War Song Strike BB [1d20+8] -> (19) +8 = 27 hits for [1d8+4] -> (5) +4 = 9 damage
+   - ally who hits BB gains 3 temp HP
+**** round 3
+ - Bugbear [1d20+7] -> (11) +7 = 18 hits Sarjor for [1d12+6] -> (7) +6 = 13 damage
+ - Goblin [1d20+5] -> (7) +5 = 12, misses Lindoma
+ - Sarjor death save: [1d10] -> = 7 fail
+ - Lindoma minor action majestic word on Sarjor. Sarjor spends a healing surge + 4, conscious but prone
+   - Slayer's Song vs BB [1d20+4] -> (3) +4 = 7, miss
+**** round 4
+ - Bugbear vs Lindoma [1d20+7] -> (10) +7 = 17, hits for [1d12+6] -> (7) +6 = 13 damage
+ - Goblin vs Sarjor [1d20+5] -> (4) +5 = 9, miss
+ - Sarjor stand up, second wind
+   - healing surge
+   - +2 bonus to all defenses
+ - Lindoma second wind,
+   - healing surge
+   - +2 to all defenses
+**** round 5
+ - Bugbear vs Sarjor [1d20+7] -> (8) +7 = 15, miss
+ - Goblin vs Sarjor [1d20+5] -> (15) +5 = 20, hit for 4 damage
+ - Sarjor MBA vs BB [1d20+8] -> (15) +8 = 23, hits for [1d8+5] -> (4) +5 = 9 damage
+   - DWA vs Goblin [1d20+8] -> (10) +8 = 18, hits for [1d6+5] -> (4) +5 = 9 damage
+ - Lindoma War Song Strike vs BB [1d20+8] -> (13) +8 = 21, hits for [1d8+4] -> (7) +4 = 11 damage
+   - ally gets 3 temp HP when hit BB
+**** round 6
+ - Bugbear vs Sarjor [1d20+7] -> (16) +7 = 23, hits for [1d12+6] -> (6) +6 = 12 damage
+ - Sarjor death save [1d20] -> = 14 saves
+ - Lindoma War Song Strike vs BB [1d20+8] -> (16) +8 = 24, hits for [1d8+4] -> (2) +4 = 6 damage
+**** round 7
+ - Bugbear [1d20+7] -> (16) +7 = 23, hits Lindoma for [1d12+6] -> (8) +6 = 14 damage
+ - Sarjor death save [1d20] -> = 8, fails
+ - Lindoma majestic word on Sarjor, Sarjor heals 10 HP
+   - Guiding Strike [1d20+8] -> (7) +8 = 15, miss
+**** round 8
+ - Does the BB attack Sarjor? -> YES-
+ - Bugbear [1d20+7] -> (12) +7 = 19, hits Sarjor for [1d12+6] -> (5) +6 = 11 damage
+ - Sarjor death save [1d20] -> = 10, saves
+ - Lindoma War Song Strike [1d20+8] -> (13) +8 = 21, hits for [1d8+4] -> (5) +4 = 9 damage
+**** Does the BB flee? -> YES+
+**** round 9
+ - BB flees south and provokes an opportunity attack from Lindoma [1d20+4] -> (10) +4 = 14 misses
+   - second opportunity attack [1d20+4] -> (20) +4 = 24, hits for [1d8] -> = 1 damage
+ - The battle is over!
+**** rewards
+ - total of 250 XP - 125 each
+ - 20% chance of a clue: [1d100] -> = 91, no
+ - 20% chance of random feature: [1d100] -> = 69, no
+ - 20% chance of loot in room: [1d100] -> = 97, no
+ - coins on minions: [1d6] -> = 3, [3d6] -> (3 2 6) = 11g ([[file:~/Library/CloudStorage/Dropbox/RPGs/The_Solo_Adventurers_Toolbox_(44655684).pdf:152][TSAT CR1 Treasure Table]] )
+*** End of Day 2
+ - exit the lair and find a suitable camp site
+ - Sajor makes a nature check at -2 for being wounded: [1d20+11] -> (9) +11 = 20
+ - They both alternate watches for 3 hours each, the goal is 12 hours of rest for 6 hours sleep
+ - Do they hear anything in the night? -> YES-
+ - Passive perception checks: [1d20+10] -> (2) +10 = 12, sarjor passes. [1d20+6] -> (1) +6 = 7, fails
+ - encounter roll: [1d100] -> = 48, fail
+ - encounter roll: [1d100] -> = 80, fail
+ - sarjor forage rolls: [1d20+11] -> (12) +11 = 23, [1d6] -> = 5 rations worth
+ - party is fully healed up
+
+<2024-08-07 Wed 00:30>
+
+*** Specific logistic notes from the last play session
+- I liked using the `org-d20-initative` to track the encounter. It was a little
+  tedious putting my point in the initiative table in order to advance it. I did
+  get into a rhythm of using `:line-number` to jump to the table
+  `org-d20-damage` to record damage, `org-d20-initiative-advance`, and then
+  `:line-number` to jump back down to where I was recording actions and dice
+  rolls.
+- Using `org-d20-initative` wants you to roll the initiative for each player
+  character before invoking. It will use `org-d20-party` variable to add the
+  initiative modifiers to the rolls, but it prompts for the rolls. Not sure why
+  it doesn't just go ahead and roll for you.
+- It does a good job showing damage and tracking bloodied, but doesn't really
+  handle healing well. It will subtract healing from total damage, but doesn't
+  remove bloodied status, or bring players back to consciousness.
+- While a player is unconscious, the initiative advance doesn't stop to prompt
+  for death save rolls.
+- Having the character sheets for sarjor and lindoma was pretty good. My overall
+  layout was 1/2 my screen (split vertically) was emacs and the other half was
+  for PDFs. During the encounter, I had the MM open showing the stat blocks for
+  the monsters in the encounter. It might have been nice to copy those into my
+  emacs session notes?
+- My emacs window was split in half horizontally with the
+  lower half my session notes. The top half was split vertically with the two
+  character sheets open. As it turns out, this 1/4 screen wasn't enough to
+  really navigate the character sheets.
+- I don't really know the characters and powers well enough. I thought I could
+  rely on the quick lookup, and I largely did. But I still needed to open the
+  powers and read them a few different times to understand the details. I was
+  also tempted to pull the powers up in browser.
+- It was still awkward to track encounter/daily power usage, second wind, death
+  saves, etc.
+- I don't really know the DM Rules well enough for 4e. I'm struggling to build
+  good encounters and determine appropriate rewards.
+
+*** Wrapping it up
+
+**** TODO write up what I've learned about designing 4e encounters
+**** TODO learn how to property aware treasure
+**** TODO Explore the Wizard's room in the Goblin Lair
+**** TODO Find a settlement somewhere in the wild

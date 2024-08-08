@@ -41,8 +41,17 @@ to get the cult under control and diminish its power. His hope is to redeem his
 legacy.
 
 * Sessions
-- [[file:sessions/2024-07-29.org][Session 1 - <2024-07-29> In which we learn more about our heroes]]
-- [[file:sessions/2024-07-30.org][Session 2 - <2024-07-30>]]
-
+** [[file:sessions/2024-07-29.org][Session 1 - <2024-07-29> In which we learn more about our heroes]]
+** [[file:sessions/2024-07-30.org][Session 2 - <2024-07-30>]]
 Our heroes enter Fosgi Coidwig in search of a settlement. After a day and a
 half, they find a Goblin Lair instead.
+** [[file:sessions/2024-08-06.org][Session 3 - <2024-08-06>]]
+While in the Goblin Lair, the heroes have a nasty encounter with a Bugbear.
+
+This encounter was quite deadly. Sarjor was knocked unconscious twice and twice
+failed his death save. Another round would have put him at 50/50 to die. Lindoma
+was down to their last breath and wouldn't withstand another blow. Meanwhile,
+the Bugbear was down to his last HP and decided to flee! In its panic, he
+provoked two opportunity attacks. Lindoma missed the first, but managed to
+scratch the Bugbear on the second inflicting a single point of damage. Thus the
+Bugbear was slain.
