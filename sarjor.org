@@ -12,15 +12,7 @@
 
 | Race | Size | Age | Gender | Height | Weight | Align. | Deity  | Adv. Co. | XP | Next XP | Level |
 |------+------+-----+--------+--------+--------+--------+--------+----------+----+---------+-------|
-| [[http://iws.mx/dnd/?view=race4][Elf]]  | M    |  40 | M      | 6'     |    145 | Good   | Melora |          | 75 |    1000 |     1 |
-
-| Max HP | Current HP | Bloodied | Healing Surge | Surges/Day | Surges Used |
-|--------+------------+----------+---------------+------------+-------------|
-|     26 |         26 |       13 |             6 |          9 |             |
-
- - Second Wind [ ]
- - Death ST Failed [ ] [ ] [ ]
- - Action Points:
+| [[http://iws.mx/dnd/?view=race4][Elf]]  | M    |  40 | M      | 6'     |    145 | Good   | Melora |          | 200 |    1000 |     1 |
 
 | Initiative | Dex | 1/2 Level | Misc | Temp |
 |------------+-----+-----------+------+------|
@@ -31,6 +23,16 @@
 |-------+------+-------+------+------|
 |     7 |    7 |     0 |    0 |    0 |
 #+TBLFM: $1=($2 + $3 + $4 + $5)
+
+* Health
+| Max HP | Current HP | Bloodied | Healing Surge | Surges/Day | Surges Used |
+|--------+------------+----------+---------------+------------+-------------|
+|     26 |         26 |       13 |             6 |          9 |             |
+
+ - Second Wind [ ]
+ - Death ST Failed [ ] [ ] [ ]
+ - Action Points:
+
 
 * Abilities
 | Ability | Score | Mod | + 1/2 Lvl |

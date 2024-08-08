@@ -8,17 +8,9 @@
 |-------+--------------+--------------|
 | [[http://iws.mx/dnd/?view=class104][Bard]]  |              |              |
 
-| Race     | Size | Age | Gender | Height | Weight | Align. | Deity  | Adv. Co. | XP | Next XP | Level |
-|----------+------+-----+--------+--------+--------+--------+--------+----------+----+---------+-------|
-| [[http://iws.mx/dnd/?view=race6][Half-Elf]] | M    |  20 | M      | 5' 9"  |    140 | Good   | Melora |          |  0 |    1000 |     1 |
-
-| Max HP | Current HP | Bloodied | Healing Surge | Surges/Day | Surges Used |
-|--------+------------+----------+---------------+------------+-------------|
-|     28 |         28 |       14 |             7 |         10 |           1 |
-
- - Second Wind [ ]
- - Death ST Failed [ ] [ ] [ ]
- - Action Points:
+| Race     | Size | Age | Gender | Height | Weight | Align. | Deity  | Adv. Co. |  XP | Next XP | Level |
+|----------+------+-----+--------+--------+--------+--------+--------+----------+-----+---------+-------|
+| [[http://iws.mx/dnd/?view=race6][Half-Elf]] | M    |  20 | M      | 5' 9"  |    140 | Good   | Melora |          | 200 |    1000 |     1 |
 
 | Initiative | Dex | 1/2 Level | Misc | Temp |
 |------------+-----+-----------+------+------|
@@ -29,6 +21,16 @@
 |-------+------+-------+------+------|
 |     6 |    6 |     0 |    0 |    0 |
 #+TBLFM: $1=($2 + $3 + $4 + $5)
+
+* Health
+| Max HP | Current HP | Bloodied | Healing Surge | Surges/Day | Surges Used |
+|--------+------------+----------+---------------+------------+-------------|
+|     28 |         28 |       14 |             7 |         10 |           0 |
+
+ - Second Wind [ ]
+ - Death ST Failed [ ] [ ] [ ]
+ - Action Points:
+
 
 * Abilities
 | Ability | Score | Mod | + 1/2 lvl |
@@ -204,7 +206,7 @@
  - At-Will | Arcane, Weapon
  - Standard Action | Melee weapon
  - Target: One creature
- - Attack: Cha vs ACTIONTYPE
+ - Attack: Cha vs AC
  - Hit: 1[W] + Cha
    - and the target takes a -2 penalty to the defense of your choice until the end of your next turn.
  - http://iws.mx/dnd/?view=power4987
