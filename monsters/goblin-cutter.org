@@ -1,0 +1,32 @@
+#+title: Goblin Cutter
+
+* Goblin Cutter :small:humanoid:natural:
+*** Level 1 Minion, XP 25
+GOBLINS ARE WICKED, TREACHEROUS CREATURES that love plunder and cruelty. They’re
+not very big or strong, but they’re dangerous when they gang up. Goblins breed
+quickly and can live most anywhere, from caves to ruins to a city’s sewers. They
+survive by raiding and robbery, taking every usable item they can carry from
+their victims.
+** Combat Specs
+- Initiative +3
+- Senses Perception +1; low-light vision
+- HP 1; a missed attack never damages a minion.
+- AC 16; Fortitude 12, Reflex 14, Will 11, Speed 6
+** Powers
+*** Short Sword :standard:atwill:weapon:mba:
+- +5 vs. AC; 4 damage (5 damage if the goblin cutter has combat advantage against the target).
+*** Goblin Tactics :atwill:
+- immediate reaction, when missed by a melee attack
+- The goblin shifts 1 square.
+** Attributes
+| Str 14 (+2) | Dex 17 (+3) | Wis 12 (+1) |
+| Con 13 (+1) | Int 8 (–1)  | Cha 8 (–1)  |
+- Alignment: Evil
+- Languages Common, Goblin
+- Skills Stealth +5, Thievery +5
+- Equipment leather armor, short sword
+** Tactics
+Goblin cutters—like all goblins—don’t fight fair. They gang up on a single enemy
+and quickly take advantage of goblin tactics to achieve flanking positions. If
+it dawns on them that they’re losing the battle, they flee, hoping to live to
+fight another day.

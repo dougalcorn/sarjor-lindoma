@@ -1,0 +1,35 @@
+#+title: Bugbear Warrior
+
+* Bugbear Warrior :medium:humanoid:natural:
+*** Level 5 Brute - XP 200
+BIG, TOUGH GOBLINS THAT LOVE TO FIGHT, bugbears are the champions, picked
+guards, and muscle for more clever goblins. Bugbears take whatever they want and
+bully others into doing their work. They hunt for food, eating any creature they
+can kill—including other goblins.
+** Combat Specs
+- Initiative +5
+- Senses: Perception +4; low-light vision
+- HP 76; Bloodied 38
+- AC 18; Fort 17, Ref 15, Will 14
+- Speed 5
+** Powers
+*** Morningstar :standard:atwill:weapon:mba:
+- +7 vs. AC; 1d12+6 damage
+*** Skullthumper :standard:encounter:weapon:melee:
+- +5 vs Fort; 1d12+6 damage
+- the target is knocked prone and dazed (save ends)
+- Requires morningstar and combat advantage
+*** Predatory Eye :minor:encounter:
+The bugbear warrior deals an extra 1d6 damage on the next attack it makes with
+combat advantage. It must apply this bonus before the end of its next turn.
+** Attributes
+  | Str 20 (+7) | Dex 16 (+5) | Wis 14 (+4) |
+  | Con 16 (+5) | Int 10 (+2) | Cha 10 (+2) |
+- Alignment: Evil
+- Languages: Common, Goblin
+- Skills: Intimidate +9, Stealth +11
+- Equipment: hide armor, morningstar
+** Tactics
+Bugbear warriors are surprisingly sneaky for their size. They sometimes send out
+their smaller kin to lead overeager adventurers into a trap. If they can’t
+achieve surprise, bugbear warriors look for chances to flank their foes.
