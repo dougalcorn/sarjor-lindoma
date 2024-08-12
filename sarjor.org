@@ -155,7 +155,7 @@
 :PROPERTIES:
 :VISIBILITY: children
 :END:
-*** Melee Basic Attack
+*** Melee Basic Attack                :atwill:standard:melee:weapon:
 :PROPERTIES:
 :POWERTYPE: At-Will
 :RANGE: weapon
@@ -163,8 +163,6 @@
 :ATTACK: DEX vs AC
 :HIT: 1[W] + STR
 :END:
- - At-Will | Melee Weapon
- - Standard Action
  - Target: One creature
  - Attack: Strength vs AC
  - Hit: 1[W] + Strength
@@ -175,21 +173,19 @@
  - A number of other powers can be used in place of the melee basic attack portion of a charge.
  - [[Attack Finesse]] uses Dexterity instead of Strength
 
-*** Ranged Basic Attack
+*** Ranged Basic Attack        :atwill:standard:weapon:melee:ranged:
 :PROPERTIES:
 :POWERTYPE: At-Will
 :ATTACK: DEX vs AC
 :HIT: 1[W] + DEX
 :END:
- - At-Will | Ranged Weapon
- - Standard
  - Target: One creature
  - Attack: Dexterity vs AC
  - Hit: 1[W] + Dexterity
    - Increase damage to 2[W] + Dexterity modifier at 21st level.
  - Special: Heavy thrown weapons use Strength instead of Dexterity for both attack and damage rolls for ranged basic attacks.
 
-*** Dual Weapon Attack
+*** Dual Weapon Attack            :atwill:free:martial:weapon:melee:
 :PROPERTIES:
 :POWERTYPE: At-Will
 :RANGE: weapon
@@ -199,8 +195,6 @@
 :END:
 /You follow your successful swing with a quick strike from your off hand./
  - Level: Ranger Attack
- - At-Will | Martial, Weapon
- - Free Action | Melee
  - Range: weapon
  - Requirement: You must be wielding two melee weapons.
  - Attack: Dex vs AC
@@ -210,7 +204,7 @@
  - Special: You can use this power only once per round.
  - http://iws.mx/dnd/?view=class790
 
-*** Power Strike
+*** Power Strike         :encounter:noaction:martial:weapon:special:
 :PROPERTIES:
 :POWERTYPE: Encounter
 :ACTIONTYPE: No Action
@@ -218,8 +212,6 @@
 :TARGET: The enemy you hit
 :END:
 /By pushing yourself beyond your normal limits, you unleash your full wrath against a foe./
- - Encounter | Martial, Weapon
- - No Action | Special
  - Trigger: You hit with a melee basic attack using a weapon.
  - Target: The enemy you hit
  - Requirement: You must be wielding two melee weapons.
@@ -227,7 +219,7 @@
    - Level 17: 2[W] extra damage.
    - Level 27: 3[W] extra damage.
  - http://iws.mx/dnd/?view=class790
-*** Fading Strike
+*** Fading Strike      :atwill:standard:martial:weapon:melee:ranged:
 :PROPERTIES:
 :POWERTYPE: At-Will
 :RANGE: weapon
@@ -237,15 +229,13 @@
 :END:
 /You launch an attack against your foe and then back away for safety./
  - Ranger Attack 1
- - At Will | Martial, Weapon
- - Standard Action | Melee or Ranged weapon
  - Target: One creature
  - Attack: Dex vs AC
  - Hit: 1[W] + Dex modifier damage
    - and you shift 2 squares to a square that is not adjacent to the target
  - Hunter Fighting Style: When making an opportunity attack, you can use this power in place of a melee basic attack.
  - http://iws.mx/dnd/?view=power10591
-*** Nimble Strike
+*** Nimble Strike            :atwill:standard:martial:weapon:ranged:
 :PROPERTIES:
 :POWERTYPE: At-Will
 :ATTACKTYPE: Ranged
@@ -257,8 +247,6 @@
 /You slink past your enemy's guard to make your attack, or you make your attack
 and then withdraw to a more advantageous position./
  - Ranger Attack 1
- - At-Will | Martial, Weapon
- - Standard Action | Ranged weapon
  - Target: One creature
  - Special: Shift 1 square before or after you attack
  - Attack: Dex vs AC
@@ -266,7 +254,7 @@ and then withdraw to a more advantageous position./
    - Increase damage to 2[W] + Dexterity modifier at 21st level.
  - http://iws.mx/dnd/?view=power919
 
-*** Scything Blow
+*** Scything Blow              :daily:standard:martial:weapon:melee:
 :PROPERTIES:
 :LEVEL: Ranger Attack 1
 :POWERTYPE: Daily
@@ -277,8 +265,6 @@ and then withdraw to a more advantageous position./
 :END:
 /You lash out with your weapon in a wide arc, knocking two foes to the ground. You then drive your blade into them./
  - Ranger Attack 1
- - Daily | Martial, Weapon
- - Standard Action | Melee weapon
  - Effect: Before the attack, you shift 2 squares.
  - Target: One or two creatures
  - Attack: Strength or Dexterity vs AC
@@ -290,90 +276,71 @@ and then withdraw to a more advantageous position./
    - Miss: Half damage.
  - http://iws.mx/dnd/?view=power10602
 
-
-
-
-
-
-
 ** Utility
 :PROPERTIES:
 :VISIBILITY: children
 :END:
-*** Aspect of the Charging Ram
+*** Aspect of the Charging Ram :atwill:minor:personal:primal:stance:
 :PROPERTIES:
 :POWERTYPE: At-Will
 :END:
 /You barrel past your foes with such speed and strength that they are unable to react to your assault./
  - Ranger Utility
- - At-Will | Primal, Stance
- - Minor Action | Personal
  - Effect: You assume a stance, the aspect of the charging ram. Until the stance ends, you gain the following benefits.
    - Your movement during a charge doesn't provoke opportunity attacks.
    - If you hit with a charge attack, you can knock the target prone.
    - You gain a +2 power bonus to the damage rolls of charge attacks.
  - http://iws.mx/dnd/?view=class790
 
-*** Aspect of the Lurking Spider
+*** Aspect of the Lurking Spider :atwill:minor:personal:primal:stance:
 :PROPERTIES:
 :POWERTYPE: At-Will
 :END:
 /Like a spider, you lie in ambush and wait until your foe comes near before launching your attack/
- - At-Will | Primal, Stance
- - Minor Action | Personal
  - Effect: You assume a stance, the aspect of the lurking spider. Until the stance ends, you gain the following benefits.
    - You gain a +2 power bonus to Stealth checks.
    - You gain a +5 power bonus to Athletics checks made to climb.
    - While you have combat advantage against an enemy, you gain a +2 power bonus to damage rolls against it.
  - http://iws.mx/dnd/?view=class790
-*** Elven Accuracy
+*** Elven Accuracy                         :encounter:free:personal:
 :PROPERTIES:
 :POWERTYPE: Encounter
 :END:
 /With an instant of focus, you take careful aim at your foe and strike with the legendary accuracy of the elves./
  - Elf Racial Utility
- - Encounter
- - Free Action | Personal
  - Trigger: You make an attack roll and dislike the result.
  - Effect: Reroll the attack roll. Use the second roll, even if it's lower.
  - http://iws.mx/dnd/?view=power1450
 
 
 * Features
-** Elven Weapon Proficiency
- - Elf feature
+** Elven Weapon Proficiency                                     :elf:
  - You gain proficiency with the longbow and the shortbow.
  - http://iws.mx/dnd/?view=race4
-** Fey Origin
- - Elf feature
+** Fey Origin                                                   :elf:
  - Your ancestors were native to the Feywild, so you are considered a fey
    creature for the purpose of effects that relate to creature origin.
  - http://iws.mx/dnd/?view=race4
 
-** Group Awareness
- - Elf feature
+** Group Awareness                                              :elf:
  - You grant non-elf allies within 5 squares of you a +1 racial bonus to
    Perception checks
  - http://iws.mx/dnd/?view=race4
 
-** Wild Step
- - Elf feature
+** Wild Step                                                    :elf:
  - You ignore diffiult terrain when you shift.
  - http://iws.mx/dnd/?view=race4
 
-** Attack Finesse
- - Ranger feature
+** Attack Finesse                                            :ranger:
  - When you make a melee basic attack, you can use your Dexterity modifier
    instead of your Strength modifier for the attack roll and the damage roll.
  - http://iws.mx/dnd/?view=class790
 
-** Flashing Blade Mastery
- - Ranger feature
+** Flashing Blade Mastery                                    :ranger:
  - You gain a +1 bonus to weapon attack rolls while you wield a light blade in
    your off hand.
  - http://iws.mx/dnd/?view=class790
-** Wilderness Tracker
- - Ranger Wilerness Knacks
+** Wilderness Tracker                             :ranger:wilderness:
  - During a short rest, you can make a Perception check (DC determined by the
    DM) to inspect the area around you. This area can be as large as 10 squares
    on a side. If your check succeeds, you determine the number and nature of the
@@ -381,8 +348,7 @@ and then withdraw to a more advantageous position./
    ascertain when and where they entered the area, as well as when and where
    they left.
  - http://iws.mx/dnd/?view=class790
-** Watchful Rest
- - Ranger Wilderness Knacks
+** Watchful Rest                                  :ranger:wilderness:
  - When you take an extended rest, you and any allies also taking the rest do
    not take the -5 penalty to Perception checks for sleeping.
  - http://iws.mx/dnd/?view=class790
