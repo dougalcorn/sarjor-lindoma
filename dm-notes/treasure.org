@@ -1,0 +1,30 @@
+#+title: Treasure
+
+The [[file:~/Library/CloudStorage/Dropbox/RPGs/4e/Books/Core Rules/DMG - Dungeon Master's Guide.pdf:126][DMG Awarding Treasure]] suggests grouping treasure into parcels. For a party
+of 5 characters there are 10 parcels of treasure per level. The idea is to group
+them together into two or three treasure rewards per level. There might be 2 to
+4 enounters without a treasure parcel and then a milestone encounter with
+several. Based on the party size, the DMG suggests adding or removing parcels.
+
+
+**  Party Level 1
+Total monetary treasure: 720gp
+1. Magic item, level 5*
+2. Magic item, level 4*
+3. Magic item, level 3
+4. Magic item, level 2*
+5. 200 gp, or two 100gp gems, or two /potions of healing/ + 100gp
+6. 180 gp, or one 100 gp gem + 80 gp, or one /potion of healing/ + 130 gp
+7. 120 gp, or one 100 gp gem + 20 gp, or one /potion of healing/ + 70 gp
+8. 120 gp, or 100 gp + 200 sp, or one 100 gp gem + 200 sp
+9. 60 gp, or one /potion of healing/ + 10 gp, or 50 gp + 100 sp
+10. 40 gp, or 400 sp, or 30 gp + 100 sp
+
+*For a party of 2 characters, it suggests removing parcels 1, 2, and 4.
+
+** Potion of Healing
+/This simple potion draws on the body's natural healing ability to cure your wounds./
+- level 5, 50gp
+*** Power                                   :minor:consumable:healing:
+Drink this potion ans spend a healing surge. Instead of the hit points you would
+normally regain, you regain 10 hit points.

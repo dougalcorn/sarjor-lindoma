@@ -1,0 +1,55 @@
+#+title: Encounters
+
+So far I've designed three encounters for this solo play. I have two level 1
+characters: a ranger (striker) and bard (leader). My first two encounters were
+way to easy. I finished the first in one round, then added another creature and
+finished that in two rounds. My third encounter was rolled as "Hard". Based on
+my earlier attempts, I went too hard and probably created a "deadly" encounter.
+
+My random encounter lookup tables in [[file:~/Library/CloudStorage/Dropbox/RPGs/The_Solo_Adventurers_Toolbox_(44655684).pdf:115][TSAT Chapter 16: Monster Encounters for the
+ Solo PC]] are based on D&D 5e that uses a Challenge Rating to determine which
+ monsters and how many to add to the encounter.
+
+
+ From the [[file:~/Library/CloudStorage/Dropbox/RPGs/4e/Books/Core Rules/DMG - Dungeon Master's Guide.pdf:57][DMG Encounter Components]], the enounter as a whole has a level:
+
+  - An easy encounter is one or two levels lower than the party's level
+  - A standard encounter is of the party's level, or one level higher
+  - A hard encounter is two to four levels higher than the party's level
+
+The party's level would presumably be the average level of the party members.
+
+There is a table that shows the XP of a standard monster for each level
+
+| Monster Level | Standard | Minion | Elite |  Solo |
+|---------------+----------+--------+-------+-------|
+|             1 |      100 |     25 |   200 |   500 |
+|             2 |      125 |     31 |   250 |   625 |
+|             3 |      150 |     38 |   300 |   750 |
+|             4 |      175 |     44 |   350 |   875 |
+|             5 |      200 |     50 |   400 | 1,000 |
+
+1. *Choose the encounter level*.
+2. *Determine your XP budget*. Multiply the number of characters in the party by
+   the XP value of a standard monster of the encounter's level.
+3. *Spend the XP*. Select enough individual monsters so that their combined XP
+   fits within or close to your XP budget.
+
+A level two encounter for two level one characters would be 125 * 2 => 250.
+A level three encounter for two level one characters would be 150 * 2 => 300.
+
+The difference between 250 and 300 XP is two level one minions.
+
+My most deadly encounter for Sarjor (ranger-striker) and Lindoma (bard-leader)
+at first level was apparently just a second level encounter. The Bugbear was
+200XP and two minions were another 50 XP. A bugbear is a level 5 monster and
+minions are level 1.
+
+It could be that putting that much of the XP budget in a single creature is too
+much. The problem was that the Bugbear did 1d12+6 damage for each hit. The two
+characters only had 26 and 28 HP. Two hits was enough to knock a character
+unconscious.
+
+The encounter could have been much easier with a single Goblin Blackblade (Level
+1, 100 XP) and six Goblin Cutters (Level 1, 25 XP) - or even two Goblin
+Blackblades and 2 Goblin Cutters.
