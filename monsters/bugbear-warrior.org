@@ -1,6 +1,6 @@
 #+title: Bugbear Warrior
 
-* Bugbear Warrior :medium:humanoid:natural:
+* Bugbear Warrior                            :medium:humanoid:natural:
 *** Level 5 Brute - XP 200
 BIG, TOUGH GOBLINS THAT LOVE TO FIGHT, bugbears are the champions, picked
 guards, and muscle for more clever goblins. Bugbears take whatever they want and
@@ -13,13 +13,13 @@ can kill—including other goblins.
 - AC 18; Fort 17, Ref 15, Will 14
 - Speed 5
 ** Powers
-*** Morningstar :standard:atwill:weapon:mba:
+*** Morningstar                         :atwill:standard:weapon:mba:
 - +7 vs. AC; 1d12+6 damage
-*** Skullthumper :standard:encounter:weapon:melee:
+*** Skullthumper                   :encounter:standard:weapon:melee:
 - +5 vs Fort; 1d12+6 damage
 - the target is knocked prone and dazed (save ends)
 - Requires morningstar and combat advantage
-*** Predatory Eye :minor:encounter:
+*** Predatory Eye                             :encounter:minor::mba:
 The bugbear warrior deals an extra 1d6 damage on the next attack it makes with
 combat advantage. It must apply this bonus before the end of its next turn.
 ** Attributes

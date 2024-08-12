@@ -1,6 +1,6 @@
 #+title: Goblin Cutter
 
-* Goblin Cutter :small:humanoid:natural:
+* Goblin Cutter                               :small:humanoid:natural:
 *** Level 1 Minion, XP 25
 GOBLINS ARE WICKED, TREACHEROUS CREATURES that love plunder and cruelty. They’re
 not very big or strong, but they’re dangerous when they gang up. Goblins breed
@@ -13,9 +13,9 @@ their victims.
 - HP 1; a missed attack never damages a minion.
 - AC 16; Fortitude 12, Reflex 14, Will 11, Speed 6
 ** Powers
-*** Short Sword :standard:atwill:weapon:mba:
+*** Short Sword                         :atwill:standard:weapon:mba:
 - +5 vs. AC; 4 damage (5 damage if the goblin cutter has combat advantage against the target).
-*** Goblin Tactics :atwill:
+*** Goblin Tactics                                          :atwill:
 - immediate reaction, when missed by a melee attack
 - The goblin shifts 1 square.
 ** Attributes
