@@ -1,0 +1,123 @@
+#+title: 2024 08 12
+
+* Session 4 - <2024-08-12 Mon 18:45>
+
+When last we left our pair, they had just survived a deadly encounter with a
+Bugbear. They then left the Goblin lair to find a safe campsire in the wild.
+There's still one more room left to explore: the Wizard's Chamber. They had
+found a magic door made of pure flame as well as a runestone that looks as if it
+would disable the trap.
+
+Goblin Lair: this lair is made up of 6 rooms. As of yet, only 3 have been explored.
+
+** Room 5: the Wizard's Chamber
+- [[file:~/Library/CloudStorage/Dropbox/RPGs/The_Solo_Adventurers_Toolbox_(44655684).pdf:47][TSAT Room Table]] [1d20] -> = 14, circular room [1d4] -> = 1 x 10 diameter
+  - I need to make this room bigger to handle the encouter, [1d4] -> = 2 x 10'
+- Room contents: [1d100] -> = 30, Level appropriate Hard encounter
+  - clue [1d100] -> = 88, no
+  - Loot [1d100] -> = 4, yes!
+  - random [1d100] -> = 46, no
+  - SD [1d100] -> = 45, no
+*** hard encounter: level 3, 300 XP budget
+- Goblin Hexer: Level 3, 150 XP
+- Goblin Blackblade: Level 1, 100 XP
+- Goblin Cutpurse: Level 1, 25 XP
+- Sarjor initiative roll [1d20] -> = 18
+- Lindoma initiative roll [1d20] -> = 5
+
+Round of combat: 4
+| Turn | Creature              | Mod | Init | HP | Damage | Status   |
+|------+-----------------------+-----+------+----+--------+----------|
+|      | ~Goblin Blackblade 1~ |  +7 |   23 | 25 |     28 | bloodied |
+|      | ~Goblin Hexer 1~      |  +3 |   22 | 46 |     58 | bloodied |
+|      | ~Goblin Cutter 1~     |  +3 |   21 |  1 |     10 |          |
+|      | ~Goblin Cutter 2~     |  +3 |   21 |  1 |     10 |          |
+|      | Sarjor                |  +4 |   18 | 26 |      0 |          |
+| >>>> | Lindoma               |  +0 |    5 | 28 |      0 |          |
+
+**** round 1
+- GBB, mba vs sarjor [1d20+5] -> (4) +5 = 9, miss
+- Hexer casts vexing cloud. The whole room is affected
+- GC1 mba vs sarjor [1d20+5] -> (4) +5 = 9, miss
+- GC2 mba vs lindoma [1d20+5] -> (12) +5 = 17 hit for 4 damage
+- Sarjor sything blow GBB [1d20+6] -> (18) +6 = 24, hits and knocks him prone [1d8+5] -> (7) +5 = 12 damage
+  - second attack vs GBB [1d20+6] -> (8) +6 = 14 miss, [1d8+5] -> (3) +5 = 8 / 2 => 4 damage
+    - GBB /goblin tactics/ can't shift while prone
+  - attack GC1 [1d20+6] -> (13) +6 = 19, hits and kills [1d8+5] -> (5) +5 = 10 damage
+- Lindoma shout of triumph
+  - vs GB [1d20+2] -> (3) +2 = 5, miss
+  - vs GC2 [1d20+2] -> (10) +2 = 12, hits [1d6+4] -> (6) +4 = 10 damage
+  - vs Hex [1d20+2] -> (16) +2 = 18, hits [1d6+4] -> (6) +4 = 10 damage
+**** round 2
+- GBB stands, mba vs Sarjor [1d20+5] -> (7) +5 = 12, miss
+- Hexer casts blinding hex on Sarjor [1d20+7] -> (14) +7 = 21, hits [2d6+1] -> (1 1) +1 = 3
+  - Sarjor takes -5 to attack
+- Sarjor shifts and fading strike [1d20+4] -> (13) +4 = 17, hits [1d8+5] -> (5) +5 = 10 damage and shifts 2
+  - Sarjor saves vs blind [1d20] -> = 6, fails
+- Lindoma
+  - knack for success, Sarjor saves blindness
+  - Guiding Strike vs GBB [1d20+6] -> (15) +6 = 21, hits for [1d8+4] -> (6) +4 = 10 and kills it
+**** round 3
+- Hexer
+  - Does hexer use stinging hex? -> YES-
+  - vs Sarjor [1d20+7] -> (1) +7 = 8, miss
+- Sarjor mba vs Hex [1d20+6] -> (6) +6 = 12
+  - elven accuracy [1d20+6] -> (1) +6 = 7, miss
+- Lindoma moves and guiding strike [1d20+6] -> (17) +6 = 23, hits for [1d8+4] -> (2) +4 = 6 damage
+  - -2 AC on Hexer
+**** round 4
+- Hexer
+  - recharge stinging vex: [1d6] -> = 5
+  - does the hexer use stinging hex? -> NO+
+  - does the hexer attack sarjor? -> NO-
+  - blinding hex vs Lindoma [1d20+7] -> (4) +7 = 11, miss
+- Sarjor mba hex [1d20+8] -> (15) +8 = 23, hit [1d8+5] -> (3) +5 = 8 damage
+  - DWA [1d20+8] -> (12) +8 = 20, hit [1d6+5] -> (4) +5 = 9 damage
+  - power strike [1d8] -> = 5 damage
+- Lindoma war song strike [1d20+8] -> (19) +8 = 27, hits for [1d8+4] -> (3) +4 = 7 damage
+  - grants temp hp to sarjor if he hits
+**** round 5
+- Hexer mba vs Sarjor [1d20+7] -> (5) +7 = 12, miss
+- Sarjor mbs vs Hexer [1d20+6] -> (16) +6 = 22, hits for [1d8+5] -> (8) +5 = 13 damage and kills it
+  - gains 4 temp HP
+**** short rest, lindoma takes healing surge
+**** rewards: 150 XP each
+- Sarjor gets +1 Defensive Hide Armor
+- two potions of healing
+- 180 gp
+- Everlasting Provisions
+** Back to Room 4
+*** Door 1: unlocked and leads to a stairway
+- [[file:~/Library/CloudStorage/Dropbox/RPGs/The_Solo_Adventurers_Toolbox_(44655684).pdf:47][TSAT Stairs Table]]: [1d20] -> = 2, down one level [1d4] -> = 1, dead end
+*** Door 3: unlocked and leads to a passageway
+- [[file:~/Library/CloudStorage/Dropbox/RPGs/The_Solo_Adventurers_Toolbox_(44655684).pdf:44][TSAT Passage Table]]: [1d20] -> = 17, turns left and stairs
+- Stairs [1d20] -> = 18, up one level to passage
+- passage [1d20] -> = 15, passage narrows [1d6] -> = 4 / 2 * 10'
+- passage [1d20] -> = 8, continues [1d4] -> = 3 comes to T
+- turn right, [1d20] -> = 5, turns right
+- [1d20] -> = 12, door
+- Door A1 [1d100] -> = 50, SD [1d4] -> = 3, hidden chamber
+  - perception check [1d20+10] -> (13) +10 = 23, finds the door
+  - room 7: [1d20] -> = 1, 5x5 alcove
+    - is there treasure in this hidden alcove? [likely] -> NO-
+    - but there is a clue [1d100] -> = 92
+- turn left, [1d20] -> = 13, door
+- Door A2 [1d100] -> = 43, Locked and trapped stone door.
+  - DC 15 check: [1d20+10] -> (11) +10 = 21
+  - Sarjor notices the trap, but can't open the door
+** A halfling's skull, intact except for a perfect circle removed at the top
+- [[file:~/Library/CloudStorage/Dropbox/RPGs/MythicGME2eV2.pdf:95][Curses]] [2d100] -> (15 33) = "change" "evil"
+- Clearly this halfling has been part of some evil ritual. His brain has been removed and he was changed into an evil servant of some kind. We'll have to be on the lookout
+** Back out to the wilderness
+** Explore the wilderness
+- 1608 [[file:~/Library/CloudStorage/Dropbox/RPGs/The_Solo_Adventurers_Toolbox_(44655684).pdf:61][Minor Feature for Grassland hex]]: [1d100] -> = 3 continuing grassland
+- 1507 [1d100] -> = 3, continuing grassland
+- 1408 [1d100] -> = 1, continuing grassland
+- 1409 [1d100] -> = 34, continuing grassland
+- Encounter [1d100] -> = 95, no
+- 1410 [1d100] -> = 9, continuing grassland
+- 1411 [1d100] -> = 94, [1d6] -> = 3,
+  - Monument [1d20] -> = 9, Significant/tribally important tree or other natural feature
+  - [1d100] -> = 96, guarded by barbarians
+** [[file:~/Library/CloudStorage/Dropbox/RPGs/sarjor-lindoma/szent-fa-1411.org][Szent Fa]] - found village at 1411
+<2024-08-13 Tue 00:45>

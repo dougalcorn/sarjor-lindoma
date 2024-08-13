@@ -1,0 +1,79 @@
+#+title: Szent Fa
+
+* Szent Fa, small tribal village at 1411
+** roll the village
+  - Small tribal village
+    - https://watabou.github.io/village-generator/?seed=1342225499&tags=isolated,uncultivated,sparse&name=Szent+Fa&pop=43
+    - Szent Fa
+    - Is the tree related to the gods? [likely] -> YES
+      - [4d100] -> (13 9 93 69) = bizarre, attract, violent, major
+      - [1d100] -> = 44, festive
+      - Apafa, Father Tree.
+        - is the god neutral? -> NO-
+        - is the god good? [likely] -> YES
+        - chaotic good
+    - Is the tree related to some legend? -> NO+
+    - Is this tree tied to some power? [likely] -> YES-
+      - [3d100] -> (50 16 2) = heal, communicate, adversity
+    - Tree is a conduit for a god to communicate with the village
+    - It's been significantly damaged in a violent attack
+    - They are seeking some ritual that will heal their tree
+    - is the chieftan the village shaman? [unlikely] -> NO+
+    - is there tension between chieftan and shaman? [likely] -> NO
+    - are they husband and wife? [likely] -> YES+
+    - Village chieftan, Mishka
+      - [2d100] -> (19 96) = delightful and established
+      - [2d100] -> (95 99) = realize expertise
+      - wants to improve the technology of the village, blacksmith
+      - charismatic leader, everyone loves him, his position is very secure
+    - Village shaman, Olah
+      - [2d100] -> (69 76) = pious needy
+      - [2d100] -> (56 19) = assist intelligence
+      - she's teaching the villiage youth and preparing them for the future
+      -
+    - Is there another leader in the village? -> YES
+      - [2d100] -> (49 75) = scholarly soldier
+      - [2d100] -> (54 63) = compel envy
+    - Toth, crafty soldier
+      - Gets things done,
+      - lieutenant
+      - is toth lawful? [likely] -> YES-
+      - is toth evil? [likely] -> YES+
+      - Toth doesn't think Mishka is as good a leader as the village does
+      - He wants to become village leader, but knows he can't overthrow Mishka
+      - Toth needs to cause Mishka to die, but not by his hand
+      - Does toth have feeling for Olah? -> YES
+** Village background
+Szent Fa, which means "Holy Tree", is a small, tribal village of about 50
+people. At the center of the village is a great tree that is the conduit for the
+god, Apfa ("Father Tree"). He is a chaotic good spirit whom the village serves.
+
+The village chieftan is Mishka. He's a charismatic leader whom everyone loves.
+He's been the chieftan for a while and has no fear for his position. He knows
+the village won't follow anyone else. His wife, Olah, is the village shamanka.
+She's very serious in serving Apfa. Her communion with Apfa brings all sorts of
+chores the village does to satisfy the spirit. She also teaches tribal lore to
+the village children and is looking for someone to train to one day take her
+place.
+
+Toth is a crafty warrior. He's grown up as the right-hand man to Mishka, but
+he's envious of Mishka's position. What's more, Toth and Mishka were rivals of
+sorts for Olah when they were young. Olah chose Mishka as her husband without
+even thinking much about Toth. Toth knows he'll never be able to take over from
+Mishka while he lives. So Toth has decided to figure out a way for Mishka to
+die, but not by his hand.
+
+Toth made contact with a roaming band of kobols mercenaries and paid them to
+attack the village. His hope would be that Mishka would die in the attack.
+Several villagers did die, but not Mishka. Also the tree was severely damaged by
+the kobolds.
+
+Olah has determined that in order to heal the tree, she needs the ears of the
+kobolds to turn into a fertilizer to pour around the base of the tree. Only by
+the fermented blood of Apfa's enemies can the tree heal.
+
+Our wandering heroes know none of this. Rather, they stumble upon the village
+the day after the attack while the village is meeting at the base of the tree in
+council.
+
+[[./maps/szent-fa-1411.png]]

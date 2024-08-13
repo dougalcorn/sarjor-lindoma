@@ -134,7 +134,9 @@ Round of combat: 9
 
 *** Wrapping it up
 
-**** TODO write up what I've learned about designing 4e encounters
-**** TODO learn how to property aware treasure
+**** DONE write up what I've learned about designing 4e encounters
+- State "DONE"       from "TODO"       [2024-08-12 Mon 18:44]
+**** DONE learn how to property aware treasure
+- State "DONE"       from "TODO"       [2024-08-12 Mon 18:44]
 **** TODO Explore the Wizard's room in the Goblin Lair
 **** TODO Find a settlement somewhere in the wild

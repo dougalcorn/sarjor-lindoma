@@ -7,13 +7,18 @@
 
 * Themes
 - [ ] Avoid Lindoma's enemy
-- [ ] Explore Goblin Lair @1508
+- [x] Explore Goblin Lair @1508
+- [ ] Hafling's skull, found in Goblin Lair
+- [ ] Village council in Szent Fa
 
 * NPC Characters
 - Lindoma's enemy
-- King Hugo
-- Amathahu
+- King Hugo, king of the region
+- Amathahu, evil wizard who woke Betlahya
 - Goblin Lair Mage
+- Mishka, Szent Fa Chief
+- Olah, Szent Fa Shamanka
+- Toth, Szent Fa Lieutenant
 
 * Region - Fosgi Coidwig
 - Temperate climate
@@ -55,3 +60,11 @@ the Bugbear was down to his last HP and decided to flee! In its panic, he
 provoked two opportunity attacks. Lindoma missed the first, but managed to
 scratch the Bugbear on the second inflicting a single point of damage. Thus the
 Bugbear was slain.
+** [[file:sessions/2024-08-12.org][Session 4 - <2024-08-12>]]
+The team went back into the Goblin Lair to finish exploring. They found a Goblin
+Hexer in the Wizard's chamber along with a Blackblade and two Cutters. After
+defeating the Hexer, they found some magic items. Further exploration of the
+lair uncovered a halfling's skull with a perfect circular hole in the top as if
+part of some dark ritual. Another day's exploration in the wilderness and the
+pair came across the village of [[file:szent-fa-1411.org][Szent Fa]] with a great, mystical tree in the
+center.
