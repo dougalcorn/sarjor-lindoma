@@ -1,0 +1,28 @@
+#+title: Goblin Blackblade
+
+* Goblin Blackblade                           :small:humaniod:natural:
+*** Level 1 Lurker, XP 100
+** Combat Specs
+- Initiative +7
+- Senses Perception +1; low-light vision
+- HP 25; Bloodied 12
+- AC 16; Fortitude 12, Reflex 14, Will 11, Speed 6
+** Powers
+*** Short Sword                         :atwill:standard:weapon:mba:
+- +5 vs. AC; 1d6+2 damage
+*** Combat Advantage
+- The goblin blackblade deals an extra 1d6 damage against any target it has combat advantage against.
+*** Goblin Tactics                                          :atwill:
+- immediate reaction, when missed by a melee attack
+- The goblin shifts 1 square.
+*** Sneaky
+- When shifting, a goblin blackblade can move into a space occupied by an ally of its level or lower. The ally shifts into the blackblade's previous space as a free action.
+** Attributes
+| Str 14 (+2) | Dex 17 (+3) | Wis 12 (+1) |
+| Con 13 (+1) | Int 8 (–1)  | Cha 8 (–1)  |
+- Alignment: Evil
+- Languages Common, Goblin
+- Skills Stealth +10, Thievery +10
+- Equipment leather armor, short sword
+** Tactics
+Goblin blackblades have more stomach for melee than most goblins, preferring to flank a single enemy to gain combat advantage. When bloodied, they use their sneaky power to trade places with fresher goblins.

@@ -1,0 +1,42 @@
+#+title: Goblin Hexer
+
+* Goblin Hexer                                :small:humaniod:natural:
+*** Level 3 Controller, 150 XP
+** Combat Specs
+- Initiative +3
+- Senses: Perception +2, low-light vision
+- HP 46; Bloodied 23
+- AC 17; Fortitude 14, Reflex 15, Will 16
+- Speed 6
+** Powers
+*** Hexer Rod                           :atwill:standard:weapon:mba:
+- +7 vs AC; 1d6+1 damage
+*** Blinding Hex                            :atwill:standard:ranged:
+- +7 vs Fortitude; 2d6+1 damage, and the target is blinded (save ends)
+- Ranged 10
+*** Stinging Hex                          :recharge:standard:ranged:
+- +7 vs Will; the target takes 3d6+1 damage if it moves during its turn (save ends)
+- range 10
+- recharge 5 or 6
+*** Vexing Cloud            :encounter:standard:sustain_minor:burst:
+- Area burst 3 within 10; automatic hit; all enemies within zone take a -2 penalty to attack rolls.
+- The zone grants concealment to the goblin hexer and its allies
+- The goblin hexer can sustain the zone as a minor action, moving it up to 5 squares
+*** Incite Bravery                :atwill:immediate_reaction:ranged:
+- Immediate reaction when an ally uses /goblin tactics/
+- Range 10
+- the targetted ally can shift 2 more squares and make an attack
+*** Goblin Tactics                       :atwill:immediate_reaction:
+- Immediate reaction when missed by a melee attack
+- The goblin shifts 1 square
+*** Lead from the Rear                  :atwill:immediate_interrupt:
+- Immediate interrupt when targeted by a ranged attack
+- The goblin hexer can change the attack's target to an adjacent ally of its level or lower.
+** Attributes
+| Str 10 (+1) | Dex 15 (+3) | Wis 13 (+2) |
+| Con 14 (+3) | Int 9 (+0)  | Cha 18 (+5) |
+- Alignment: Evil
+- Languages: Common, Goblin
+- Equipment: leather robes, hexer rod
+** Tactics
+The goblin hexer uses /lead from the rear/ to turn nearby allies into meat shields while it casts /vexing cloud/ around itself and its closest allies and enemies. It then targets an enemy defender with /stinging hex/ and uses its /blinding hex/ on foes making ranged attacks. When another goblin within 10 squares uses /goblin tactics/, the goblin hexer uses /incite bravery/ to allow that goblin to make a free attack.
