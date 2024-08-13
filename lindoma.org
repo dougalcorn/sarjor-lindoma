@@ -10,7 +10,7 @@
 
 | Race     | Size | Age | Gender | Height | Weight | Align. | Deity  | Adv. Co. |  XP | Next XP | Level |
 |----------+------+-----+--------+--------+--------+--------+--------+----------+-----+---------+-------|
-| [[http://iws.mx/dnd/?view=race6][Half-Elf]] | M    |  20 | M      | 5' 9"  |    140 | Good   | Melora |          | 200 |    1000 |     1 |
+| [[http://iws.mx/dnd/?view=race6][Half-Elf]] | M    |  20 | M      | 5' 9"  |    140 | Good   | Melora |          | 350 |    1000 |     1 |
 
 | Initiative | Dex | 1/2 Level | Misc | Temp |
 |------------+-----+-----------+------+------|
@@ -91,6 +91,9 @@
 | [[War Song Srike]]      | At-Will   | AC   | 1d20 +8 | 1d8 +4 |     |
 | [[Shout of Triumph]]    | Encounter | Fort | 1d20 +4 | 1d8 +4 | [ ] |
 | [[Slayer's Song]]       | Daily     | AC   | 1d20 +4 | 2d8 +4 | [ ] |
+| [[Words of Friendship]] | Encounter |      |         |        | [ ] |
+| [[Majestic Word]]       | Encounter |      |         |        | [ ] |
+| [[Knack for Success]]   | Encounter |      |         |        | [ ] |
 ** Conditionals
 :PROPERTIES:
 :VISIBILITY: all
@@ -101,7 +104,7 @@
 | Weapon/Power        | Attack | 1/2 Level | Ability  | Class | Prof | Feat | Enh | Misc |
 |---------------------+--------+-----------+----------+-------+------+------+-----+------|
 | [[Melee Basic Attack]]  |     +4 |         0 | 0 (STR)  |     0 |    3 |    1 |   0 |    0 |
-| [[Ranged Basic Attack]] |     +4 |         0 | 0 (DEX)  |     0 |    3 |    1 |   0 |    0 |
+| [[Ranged Basic Attack]] |     +4 |         0 |          |     0 |    3 |    1 |   0 |    0 |
 | [[Guiding Strike]]      |     +8 |         0 | +4 (CHA) |     0 |    3 |    1 |   0 |    0 |
 | [[War Song Strike]]     |     +8 |         0 | +4 (CHA) |     0 |    3 |    1 |   0 |    0 |
 | [[Shout of Triump]]     |     +4 |         0 | +4 (CHA) |     0 |    0 |    0 |   0 |    0 |
@@ -514,18 +517,28 @@
   | Tinderbox          |        1 |        .5 |            1 |                  1 |             0.5 |
   | Ration             |       10 |        .5 |            1 |                 10 |              5. |
   | Waterskin          |        1 |        .2 |            5 |                  5 |             0.2 |
+  | Healing Potion     |        1 |        50 |           .1 |                0.1 |              50 |
   | Hempen Rope (50ft) |        1 |         1 |           10 |                 10 |               1 |
   | Arrows             |       60 |       .05 |           .1 |                 6. |              3. |
   | Hide Armor         |        1 |        30 |           25 |                 25 |              30 |
   |--------------------+----------+-----------+--------------+--------------------+-----------------|
-  | Carry Capacity     |      100 |           |              |                70. |           106.8 |
+  | Carry Capacity     |      100 |           |              |               70.1 |           156.8 |
   #+TBLFM: $5=($2 * $4)
   #+TBLFM: $6=($2 * $3)
   #+TBLFM: @>$5=vsum(@<<$5..@>>$5)
   #+TBLFM: @>$6=vsum(@<<$6..@>>$6)
+*** Magic Items
+**** Everlasting Provisions
+/This plain basket radiates delicious smells./
+- http://iws.mx/dnd/?view=item1224
+- Wonderous Item: 840 gp
+- Property: After an extended rest, you open the basket, creating enough food
+  and water to feed five Medium or Small creatures (or one Large creature) for
+  24 hours.
+
 
 ** Money
    | Copper | Silver | Electrum | Gold | Platinum | Total (Gold) |
    |--------+--------+----------+------+----------+--------------|
-   |      7 |     12 |          |    8 |          |         9.27 |
+   |      7 |     12 |          |   98 |          |        99.27 |
    #+TBLFM: $6=(($1 / 100) + ($2 / 10) + ($3 / 2) + $4 + ($5 * 10));N

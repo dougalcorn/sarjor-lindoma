@@ -12,7 +12,7 @@
 
 | Race | Size | Age | Gender | Height | Weight | Align. | Deity  | Adv. Co. | XP | Next XP | Level |
 |------+------+-----+--------+--------+--------+--------+--------+----------+----+---------+-------|
-| [[http://iws.mx/dnd/?view=race4][Elf]]  | M    |  40 | M      | 6'     |    145 | Good   | Melora |          | 200 |    1000 |     1 |
+| [[http://iws.mx/dnd/?view=race4][Elf]]  | M    |  40 | M      | 6'     |    145 | Good   | Melora |          | 350 |    1000 |     1 |
 
 | Initiative | Dex | 1/2 Level | Misc | Temp |
 |------------+-----+-----------+------+------|
@@ -54,17 +54,20 @@
 :END:
 | Total |      | 10 + 1/2 lvl | Armor | Ability | Class | Feat | Enh. | Misc | Temp |
 |-------+------+--------------+-------+---------+-------+------+------+------+------|
-|    17 | AC   |           10 |     3 |       4 |       |      |      |      |      |
+|    18 | AC   |           10 |     3 |       4 |       |      |    1 |      |      |
 |    13 | FORT |           10 |       |       2 |     1 |      |      |      |      |
 |    15 | REF  |           10 |       |       4 |     1 |      |      |      |      |
 |    13 | WILL |           10 |       |       3 |       |      |      |      |      |
 #+TBLFM: $1=($3 + $4 + $5 + $6 + $7 + $8 + $9 + $10)
 ** Bonuses
  - Ranger class adds +1 Fort, +1 Reflex
+ - [[+1 Defensive Hide Armor]]: +1 enh to AC
 
 | Armor Bonus | Shield Bonus | Check Penalty | Speed Penalty | Heavy? |
 |-------------+--------------+---------------+---------------+--------|
 |           3 |            0 |             0 |             0 | [ ]    |
+** Conditional
+- [[Defensive Armor]]: (Daily) +2 bonus to the defense that triggered the hit
 
 
 * Quick Look Up
@@ -85,6 +88,7 @@
 | [[Nimble Strike]]       | At-Will   | AC | 1d20 +8  | 1d10 +5 |     |
 | [[Scything Blow]]       | Daily     | AC | 1d20 +8* | 1d8 + 5 | [ ] |
 | [[Elven Accuracy]]      | Encounter |    |          |         | [ ] |
+| [[Defensive Armor]]     | Daily     |    |          |         | [ ] |
 ** Conditionals
 :PROPERTIES:
 :VISIBILITY: all
@@ -312,6 +316,12 @@ and then withdraw to a more advantageous position./
  - Effect: Reroll the attack roll. Use the second roll, even if it's lower.
  - http://iws.mx/dnd/?view=power1450
 
+*** Defensive Armor                                :daily:interrupt:
+- Trigger: An enemy hits you.
+- Effect: Until the start of your next turn, you gain a +2 bonus to the defense
+  that the triggering enemy hit.
+- Augment 1: The bonus increases to +5.
+
 
 * Features
 ** Elven Weapon Proficiency                                     :elf:
@@ -425,9 +435,19 @@ and then withdraw to a more advantageous position./
   #+TBLFM: $6=($2 * $3)
   #+TBLFM: @>$5=vsum(@<<$5..@>>$5)
   #+TBLFM: @>$6=vsum(@<<$6..@>>$6)
+*** Magic Items
+**** +1 Defensive Hide Armor
+/This durable armor responds to your thoughts and reinforces itself to protect you./
+- +1 enhancement bonus to AC
+- Value: 680gp
+- http://iws.mx/dnd/?view=armor1055
+***** Power (Augmentable) | Daily (Interrupt)
+- Trigger: An enemy hits you.
+- Effect: Until the start of your next turn, you gain a +2 bonus to the defense that the triggering enemy hit.
+- Augment 1: The bonus increases to +5.
 
 ** Money
    | Copper | Silver | Electrum | Gold | Platinum | Total (Gold) |
    |--------+--------+----------+------+----------+--------------|
-   |      7 |     15 |          |      |          |         1.57 |
+   |      7 |     15 |          |   90 |          |        91.57 |
    #+TBLFM: $6=(($1 / 100) + ($2 / 10) + ($3 / 2) + $4 + ($5 * 10));N
