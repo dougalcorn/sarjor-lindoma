@@ -1,0 +1,44 @@
+#+title: Session 5 - 2024-08-14
+
+* Session 5 - <2024-08-14 Wed 01:30>
+
+** Wilderness exploration
+- 1310 [1d100] -> = 14, grassland
+- 1311 [1d100] -> = 21, grassland
+- 1309 [1d100] -> = 39, grassland
+- 1308 [1d100] -> = 99, Monster Lair
+  - Kobold Lair
+- 1209 [1d100] -> = 91, Unmarked Settlement
+  - [1d100] -> = 70, Hamlet, inhabited
+  - Settlement founded on surrounding industry
+  - [1d100] -> = 38, human
+  - Savvaerk, "sawmill"
+  - [[https://watabou.github.io/village-generator/?seed=588276629&tags=organic,grove,river,palisade,highway,sparse&name=Savvaerk&pop=102][Map permalink]]
+- 1007 [1d12] -> = 1, nope - Forest
+- 1208 [1d100] -> = 64, small wooded gully
+  - [1d100] -> = 24, standard gully
+- 1307 [1d100] -> = 13, forest
+- 1108 [1d100] -> = 47,
+- 1504 Is this drawn from forrest? -> YES
+  - [1d12] -> = 8, secondary - grasslands
+- 1506 [1d100] -> = 51, grasslands
+- 1607 [1d100] -> = 73, Lake
+  - [1d100] -> = 70, Medium sized lake with small settlment on shore
+  - [1d100+20] -> (60) +20 = 80, unmapped villiage, inhabited
+  - Settlement founded on surrounding industry - farming
+  - [1d100] -> = 66, human
+  - Vedsoen, "by the lake"
+  - [[https://watabou.github.io/village-generator/?seed=1776966898&tags=organic,grove,farmland,isolated,coast&name=Vedsoen&pop=247][Map permalink]]
+- 1708 [1d100] -> = 89, settlement
+  - [1d100] -> = 95, [1d6] -> = 6
+  - Tower
+- 1710 [1d100] -> = 83, rocky outcrop
+  - [1d100] -> = 27
+- 1711 [1d100] -> = 41, grassland
+- 1612 [1d100] -> = 44, grassland
+- 1810 [1d100] -> = 82, rocky outcrop
+  - [1d100] -> = 49, rocky outcrop protruding abover overarching terrain
+- 1809 [1d100] -> = 74, lake
+  - [1d100] -> = 75, Large unmapped lake, with small mountain range by its shores
+  - [1d100] -> = 71, small mountain range covered by forest
+  - [1d100] -> = 66, Serene, Sylvan wood

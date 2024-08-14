@@ -23,6 +23,9 @@
 * Region - Fosgi Coidwig
 - Temperate climate
 - Human kingdom, lawful, civilized, unsafe, contested
+- [[file:szent-fa-1411.org][Szent Fa @1411]]
+- [[file:savvaerk-1209.org][Savvaerk @1209]]
+- [[file:vedsoen-1607.org][Vedsoen @1607]]
 
 * Background
 
@@ -68,3 +71,9 @@ lair uncovered a halfling's skull with a perfect circular hole in the top as if
 part of some dark ritual. Another day's exploration in the wilderness and the
 pair came across the village of [[file:szent-fa-1411.org][Szent Fa]] with a great, mystical tree in the
 center.
+** [[file:sessions/2024-08-14.org][Session 5 - <2024-08-14>]]
+Mostly mapping out the region. No real gameplay. Two settlements found. Savvaerk
+is a small hamlet based around a sawmill on a river. There's a large lake
+upstream. Unfortunately, there's a monster lair across the river a bit from
+Savvaerk. A road leads along the river and then over to a larger village Vedsoen
+that's situated on a lake. Nearby is a lonely tower.

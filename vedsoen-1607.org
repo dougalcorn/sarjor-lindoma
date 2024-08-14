@@ -1,0 +1,11 @@
+#+title: Vedsoen
+
+* Vedsoen
+
+[[./maps/vedsoen-1607.png]]
+
+- Village, population 250
+- farming, fishing
+- build alongside the lake
+- lonely tower nearby at 1708
+- road to Savvaerk

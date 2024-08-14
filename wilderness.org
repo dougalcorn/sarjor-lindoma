@@ -140,3 +140,7 @@ of terrain, there is a distance multiplier:
 
 Most difficult terrain would reduce to 2 hexes per day. Extensive difficult
 terrain would be 3 hexes per day.
+
+* Drawing
+
+https://www.youtube.com/watch?v=d1XEVzX5cxg
