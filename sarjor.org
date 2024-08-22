@@ -1,14 +1,6 @@
-:PROPERTIES:
-:NAME: Sarjor
-:RACE: Elf
-:CLASS: Ranger
-:XP: 350
-:NEXTXP: 1000
-:LEVEL: 1
-:HALFLEVEL: 0
-:END:
 #+title: Sarjor
 #+STARTUP: overview
+#+CONSTANTS: halflevel=0
 
 * Name: Sarjor
 - Myth-Weavers Character Sheet: https://www.myth-weavers.com/sheets/?id=2927850
@@ -21,20 +13,17 @@
 
 
 | Race | Size | Age | Gender | Height | Weight | Align. | Deity  |
-|------+------+-----+--------+--------+--------+--------+--------+
+|------+------+-----+--------+--------+--------+--------+--------|
 | [[http://iws.mx/dnd/?view=race4][Elf]]  | M    |  40 | M      | 6'     |    145 | Good   | Melora |
 
-|   XP | Next XP | Level |
-|------+---------+-------|
-| 7300 |    7500 |     5 |
-#+TBLFM: $1='(org-entry-get nil "XP" t)
-#+TBLFM: $2='(org-entry-get nil "NEXTXP" t)
-#+TBLFM: $3='(org-entry-get nil "LEVEL" t)
+|  XP | Next XP | Level |
+|-----+---------+-------|
+| 350 |    1000 |     1 |
 
 | Initiative | Dex | 1/2L | Misc | Temp |
 |------------+-----+------+------+------|
 |          4 |   4 |    0 |    0 |    0 |
-#+TBLFM: $3='(org-entry-get nil "HALFLEVEL" t)
+#+TBLFM: $3=$halflevel
 #+TBLFM: $1=($2 + $3 + $4 + $5)
 
 | Speed | Base | Armor | Item | Temp |
@@ -53,8 +42,8 @@
 | INT     |    10 |   0 |     0 |
 | WIS     |    16 |   3 |     3 |
 | CHA     |    10 |   0 |     0 |
-#+TBLFM: $3='(int-to-string (floor (/ (- $2 10) 2)));N
-#+TBLFM: $4='(+ $3 (string-to-number (org-entry-get nil "HALFLEVEL" t)));N
+#+TBLFM: $3=floor(($2-10)/2);N
+#+TBLFM: $4=($3 + $halflevel);N
 
 
 * Health
@@ -68,15 +57,16 @@
 
 
 * Defense
-| Total |      | 10 + | Arm. | Abil. | Class | Feat | Enh. | Misc | Temp |
-|       |      | 1/2L |      |       |       |      |      |      |      |
-|-------+------+------+------+-------+-------+------+------+------+------|
-|    18 | AC   |   10 |    3 |     4 |       |      |    1 |      |      |
-|    13 | FORT |   10 |      |     2 |     1 |      |      |      |      |
-|    15 | REF  |   10 |      |     4 |     1 |      |      |      |      |
-|    13 | WILL |   10 |      |     3 |       |      |      |      |      |
-#+TBLFM: $3='(+ 10 (string-to-number (org-entry-get nil "HALFLEVEL" t)))
-#+TBLFM: $1=($3 + $4 + $5 + $6 + $7 + $8 + $9 + $10)
+| Total |      | 10 + | Arm. | Abil. | Mod | Class | Feat | Enh. | Misc | Temp |
+|       |      | 1/2L |      |       |     |       |      |      |      |      |
+|-------+------+------+------+-------+-----+-------+------+------+------+------|
+|    18 | AC   |   10 |    3 | DEX   |   4 |       |      |    1 |      |      |
+|    13 | FORT |   10 |      | CON   |   2 |     1 |      |      |      |      |
+|    15 | REF  |   10 |      | DEX   |   4 |     1 |      |      |      |      |
+|    13 | WILL |   10 |      | WIS   |   3 |       |      |      |      |      |
+#+TBLFM: $3=(10 + $halflevel)
+#+TBLFM: $6='(or (org-lookup-first $5 '(remote(Abilities,@2$1..@>$1)) '(remote(Abilities,@2$3..@>$3))) "")
+#+TBLFM: $1=($3 + $4 + $6 + $7 + $8 + $9 + $10 + $11)
 *** Bonuses
 - Ranger class adds +1 Fort, +1 Reflex
 - +1 Defensive Hide Armor: +1 enh to AC
@@ -89,78 +79,84 @@
 
 
 * Quick Look Up
-| Weapon/Power        | Type      | vs | Attack   | Bonus   |     |
-|---------------------+-----------+----+----------+---------+-----|
-| Melee Basic Attack  | At-Will   | AC | 1d20 +8  | 1d8 + 5 |     |
-| Ranged Basic Attack | At-Will   | AC | 1d20 +7  | 1d10 +5 |     |
-| Dual Weapon Attack  | At-Will   | AC | 1d20 +8  | 1d6 + 5 |     |
-| Power Strike        | Encounter | -  | -        | 1d8     | [ ] |
-| Fading Strike       | At-Will   | AC | 1d20 +8  | 1d8 +5  |     |
-| Nimble Strike       | At-Will   | AC | 1d20 +8  | 1d10 +5 |     |
-| Scything Blow       | Daily     | AC | 1d20 +8* | 1d8 + 5 | [ ] |
-| Elven Accuracy      | Encounter |    |          |         | [ ] |
-| Defensive Armor     | Daily     |    |          |         | [ ] |
-** Conditionals
+| Weapon/Power        | Type      | vs |  Att |   Att |  Dmg |   Dmg |     |
+|                     |           |    |  Die | Bonus |  Die | Bonus |     |
+|---------------------+-----------+----+------+-------+------+-------+-----|
+| Melee Basic Attack  | At-Will   | AC | 1d20 |    +8 |  1d8 |    +5 |     |
+| Ranged Basic Attack | At-Will   | AC | 1d20 |    +7 | 1d10 |    +5 |     |
+| Dual Weapon Attack  | At-Will   | AC | 1d20 |    +8 |  1d6 |    +5 |     |
+| Fading Strike       | At-Will   | AC | 1d20 |    +8 |  1d8 |    +5 |     |
+| Nimble Strike       | At-Will   | AC | 1d20 |    +8 | 1d10 |    +5 |     |
+| Power Strike        | Encounter |    |      |       |  1d8 |    +1 | [ ] |
+| Elven Accuracy      | Encounter |    |      |       |      |       | [ ] |
+| Scything Blow       | Daily     | AC | 1d20 |    +8 |  1d8 |    +5 | [ ] |
+| Defensive Armor     | Daily     |    |      |       |      |       | [ ] |
+#+TBLFM: $5='(or (org-lookup-first $1 '(remote(attack,@2$1..@>$1)) '(remote(attack,@2$2..@>$2))) "")
+#+TBLFM: $7='(or (org-lookup-first $1 '(remote(damage,@2$1..@>$1)) '(remote(damage,@2$2..@>$2))) "")
+** Conditionals:
 - Aspect of the Charging Ram: no opp att, knock prone, +2 power damage bonus
 - Aspect of the Lurking Spider: while you have CA, +2 power bonus to damage
 
 
-** Attack Workspace
-| Weapon/Power        | Attack | 1/2L | Abil. | Class | Prof | Feat | Enh | Misc |
-|---------------------+--------+------+-------+-------+------+------+-----+------|
-| Melee Basic Attack  |     +8 |    0 |     4 |       |    3 |    1 |     |      |
-| Ranged Basic Attack |     +7 |    0 |     4 |       |    2 |    1 |     |      |
-| Dual Weapon Attack  |     +8 |    0 |     4 |       |    3 |    1 |     |      |
-| Fading Strike       |     +8 |    0 |     4 |       |    3 |    1 |     |      |
-| Nimble Strike       |     +8 |    0 |     4 |       |    3 |    1 |     |      |
-| Scything Blow       |     +8 |    0 |     4 |       |    3 |    1 |     |      |
-#+TBLFM: $3='(org-entry-get nil "HALFLEVEL" t)
-#+TBLFM: $2='(concat "+" (int-to-string (+ $3 $4 $5 $6 $7 $8 $9)));N
-*** Bonuses
-- Weapon Expertise: Longsword, short sword, longbow +1 attack
-- Attack Finesse: use Dex modifier for melee basic attack
+** Workspace
+#+TBLNAME: attack
+| Weapon/Power        | Attack | Abil. | Mod+ | Class | Prof | Feat | Enh | Misc |
+|                     |        |       | 1/2L |       |      |      |     |      |
+|---------------------+--------+-------+------+-------+------+------+-----+------|
+| Melee Basic Attack  |     +8 | DEX   |    4 |       |    3 |    1 |     |      |
+| Ranged Basic Attack |     +7 | DEX   |    4 |       |    2 |    1 |     |      |
+| Dual Weapon Attack  |     +8 | DEX   |    4 |       |    3 |    1 |     |      |
+| Fading Strike       |     +8 | DEX   |    4 |       |    3 |    1 |     |      |
+| Nimble Strike       |     +8 | DEX   |    4 |       |    3 |    1 |     |      |
+| Scything Blow       |     +8 | DEX   |    4 |       |    3 |    1 |     |      |
+#+TBLFM: $4='(or (org-lookup-first $3 '(remote(Abilities,@2$1..@>$1)) '(remote(Abilities,@2$4..@>$4))) "")
+#+TBLFM: $2='(concat "+" (int-to-string (+ $4 $5 $6 $7 $8 $9)));N
+- Bonuses:
+  - Weapon Expertise: Longsword, short sword, longbow +1 attack
+  - Attack Finesse: use Dex modifier for melee basic attack
 
-** Damage Workspace
-| Weapon/Power        | Bonus | Ability | Feat | Enh | Misc | Misc |
-|---------------------+-------+---------+------+-----+------+------|
-| Melee Basic Attack  |    +5 |       4 |    1 |     |      |      |
-| Ranged Basic Attack |    +5 |       4 |    1 |     |      |      |
-| Dual Weapon Attack  |    +5 |       4 |    1 |     |      |      |
-| Power Strike        |    +1 |         |    1 |     |      |      |
-| Fading Strike       |    +5 |       4 |    1 |     |      |      |
-| Nimble Strike       |    +5 |       4 |    1 |     |      |      |
-| Scything Blow       |    +5 |       4 |    1 |     |      |      |
-#+TBLFM: $2='(concat "+" (int-to-string (-sum '($3 $4 $5 $6))));N
-*** Bonuses
-- Two-Weapon Fighting: +1 dmg
+#+TBLNAME: damage
+| Weapon/Power        | Bonus | Abil. | Mod. | Feat | Enh | Misc | Misc |
+|---------------------+-------+-------+------+------+-----+------+------|
+| Melee Basic Attack  |    +5 | DEX   |    4 |    1 |     |      |      |
+| Ranged Basic Attack |    +5 | DEX   |    4 |    1 |     |      |      |
+| Dual Weapon Attack  |    +5 | DEX   |    4 |    1 |     |      |      |
+| Power Strike        |    +1 |       |      |    1 |     |      |      |
+| Fading Strike       |    +5 | DEX   |    4 |    1 |     |      |      |
+| Nimble Strike       |    +5 | DEX   |    4 |    1 |     |      |      |
+| Scything Blow       |    +5 | DEX   |    4 |    1 |     |      |      |
+#+TBLFM: $4='(or (org-lookup-first $3 '(remote(Abilities,@2$1..@>$1)) '(remote(Abilities,@2$3..@>$3))) "")
+#+TBLFM: $2='(concat "+" (int-to-string (-sum '($4 $5 $6 $7))));N
+- Bonuses:
+  - Two-Weapon Fighting: +1 dmg
 
 
 * Skills
 | Mod | Name          | Abil. | Train | Mod+ | Armor | Misc | Temp |
 |     |               |       |       | 1/2L |       |      |      |
 |-----+---------------+-------+-------+------+-------+------+------|
-|  +9 | Acrobatics    | DEX   |     1 |    4 |       |      |      |
-|  +0 | Arcana        | INT   |       |    0 |       |      |      |
-|  +5 | Athletics     | STR   |     1 |    0 |       |      |      |
-|  +0 | Bluff         | CHA   |       |    0 |       |      |      |
-|  +1 | Diplomacy     | CHA   |       |    0 |       |    1 |      |
+|  +9 | Acrobatics    | DEX   |     5 |    4 |       |      |      |
+|  +0 | Arcana        | INT   |       |      |       |      |      |
+|  +5 | Athletics     | STR   |     5 |      |       |      |      |
+|  +0 | Bluff         | CHA   |       |      |       |      |      |
+|  +1 | Diplomacy     | CHA   |       |      |       |    1 |      |
 |  +3 | Dungeoneering | WIS   |       |    3 |       |      |      |
 |  +2 | Endurance     | CON   |       |    2 |       |      |      |
 |  +3 | Heal          | WIS   |       |    3 |       |      |      |
-|  +0 | History       | INT   |       |    0 |       |      |      |
+|  +0 | History       | INT   |       |      |       |      |      |
 |  +3 | Insight       | WIS   |       |    3 |       |      |      |
-|  +0 | Intimidate    | CHA   |       |    0 |       |      |      |
-| +10 | Nature        | WIS   |     1 |    3 |       |    2 |      |
-| +10 | Perception    | WIS   |     1 |    3 |       |    2 |      |
-|  +0 | Religion      | INT   |       |    0 |       |      |      |
-|  +9 | Stealth       | DEX   |     1 |    4 |       |      |      |
-|  +0 | Streetwise    | CHA   |       |    0 |       |      |      |
+|  +0 | Intimidate    | CHA   |       |      |       |      |      |
+| +10 | Nature        | WIS   |     5 |    3 |       |    2 |      |
+| +10 | Perception    | WIS   |     5 |    3 |       |    2 |      |
+|  +0 | Religion      | INT   |       |      |       |      |      |
+|  +9 | Stealth       | DEX   |     5 |    4 |       |      |      |
+|  +0 | Streetwise    | CHA   |       |      |       |      |      |
 |  +4 | Theivery      | DEX   |       |    4 |       |      |      |
-#+TBLFM: $5='(org-lookup-first $3 '(remote(Abilities,@2$1..@>$1)) '(remote(Abilities,@2$4..@>$4)))
-#+TBLFM: $1='(concat "+" (int-to-string (+ $5 $6 $7 $8 (if (eql $4 1) 5 0))));N
-*** Bonuses
-- Ranger class feature adds +2 Nature and +2 Perception
-- Lindoma's Group Diplomacy adds +1 to Diplomacy
+#+TBLFM: $5='(blank-if-zero (org-lookup-first $3 '(remote(Abilities,@2$1..@>$1)) '(remote(Abilities,@2$4..@>$4))))
+#+TBLFM: $1='(concat "+" (int-to-string (+ $5 $6 $7 $8 $4)));N
+- Bonuses
+  - Ranger class feature adds +2 Nature and +2 Perception
+  - Lindoma's Group Diplomacy adds +1 to Diplomacy
 
 
 * Powers
