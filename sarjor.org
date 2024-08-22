@@ -57,13 +57,12 @@
 
 
 * Defense
-| Total |      | 10 + | Arm. | Abil. | Mod | Class | Feat | Enh. | Misc | Temp |
-|       |      | 1/2L |      |       |     |       |      |      |      |      |
-|-------+------+------+------+-------+-----+-------+------+------+------+------|
-|    18 | AC   |   10 |    3 | DEX   |   4 |       |      |    1 |      |      |
-|    13 | FORT |   10 |      | CON   |   2 |     1 |      |      |      |      |
-|    15 | REF  |   10 |      | DEX   |   4 |     1 |      |      |      |      |
-|    13 | WILL |   10 |      | WIS   |   3 |       |      |      |      |      |
+| Total | Def  | Base | Arm | Abil | Mod | Class | Feat | Enh | Misc | Temp |
+|-------+------+------+-----+------+-----+-------+------+-----+------+------|
+|    18 | AC   |   10 |   3 | DEX  |   4 |       |      |   1 |      |      |
+|    13 | FORT |   10 |     | CON  |   2 |     1 |      |     |      |      |
+|    15 | REF  |   10 |     | DEX  |   4 |     1 |      |     |      |      |
+|    13 | WILL |   10 |     | WIS  |   3 |       |      |     |      |      |
 #+TBLFM: $3=(10 + $halflevel)
 #+TBLFM: $6='(or (org-lookup-first $5 '(remote(Abilities,@2$1..@>$1)) '(remote(Abilities,@2$3..@>$3))) "")
 #+TBLFM: $1=($3 + $4 + $6 + $7 + $8 + $9 + $10 + $11)
@@ -79,6 +78,41 @@
 
 
 * Quick Look Up
+** Workspace
+*** Attack
+#+TBLNAME: attack
+| Weapon/Power        | Attack | Abil. | Mod+ | Class | Prof | Feat | Enh | Misc |
+|                     |        |       | 1/2L |       |      |      |     |      |
+|---------------------+--------+-------+------+-------+------+------+-----+------|
+| Melee Basic Attack  |     +8 | DEX   |    4 |       |    3 |    1 |     |      |
+| Ranged Basic Attack |     +7 | DEX   |    4 |       |    2 |    1 |     |      |
+| Dual Weapon Attack  |     +8 | DEX   |    4 |       |    3 |    1 |     |      |
+| Fading Strike       |     +8 | DEX   |    4 |       |    3 |    1 |     |      |
+| Nimble Strike       |     +8 | DEX   |    4 |       |    3 |    1 |     |      |
+| Scything Blow       |     +8 | DEX   |    4 |       |    3 |    1 |     |      |
+#+TBLFM: $4='(or (org-lookup-first $3 '(remote(Abilities,@2$1..@>$1)) '(remote(Abilities,@2$4..@>$4))) "")
+#+TBLFM: $2='(concat "+" (int-to-string (+ $4 $5 $6 $7 $8 $9)));N
+- Bonuses:
+  - Weapon Expertise: Longsword, short sword, longbow +1 attack
+  - Attack Finesse: use Dex modifier for melee basic attack
+
+*** Damage
+#+TBLNAME: damage
+| Weapon/Power        | Bonus | Abil. | Mod. | Feat | Enh | Misc | Misc |
+|---------------------+-------+-------+------+------+-----+------+------|
+| Melee Basic Attack  |    +5 | DEX   |    4 |    1 |     |      |      |
+| Ranged Basic Attack |    +5 | DEX   |    4 |    1 |     |      |      |
+| Dual Weapon Attack  |    +5 | DEX   |    4 |    1 |     |      |      |
+| Power Strike        |    +1 |       |      |    1 |     |      |      |
+| Fading Strike       |    +5 | DEX   |    4 |    1 |     |      |      |
+| Nimble Strike       |    +5 | DEX   |    4 |    1 |     |      |      |
+| Scything Blow       |    +5 | DEX   |    4 |    1 |     |      |      |
+#+TBLFM: $4='(or (org-lookup-first $3 '(remote(Abilities,@2$1..@>$1)) '(remote(Abilities,@2$3..@>$3))) "")
+#+TBLFM: $2='(concat "+" (int-to-string (-sum '($4 $5 $6 $7))));N
+- Bonuses:
+  - Two-Weapon Fighting: +1 dmg
+
+** Summary
 | Weapon/Power        | Type      | vs |  Att |   Att |  Dmg |   Dmg |     |
 |                     |           |    |  Die | Bonus |  Die | Bonus |     |
 |---------------------+-----------+----+------+-------+------+-------+-----|
@@ -97,38 +131,6 @@
 - Aspect of the Charging Ram: no opp att, knock prone, +2 power damage bonus
 - Aspect of the Lurking Spider: while you have CA, +2 power bonus to damage
 
-
-** Workspace
-#+TBLNAME: attack
-| Weapon/Power        | Attack | Abil. | Mod+ | Class | Prof | Feat | Enh | Misc |
-|                     |        |       | 1/2L |       |      |      |     |      |
-|---------------------+--------+-------+------+-------+------+------+-----+------|
-| Melee Basic Attack  |     +8 | DEX   |    4 |       |    3 |    1 |     |      |
-| Ranged Basic Attack |     +7 | DEX   |    4 |       |    2 |    1 |     |      |
-| Dual Weapon Attack  |     +8 | DEX   |    4 |       |    3 |    1 |     |      |
-| Fading Strike       |     +8 | DEX   |    4 |       |    3 |    1 |     |      |
-| Nimble Strike       |     +8 | DEX   |    4 |       |    3 |    1 |     |      |
-| Scything Blow       |     +8 | DEX   |    4 |       |    3 |    1 |     |      |
-#+TBLFM: $4='(or (org-lookup-first $3 '(remote(Abilities,@2$1..@>$1)) '(remote(Abilities,@2$4..@>$4))) "")
-#+TBLFM: $2='(concat "+" (int-to-string (+ $4 $5 $6 $7 $8 $9)));N
-- Bonuses:
-  - Weapon Expertise: Longsword, short sword, longbow +1 attack
-  - Attack Finesse: use Dex modifier for melee basic attack
-
-#+TBLNAME: damage
-| Weapon/Power        | Bonus | Abil. | Mod. | Feat | Enh | Misc | Misc |
-|---------------------+-------+-------+------+------+-----+------+------|
-| Melee Basic Attack  |    +5 | DEX   |    4 |    1 |     |      |      |
-| Ranged Basic Attack |    +5 | DEX   |    4 |    1 |     |      |      |
-| Dual Weapon Attack  |    +5 | DEX   |    4 |    1 |     |      |      |
-| Power Strike        |    +1 |       |      |    1 |     |      |      |
-| Fading Strike       |    +5 | DEX   |    4 |    1 |     |      |      |
-| Nimble Strike       |    +5 | DEX   |    4 |    1 |     |      |      |
-| Scything Blow       |    +5 | DEX   |    4 |    1 |     |      |      |
-#+TBLFM: $4='(or (org-lookup-first $3 '(remote(Abilities,@2$1..@>$1)) '(remote(Abilities,@2$3..@>$3))) "")
-#+TBLFM: $2='(concat "+" (int-to-string (-sum '($4 $5 $6 $7))));N
-- Bonuses:
-  - Two-Weapon Fighting: +1 dmg
 
 
 * Skills
