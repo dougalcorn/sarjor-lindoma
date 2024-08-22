@@ -1,8 +1,18 @@
+:PROPERTIES:
+:NAME: Sarjor
+:RACE: Elf
+:CLASS: Ranger
+:XP: 350
+:NEXTXP: 1000
+:LEVEL: 1
+:HALFLEVEL: 0
+:END:
 #+title: Sarjor
 #+STARTUP: overview
 
 * Name: Sarjor
- - Myth-Weavers Character Sheet: https://www.myth-weavers.com/sheets/?id=2927850
+- Myth-Weavers Character Sheet: https://www.myth-weavers.com/sheets/?id=2927850
+
 
 * Attributes
 | Class          | Paragon Path | Epic Destiny |
@@ -10,13 +20,21 @@
 | [[http://iws.mx/dnd/?view=class790][Ranger (Scout)]] |              |              |
 
 
-| Race | Size | Age | Gender | Height | Weight | Align. | Deity  | Adv. Co. | XP | Next XP | Level |
-|------+------+-----+--------+--------+--------+--------+--------+----------+----+---------+-------|
-| [[http://iws.mx/dnd/?view=race4][Elf]]  | M    |  40 | M      | 6'     |    145 | Good   | Melora |          | 350 |    1000 |     1 |
+| Race | Size | Age | Gender | Height | Weight | Align. | Deity  |
+|------+------+-----+--------+--------+--------+--------+--------+
+| [[http://iws.mx/dnd/?view=race4][Elf]]  | M    |  40 | M      | 6'     |    145 | Good   | Melora |
 
-| Initiative | Dex | 1/2 Level | Misc | Temp |
-|------------+-----+-----------+------+------|
-|          4 |   4 |         0 |    0 |    0 |
+|   XP | Next XP | Level |
+|------+---------+-------|
+| 7300 |    7500 |     5 |
+#+TBLFM: $1='(org-entry-get nil "XP" t)
+#+TBLFM: $2='(org-entry-get nil "NEXTXP" t)
+#+TBLFM: $3='(org-entry-get nil "LEVEL" t)
+
+| Initiative | Dex | 1/2L | Misc | Temp |
+|------------+-----+------+------+------|
+|          4 |   4 |    0 |    0 |    0 |
+#+TBLFM: $3='(org-entry-get nil "HALFLEVEL" t)
 #+TBLFM: $1=($2 + $3 + $4 + $5)
 
 | Speed | Base | Armor | Item | Temp |
@@ -24,297 +42,234 @@
 |     7 |    7 |     0 |    0 |    0 |
 #+TBLFM: $1=($2 + $3 + $4 + $5)
 
-* Health
-| Max HP | Current HP | Bloodied | Healing Surge | Surges/Day | Surges Used |
-|--------+------------+----------+---------------+------------+-------------|
-|     26 |         26 |       13 |             6 |          9 |             |
-
- - Second Wind [ ]
- - Death ST Failed [ ] [ ] [ ]
- - Action Points:
-
 
 * Abilities
-| Ability | Score | Mod | + 1/2 Lvl |
-|---------+-------+-----+-----------|
-| STR     |    11 |   0 |         2 |
-| CON     |    14 |   2 |         4 |
-| DEX     |    18 |   4 |         6 |
-| INT     |    10 |   0 |         2 |
-| WIS     |    16 |   3 |         5 |
-| CHA     |    10 |   0 |         2 |
+| Ability | Score | Mod | +1/2L |
+|---------+-------+-----+-------|
+| STR     |    11 |   0 |     0 |
+| CON     |    14 |   2 |     2 |
+| DEX     |    18 |   4 |     4 |
+| INT     |    10 |   0 |     0 |
+| WIS     |    16 |   3 |     3 |
+| CHA     |    10 |   0 |     0 |
 #+TBLFM: $3='(int-to-string (floor (/ (- $2 10) 2)));N
-#+TBLFM: $4=($3 + 2)
+#+TBLFM: $4='(+ $3 (string-to-number (org-entry-get nil "HALFLEVEL" t)));N
 
+
+* Health
+** Hit Points (HP): 26/26
+** Bloodied: 13
+** Healing Surge: 6
+** Surges: 9/9
+** [ ] Second Wind
+** [ ] [ ] [ ] Death Saving Throw Failed
+** Action Points:
 
 
 * Defense
-:PROPERTIES:
-:VISIBILITY: all
-:END:
-| Total |      | 10 + 1/2 lvl | Armor | Ability | Class | Feat | Enh. | Misc | Temp |
-|-------+------+--------------+-------+---------+-------+------+------+------+------|
-|    18 | AC   |           10 |     3 |       4 |       |      |    1 |      |      |
-|    13 | FORT |           10 |       |       2 |     1 |      |      |      |      |
-|    15 | REF  |           10 |       |       4 |     1 |      |      |      |      |
-|    13 | WILL |           10 |       |       3 |       |      |      |      |      |
+| Total |      | 10 + | Arm. | Abil. | Class | Feat | Enh. | Misc | Temp |
+|       |      | 1/2L |      |       |       |      |      |      |      |
+|-------+------+------+------+-------+-------+------+------+------+------|
+|    18 | AC   |   10 |    3 |     4 |       |      |    1 |      |      |
+|    13 | FORT |   10 |      |     2 |     1 |      |      |      |      |
+|    15 | REF  |   10 |      |     4 |     1 |      |      |      |      |
+|    13 | WILL |   10 |      |     3 |       |      |      |      |      |
+#+TBLFM: $3='(+ 10 (string-to-number (org-entry-get nil "HALFLEVEL" t)))
 #+TBLFM: $1=($3 + $4 + $5 + $6 + $7 + $8 + $9 + $10)
-** Bonuses
- - Ranger class adds +1 Fort, +1 Reflex
- - [[+1 Defensive Hide Armor]]: +1 enh to AC
+*** Bonuses
+- Ranger class adds +1 Fort, +1 Reflex
+- +1 Defensive Hide Armor: +1 enh to AC
 
 | Armor Bonus | Shield Bonus | Check Penalty | Speed Penalty | Heavy? |
 |-------------+--------------+---------------+---------------+--------|
 |           3 |            0 |             0 |             0 | [ ]    |
 ** Conditional
-- [[Defensive Armor]]: (Daily) +2 bonus to the defense that triggered the hit
+- Defensive Armor: (Daily) +2 bonus to the defense that triggered the hit
 
 
 * Quick Look Up
-:PROPERTIES:
-:VISIBILITY: children
-:END:
-** Summary
-:PROPERTIES:
-:VISIBILITY: all
-:END:
 | Weapon/Power        | Type      | vs | Attack   | Bonus   |     |
 |---------------------+-----------+----+----------+---------+-----|
-| [[Melee Basic Attack]]  | At-Will   | AC | 1d20 +8  | 1d8 + 5 |     |
-| [[Ranged Basic Attack]] | At-Will   | AC | 1d20 +7  | 1d10 +5 |     |
-| [[Dual Weapon Attack]]  | At-Will   | AC | 1d20 +8  | 1d6 + 5 |     |
-| [[Power Strike]]        | Encounter | -  | -        | 1d8     | [ ] |
-| [[Fading Strike]]       | At-Will   | AC | 1d20 +8  | 1d8 +5  |     |
-| [[Nimble Strike]]       | At-Will   | AC | 1d20 +8  | 1d10 +5 |     |
-| [[Scything Blow]]       | Daily     | AC | 1d20 +8* | 1d8 + 5 | [ ] |
-| [[Elven Accuracy]]      | Encounter |    |          |         | [ ] |
-| [[Defensive Armor]]     | Daily     |    |          |         | [ ] |
+| Melee Basic Attack  | At-Will   | AC | 1d20 +8  | 1d8 + 5 |     |
+| Ranged Basic Attack | At-Will   | AC | 1d20 +7  | 1d10 +5 |     |
+| Dual Weapon Attack  | At-Will   | AC | 1d20 +8  | 1d6 + 5 |     |
+| Power Strike        | Encounter | -  | -        | 1d8     | [ ] |
+| Fading Strike       | At-Will   | AC | 1d20 +8  | 1d8 +5  |     |
+| Nimble Strike       | At-Will   | AC | 1d20 +8  | 1d10 +5 |     |
+| Scything Blow       | Daily     | AC | 1d20 +8* | 1d8 + 5 | [ ] |
+| Elven Accuracy      | Encounter |    |          |         | [ ] |
+| Defensive Armor     | Daily     |    |          |         | [ ] |
 ** Conditionals
-:PROPERTIES:
-:VISIBILITY: all
-:END:
- - [[Aspect of the Charging Ram]]: no opp att, knock prone, +2 power damage bonus
- - [[Aspect of the Lurking Spider]]: while you have CA, +2 power bonus to damage
+- Aspect of the Charging Ram: no opp att, knock prone, +2 power damage bonus
+- Aspect of the Lurking Spider: while you have CA, +2 power bonus to damage
+
 
 ** Attack Workspace
-| Weapon/Power        | Attack | 1/2 Level | Ability | Class | Prof | Feat | Enh | Misc |
-|---------------------+--------+-----------+---------+-------+------+------+-----+------|
-| [[Melee Basic Attack]]  |     +8 |           | 4 (STR) |       |    3 |    1 |     |      |
-| [[Ranged Basic Attack]] |     +7 |           | 4 (DEX) |       |    2 |    1 |     |      |
-| [[Dual Weapon Attack]]  |     +8 |           | 4 (DEX) |       |    3 |    1 |     |      |
-| [[Fading Strike]]       |     +8 |           | 4       |       |    3 |    1 |     |      |
-| [[Nimble Strike]]       |     +8 |           | 4       |       |    3 |    1 |     |      |
-| [[Scything Blow]]       |     +8 |           | 4       |       |    3 |    1 |     |      |
-#+TBLFM: $2='(concat "+" (int-to-string (-sum '($3 $4 $5 $6 $7 $8 $9))));N
+| Weapon/Power        | Attack | 1/2L | Abil. | Class | Prof | Feat | Enh | Misc |
+|---------------------+--------+------+-------+-------+------+------+-----+------|
+| Melee Basic Attack  |     +8 |    0 |     4 |       |    3 |    1 |     |      |
+| Ranged Basic Attack |     +7 |    0 |     4 |       |    2 |    1 |     |      |
+| Dual Weapon Attack  |     +8 |    0 |     4 |       |    3 |    1 |     |      |
+| Fading Strike       |     +8 |    0 |     4 |       |    3 |    1 |     |      |
+| Nimble Strike       |     +8 |    0 |     4 |       |    3 |    1 |     |      |
+| Scything Blow       |     +8 |    0 |     4 |       |    3 |    1 |     |      |
+#+TBLFM: $3='(org-entry-get nil "HALFLEVEL" t)
+#+TBLFM: $2='(concat "+" (int-to-string (+ $3 $4 $5 $6 $7 $8 $9)));N
 *** Bonuses
- - [[Weapon Expertise: Longsword]], short sword, longbow +1 attack
- - [[Attack Finesse]]: use Dex modifier for melee basic attack
+- Weapon Expertise: Longsword, short sword, longbow +1 attack
+- Attack Finesse: use Dex modifier for melee basic attack
 
 ** Damage Workspace
 | Weapon/Power        | Bonus | Ability | Feat | Enh | Misc | Misc |
 |---------------------+-------+---------+------+-----+------+------|
-| [[Melee Basic Attack]]  |    +5 |       4 |    1 |     |      |      |
-| [[Ranged Basic Attack]] |    +5 |       4 |    1 |     |      |      |
-| [[Dual Weapon Attack]]  |    +5 |       4 |    1 |     |      |      |
-| [[Power Strike]]        |    +1 |         |    1 |     |      |      |
-| [[Fading Strike]]       |    +5 |       4 |    1 |     |      |      |
-| [[Nimble Strike]]       |    +5 |       4 |    1 |     |      |      |
-| [[Scything Blow]]       |    +5 |       4 |    1 |     |      |      |
+| Melee Basic Attack  |    +5 |       4 |    1 |     |      |      |
+| Ranged Basic Attack |    +5 |       4 |    1 |     |      |      |
+| Dual Weapon Attack  |    +5 |       4 |    1 |     |      |      |
+| Power Strike        |    +1 |         |    1 |     |      |      |
+| Fading Strike       |    +5 |       4 |    1 |     |      |      |
+| Nimble Strike       |    +5 |       4 |    1 |     |      |      |
+| Scything Blow       |    +5 |       4 |    1 |     |      |      |
 #+TBLFM: $2='(concat "+" (int-to-string (-sum '($3 $4 $5 $6))));N
 *** Bonuses
- - [[Two-Weapon Fighting]]: +1 dmg
+- Two-Weapon Fighting: +1 dmg
 
 
 * Skills
-| Mod | Name          | Abil. | Train | Mod | 1/2 Lvl | Armor | Misc | Temp |
-|-----+---------------+-------+-------+-----+---------+-------+------+------|
-|  +9 | Acrobatics    | Dex   |     1 |   4 |         |       |      |      |
-|  +0 | Arcana        | Int   |       |     |         |       |      |      |
-|  +5 | Athletics     | Str   |     1 |     |         |       |      |      |
-|  +0 | Bluff         | Cha   |       |     |         |       |      |      |
-|  +1 | Diplomacy     | Cha   |       |     |         |       |    1 |      |
-|  +3 | Dungeoneering | Wis   |       |   3 |         |       |      |      |
-|  +2 | Endurance     | Con   |       |   2 |         |       |      |      |
-|  +3 | Heal          | Wis   |       |   3 |         |       |      |      |
-|  +0 | History       | Int   |       |     |         |       |      |      |
-|  +3 | Insight       | Wis   |       |   3 |         |       |      |      |
-|  +0 | Intimidate    | Cha   |       |     |         |       |      |      |
-| +10 | Nature        | Wis   |     1 |   3 |         |       |    2 |      |
-| +10 | Perception    | Wis   |     1 |   3 |         |       |    2 |      |
-|  +0 | Religion      | Int   |       |     |         |       |      |      |
-|  +9 | Stealth       | Dex   |     1 |   4 |         |       |      |      |
-|  +0 | Streetwise    | Cha   |       |     |         |       |      |      |
-|  +4 | Theivery      | Dex   |       |   4 |         |       |      |      |
+| Mod | Name          | Abil. | Train | Mod | 1/2L | Armor | Misc | Temp |
+|-----+---------------+-------+-------+-----+------+-------+------+------|
+|  +9 | Acrobatics    | Dex   |     1 |   4 |    0 |       |      |      |
+|  +0 | Arcana        | Int   |       |     |    0 |       |      |      |
+|  +5 | Athletics     | Str   |     1 |     |    0 |       |      |      |
+|  +0 | Bluff         | Cha   |       |     |    0 |       |      |      |
+|  +1 | Diplomacy     | Cha   |       |     |    0 |       |    1 |      |
+|  +3 | Dungeoneering | Wis   |       |   3 |    0 |       |      |      |
+|  +2 | Endurance     | Con   |       |   2 |    0 |       |      |      |
+|  +3 | Heal          | Wis   |       |   3 |    0 |       |      |      |
+|  +0 | History       | Int   |       |     |    0 |       |      |      |
+|  +3 | Insight       | Wis   |       |   3 |    0 |       |      |      |
+|  +0 | Intimidate    | Cha   |       |     |    0 |       |      |      |
+| +10 | Nature        | Wis   |     1 |   3 |    0 |       |    2 |      |
+| +10 | Perception    | Wis   |     1 |   3 |    0 |       |    2 |      |
+|  +0 | Religion      | Int   |       |     |    0 |       |      |      |
+|  +9 | Stealth       | Dex   |     1 |   4 |    0 |       |      |      |
+|  +0 | Streetwise    | Cha   |       |     |    0 |       |      |      |
+|  +4 | Theivery      | Dex   |       |   4 |    0 |       |      |      |
+#+TBLFM: $6='(org-entry-get nil "HALFLEVEL" t)
 #+TBLFM: $1='(concat "+" (int-to-string (+ $5 $6 $7 $8 $9 (if (eql $4 1) 5 0))));N
- - Ranger class feature adds +2 Nature and +2 Perception
- - Lindoma's Group Diplomacy adds +1 to Diplomacy
+*** Bonuses
+- Ranger class feature adds +2 Nature and +2 Perception
+- Lindoma's Group Diplomacy adds +1 to Diplomacy
 
 
 * Powers
-:PROPERTIES:
-:COLUMNS: %ITEM %POWERTYPE(Type) %ATTACK %HIT %RANGE %TARGET
-:VISIBILITY: children
-:END:
 ** Attack
-:PROPERTIES:
-:VISIBILITY: children
-:END:
 *** Melee Basic Attack                :atwill:standard:melee:weapon:
-:PROPERTIES:
-:POWERTYPE: At-Will
-:RANGE: weapon
-:TARGET: One creature
-:ATTACK: DEX vs AC
-:HIT: 1[W] + STR
-:END:
- - Target: One creature
- - Attack: Strength vs AC
- - Hit: 1[W] + Strength
-   - Increase damage to 2[W] + Strength modifier at 21st level.
- - Special: Unarmed attacking counts as a weapon when making a melee basic attack.
- - The melee basic attack is an at-will power available to all characters. It can be performed as part of a basic attack action or a number of other actions, such as charge, coup de grace, or opportunity attack.
- - Certain at-will powers count as melee basic attacks. They can be used any time a melee basic attack could be used, and are affected by modifiers to melee basic attacks.
- - A number of other powers can be used in place of the melee basic attack portion of a charge.
- - [[Attack Finesse]] uses Dexterity instead of Strength
+- Target: One creature
+- Attack: Strength vs AC
+- Hit: 1[W] + Strength
+  - Increase damage to 2[W] + Strength modifier at 21st level.
+- Special: Unarmed attacking counts as a weapon when making a melee basic attack.
+- The melee basic attack is an at-will power available to all characters. It can be performed as part of a basic attack action or a number of other actions, such as charge, coup de grace, or opportunity attack.
+- Certain at-will powers count as melee basic attacks. They can be used any time a melee basic attack could be used, and are affected by modifiers to melee basic attacks.
+- A number of other powers can be used in place of the melee basic attack portion of a charge.
+- Attack Finesse uses Dexterity instead of Strength
 
 *** Ranged Basic Attack        :atwill:standard:weapon:melee:ranged:
-:PROPERTIES:
-:POWERTYPE: At-Will
-:ATTACK: DEX vs AC
-:HIT: 1[W] + DEX
-:END:
- - Target: One creature
- - Attack: Dexterity vs AC
- - Hit: 1[W] + Dexterity
-   - Increase damage to 2[W] + Dexterity modifier at 21st level.
- - Special: Heavy thrown weapons use Strength instead of Dexterity for both attack and damage rolls for ranged basic attacks.
+- Target: One creature
+- Attack: Dexterity vs AC
+- Hit: 1[W] + Dexterity
+  - Increase damage to 2[W] + Dexterity modifier at 21st level.
+- Special: Heavy thrown weapons use Strength instead of Dexterity for both attack and damage rolls for ranged basic attacks.
 
 *** Dual Weapon Attack            :atwill:free:martial:weapon:melee:
-:PROPERTIES:
-:POWERTYPE: At-Will
-:RANGE: weapon
-:TARGET: One creature
-:ATTACK: DEX vs AC
-:HIT: 1[W] + DEX
-:END:
 /You follow your successful swing with a quick strike from your off hand./
- - Level: Ranger Attack
- - Range: weapon
- - Requirement: You must be wielding two melee weapons.
- - Attack: Dex vs AC
- - Hit: 1[W] + DEX
- - Target: One creature
- - Trigger: You hit with a melee basic attack on your turn.
- - Special: You can use this power only once per round.
- - http://iws.mx/dnd/?view=class790
+- Level: Ranger Attack
+- Range: weapon
+- Requirement: You must be wielding two melee weapons.
+- Attack: Dex vs AC
+- Hit: 1[W] + DEX
+- Target: One creature
+- Trigger: You hit with a melee basic attack on your turn.
+- Special: You can use this power only once per round.
+- http://iws.mx/dnd/?view=class790
 
 *** Power Strike         :encounter:noaction:martial:weapon:special:
-:PROPERTIES:
-:POWERTYPE: Encounter
-:ACTIONTYPE: No Action
-:ATTACKTYPE: Special
-:TARGET: The enemy you hit
-:END:
 /By pushing yourself beyond your normal limits, you unleash your full wrath against a foe./
- - Trigger: You hit with a melee basic attack using a weapon.
- - Target: The enemy you hit
- - Requirement: You must be wielding two melee weapons.
- - Effect: The target takes 1[W] extra damage from the triggering attack.
-   - Level 17: 2[W] extra damage.
-   - Level 27: 3[W] extra damage.
- - http://iws.mx/dnd/?view=class790
+- Trigger: You hit with a melee basic attack using a weapon.
+- Target: The enemy you hit
+- Requirement: You must be wielding two melee weapons.
+- Effect: The target takes 1[W] extra damage from the triggering attack.
+  - Level 17: 2[W] extra damage.
+  - Level 27: 3[W] extra damage.
+- http://iws.mx/dnd/?view=class790
+
 *** Fading Strike      :atwill:standard:martial:weapon:melee:ranged:
-:PROPERTIES:
-:POWERTYPE: At-Will
-:RANGE: weapon
-:TARGET: One Creature
-:ATTACK: DEX vs AC
-:HIT: 1[W] + DEX*
-:END:
 /You launch an attack against your foe and then back away for safety./
- - Ranger Attack 1
- - Target: One creature
- - Attack: Dex vs AC
- - Hit: 1[W] + Dex modifier damage
-   - and you shift 2 squares to a square that is not adjacent to the target
- - Hunter Fighting Style: When making an opportunity attack, you can use this power in place of a melee basic attack.
- - http://iws.mx/dnd/?view=power10591
+- Ranger Attack 1
+- Target: One creature
+- Attack: Dex vs AC
+- Hit: 1[W] + Dex modifier damage
+  - and you shift 2 squares to a square that is not adjacent to the target
+- Hunter Fighting Style: When making an opportunity attack, you can use this power in place of a melee basic attack.
+- http://iws.mx/dnd/?view=power10591
+
 *** Nimble Strike            :atwill:standard:martial:weapon:ranged:
-:PROPERTIES:
-:POWERTYPE: At-Will
-:ATTACKTYPE: Ranged
-:RANGE: weapon
-:TARGET: One Creature
-:ATTACK: DEX vs AC
-:HIT: 1[W] + DEX
-:END:
 /You slink past your enemy's guard to make your attack, or you make your attack
 and then withdraw to a more advantageous position./
- - Ranger Attack 1
- - Target: One creature
- - Special: Shift 1 square before or after you attack
- - Attack: Dex vs AC
- - Hit: 1[W] + Dexterity modifier damage
-   - Increase damage to 2[W] + Dexterity modifier at 21st level.
- - http://iws.mx/dnd/?view=power919
+- Ranger Attack 1
+- Target: One creature
+- Special: Shift 1 square before or after you attack
+- Attack: Dex vs AC
+- Hit: 1[W] + Dexterity modifier damage
+  - Increase damage to 2[W] + Dexterity modifier at 21st level.
+- http://iws.mx/dnd/?view=power919
 
 *** Scything Blow              :daily:standard:martial:weapon:melee:
-:PROPERTIES:
-:LEVEL: Ranger Attack 1
-:POWERTYPE: Daily
-:RANGE: weapon
-:TARGET: One or two creatures
-:ATTACK: DEX vs AC
-:HIT: 1[W] + DEX*
-:END:
-/You lash out with your weapon in a wide arc, knocking two foes to the ground. You then drive your blade into them./
- - Ranger Attack 1
- - Effect: Before the attack, you shift 2 squares.
- - Target: One or two creatures
- - Attack: Strength or Dexterity vs AC
- - Hit: 1[W] damage, and you knock the target prone.
- - Miss: Half damage.
- - Effect: Make a secondary attack against each target.
-   - Secondary Attack: Strength or Dexterity vs. AC
-   - Hit: 1[W] damage.
-   - Miss: Half damage.
- - http://iws.mx/dnd/?view=power10602
+/You lash out with your weapon in a wide arc, knocking two foes to the ground.
+You then drive your blade into them./
+- Ranger Attack 1
+- Effect: Before the attack, you shift 2 squares.
+- Target: One or two creatures
+- Attack: Strength or Dexterity vs AC
+- Hit: 1[W] damage, and you knock the target prone.
+- Miss: Half damage.
+- Effect: Make a secondary attack against each target.
+  - Secondary Attack: Strength or Dexterity vs. AC
+  - Hit: 1[W] damage.
+  - Miss: Half damage.
+- http://iws.mx/dnd/?view=power10602
+
 
 ** Utility
-:PROPERTIES:
-:VISIBILITY: children
-:END:
 *** Aspect of the Charging Ram :atwill:minor:personal:primal:stance:
-:PROPERTIES:
-:POWERTYPE: At-Will
-:END:
-/You barrel past your foes with such speed and strength that they are unable to react to your assault./
- - Ranger Utility
- - Effect: You assume a stance, the aspect of the charging ram. Until the stance ends, you gain the following benefits.
-   - Your movement during a charge doesn't provoke opportunity attacks.
-   - If you hit with a charge attack, you can knock the target prone.
-   - You gain a +2 power bonus to the damage rolls of charge attacks.
- - http://iws.mx/dnd/?view=class790
+/You barrel past your foes with such speed and strength that they are unable to
+react to your assault./
+- Ranger Utility
+- Effect: You assume a stance, the aspect of the charging ram. Until the stance
+  ends, you gain the following benefits.
+  - Your movement during a charge doesn't provoke opportunity attacks.
+  - If you hit with a charge attack, you can knock the target prone.
+  - You gain a +2 power bonus to the damage rolls of charge attacks.
+- http://iws.mx/dnd/?view=class790
 
 *** Aspect of the Lurking Spider :atwill:minor:personal:primal:stance:
-:PROPERTIES:
-:POWERTYPE: At-Will
-:END:
-/Like a spider, you lie in ambush and wait until your foe comes near before launching your attack/
- - Effect: You assume a stance, the aspect of the lurking spider. Until the stance ends, you gain the following benefits.
-   - You gain a +2 power bonus to Stealth checks.
-   - You gain a +5 power bonus to Athletics checks made to climb.
-   - While you have combat advantage against an enemy, you gain a +2 power bonus to damage rolls against it.
- - http://iws.mx/dnd/?view=class790
+/Like a spider, you lie in ambush and wait until your foe comes near before
+launching your attack/
+- Effect: You assume a stance, the aspect of the lurking spider. Until the
+  stance ends, you gain the following benefits.
+  - You gain a +2 power bonus to Stealth checks.
+  - You gain a +5 power bonus to Athletics checks made to climb.
+  - While you have combat advantage against an enemy, you gain a +2 power bonus
+    to damage rolls against it.
+- http://iws.mx/dnd/?view=class790
+
 *** Elven Accuracy                         :encounter:free:personal:
-:PROPERTIES:
-:POWERTYPE: Encounter
-:END:
-/With an instant of focus, you take careful aim at your foe and strike with the legendary accuracy of the elves./
- - Elf Racial Utility
- - Trigger: You make an attack roll and dislike the result.
- - Effect: Reroll the attack roll. Use the second roll, even if it's lower.
- - http://iws.mx/dnd/?view=power1450
+/With an instant of focus, you take careful aim at your foe and strike with the
+legendary accuracy of the elves./
+- Elf Racial Utility
+- Trigger: You make an attack roll and dislike the result.
+- Effect: Reroll the attack roll. Use the second roll, even if it's lower.
+- http://iws.mx/dnd/?view=power1450
 
 *** Defensive Armor                                :daily:interrupt:
 - Trigger: An enemy hits you.
@@ -325,78 +280,79 @@ and then withdraw to a more advantageous position./
 
 * Features
 ** Elven Weapon Proficiency                                     :elf:
- - You gain proficiency with the longbow and the shortbow.
- - http://iws.mx/dnd/?view=race4
+- You gain proficiency with the longbow and the shortbow.
+- http://iws.mx/dnd/?view=race4
+
 ** Fey Origin                                                   :elf:
- - Your ancestors were native to the Feywild, so you are considered a fey
-   creature for the purpose of effects that relate to creature origin.
- - http://iws.mx/dnd/?view=race4
+- Your ancestors were native to the Feywild, so you are considered a fey
+  creature for the purpose of effects that relate to creature origin.
+- http://iws.mx/dnd/?view=race4
 
 ** Group Awareness                                              :elf:
- - You grant non-elf allies within 5 squares of you a +1 racial bonus to
-   Perception checks
- - http://iws.mx/dnd/?view=race4
+- You grant non-elf allies within 5 squares of you a +1 racial bonus to
+  Perception checks
+- http://iws.mx/dnd/?view=race4
 
 ** Wild Step                                                    :elf:
- - You ignore diffiult terrain when you shift.
- - http://iws.mx/dnd/?view=race4
+- You ignore diffiult terrain when you shift.
+- http://iws.mx/dnd/?view=race4
 
 ** Attack Finesse                                            :ranger:
- - When you make a melee basic attack, you can use your Dexterity modifier
-   instead of your Strength modifier for the attack roll and the damage roll.
- - http://iws.mx/dnd/?view=class790
+- When you make a melee basic attack, you can use your Dexterity modifier
+  instead of your Strength modifier for the attack roll and the damage roll.
+- http://iws.mx/dnd/?view=class790
 
 ** Flashing Blade Mastery                                    :ranger:
- - You gain a +1 bonus to weapon attack rolls while you wield a light blade in
-   your off hand.
- - http://iws.mx/dnd/?view=class790
+- You gain a +1 bonus to weapon attack rolls while you wield a light blade in
+  your off hand.
+- http://iws.mx/dnd/?view=class790
 ** Wilderness Tracker                             :ranger:wilderness:
- - During a short rest, you can make a Perception check (DC determined by the
-   DM) to inspect the area around you. This area can be as large as 10 squares
-   on a side. If your check succeeds, you determine the number and nature of the
-   creatures that have moved through the area in the past 24 hours. You
-   ascertain when and where they entered the area, as well as when and where
-   they left.
- - http://iws.mx/dnd/?view=class790
-** Watchful Rest                                  :ranger:wilderness:
- - When you take an extended rest, you and any allies also taking the rest do
-   not take the -5 penalty to Perception checks for sleeping.
- - http://iws.mx/dnd/?view=class790
+- During a short rest, you can make a Perception check (DC determined by the DM)
+  to inspect the area around you. This area can be as large as 10 squares on a
+  side. If your check succeeds, you determine the number and nature of the
+  creatures that have moved through the area in the past 24 hours. You ascertain
+  when and where they entered the area, as well as when and where they left.
+- http://iws.mx/dnd/?view=class790
 
+** Watchful Rest                                  :ranger:wilderness:
+- When you take an extended rest, you and any allies also taking the rest do
+  not take the -5 penalty to Perception checks for sleeping.
+- http://iws.mx/dnd/?view=class790
 
 
 * Feats
 ** Weapon Expertise: Longsword
- - Level: free
- - Benefit: Choose a weapon group. You gain a +1 feat bonus to attack rolls
-    with any weapon power you use with a weapon from that group. The bonus
-    increases to +2 at 11th level and +3 at 21st level.
- - Special: You can take this feat more than once. Each time you select this
-    feat, choose another weapon group.
- - http://iws.mx/dnd/?view=feat1032
+- Level: free
+- Benefit: Choose a weapon group. You gain a +1 feat bonus to attack rolls
+   with any weapon power you use with a weapon from that group. The bonus
+   increases to +2 at 11th level and +3 at 21st level.
+- Special: You can take this feat more than once. Each time you select this
+   feat, choose another weapon group.
+- http://iws.mx/dnd/?view=feat1032
 
 ** Weapon Expertise: Short sword
- - Level: free
- - Benefit: Choose a weapon group. You gain a +1 feat bonus to attack rolls with
-   any weapon power you use with a weapon from that group. The bonus increases
-   to +2 at 11th level and +3 at 21st level.
- - Special: You can take this feat more than once. Each time you select this
-   feat, choose another weapon group.
- - http://iws.mx/dnd/?view=feat1032
+- Level: free
+- Benefit: Choose a weapon group. You gain a +1 feat bonus to attack rolls with
+  any weapon power you use with a weapon from that group. The bonus increases
+  to +2 at 11th level and +3 at 21st level.
+- Special: You can take this feat more than once. Each time you select this
+  feat, choose another weapon group.
+- http://iws.mx/dnd/?view=feat1032
 
 ** Weapon Expertise: Longbow
- - Level: free
- - Benefit: Choose a weapon group. You gain a +1 feat bonus to attack rolls
-    with any weapon power you use with a weapon from that group. The bonus
-    increases to +2 at 11th level and +3 at 21st level.
- - Special: You can take this feat more than once. Each time you select this
-    feat, choose another weapon group.
- - http://iws.mx/dnd/?view=feat1032
+- Level: free
+- Benefit: Choose a weapon group. You gain a +1 feat bonus to attack rolls
+   with any weapon power you use with a weapon from that group. The bonus
+   increases to +2 at 11th level and +3 at 21st level.
+- Special: You can take this feat more than once. Each time you select this
+   feat, choose another weapon group.
+- http://iws.mx/dnd/?view=feat1032
+
 ** Two-Weapon Fighting
- - Level 1
- - Prerequisite: Dexterity 13
- - Benefit: While wielding a melee weapon in each hand, you gain a +1 bonus to the damage rolls of weapon attacks that you make with a melee weapon.
- - http://iws.mx/dnd/?view=feat173
+- Level 1
+- Prerequisite: Dexterity 13
+- Benefit: While wielding a melee weapon in each hand, you gain a +1 bonus to the damage rolls of weapon attacks that you make with a melee weapon.
+- http://iws.mx/dnd/?view=feat173
 
 
 
@@ -407,44 +363,45 @@ and then withdraw to a more advantageous position./
   | Elf       |       | Leather | Military Melee |
   |           |       | Hide    | Simple Ranged  |
   |           |       |         | Military Melee |
-  |           |       |         |                |
 
 
 * Items
-:PROPERTIES:
-:VISIBILITY: all
-:END:
 
 ** Equipment
-  | Name               | Quantity | Cost (gp) | Weight (lbs) | Total Weight (lbs) | Total Cost (gp) |
-  |--------------------+----------+-----------+--------------+--------------------+-----------------|
-  | Longbow            |        1 |        50 |            2 |                  2 |              50 |
-  | Longsword          |        1 |        15 |            4 |                  4 |              15 |
-  | Short sword        |        1 |        10 |            2 |                  2 |              10 |
-  | Backpack           |        1 |         2 |            5 |                  5 |               2 |
-  | Bedroll            |        1 |        .1 |            2 |                  2 |             0.1 |
-  | Tinderbox          |        1 |        .5 |            1 |                  1 |             0.5 |
-  | Ration             |       10 |        .5 |            1 |                 10 |              5. |
-  | Waterskin          |        1 |        .2 |            5 |                  5 |             0.2 |
-  | Hempen Rope (50ft) |        1 |         1 |           10 |                 10 |               1 |
-  | Arrows             |       60 |       .05 |           .1 |                 6. |              3. |
-  | Hide Armor         |        1 |        30 |           25 |                 25 |              30 |
-  |--------------------+----------+-----------+--------------+--------------------+-----------------|
-  | Carry Capacity     |      100 |           |              |                72. |           116.8 |
+  | Name                    | Quantity | Cost (gp) | Weight (lbs) | Total Weight (lbs) | Total Cost (gp) |
+  |-------------------------+----------+-----------+--------------+--------------------+-----------------|
+  | Longbow                 |        1 |        50 |            2 |                  2 |              50 |
+  | Longsword               |        1 |        15 |            4 |                  4 |              15 |
+  | Short sword             |        1 |        10 |            2 |                  2 |              10 |
+  | Backpack                |        1 |         2 |            5 |                  5 |               2 |
+  | Bedroll                 |        1 |        .1 |            2 |                  2 |             0.1 |
+  | Tinderbox               |        1 |        .5 |            1 |                  1 |             0.5 |
+  | Ration                  |       10 |        .5 |            1 |                 10 |              5. |
+  | Waterskin               |        1 |        .2 |            5 |                  5 |             0.2 |
+  | Hempen Rope (50ft)      |        1 |         1 |           10 |                 10 |               1 |
+  | Arrows                  |       60 |       .05 |           .1 |                 6. |              3. |
+  | +1 Defensive Hide Armor |        1 |       680 |           25 |                 25 |             680 |
+  | Hide Armor              |        1 |        30 |           25 |                 25 |              30 |
+  |-------------------------+----------+-----------+--------------+--------------------+-----------------|
+  | Carry Capacity          |      100 |           |              |                97. |           796.8 |
   #+TBLFM: $5=($2 * $4)
   #+TBLFM: $6=($2 * $3)
   #+TBLFM: @>$5=vsum(@<<$5..@>>$5)
   #+TBLFM: @>$6=vsum(@<<$6..@>>$6)
-*** Magic Items
-**** +1 Defensive Hide Armor
+
+
+** Magic Items
+*** +1 Defensive Hide Armor                      :armor:l3:uncommon:
 /This durable armor responds to your thoughts and reinforces itself to protect you./
 - +1 enhancement bonus to AC
 - Value: 680gp
 - http://iws.mx/dnd/?view=armor1055
 ***** Power (Augmentable) | Daily (Interrupt)
 - Trigger: An enemy hits you.
-- Effect: Until the start of your next turn, you gain a +2 bonus to the defense that the triggering enemy hit.
+- Effect: Until the start of your next turn, you gain a +2 bonus to the defense
+  that the triggering enemy hit.
 - Augment 1: The bonus increases to +5.
+
 
 ** Money
    | Copper | Silver | Electrum | Gold | Platinum | Total (Gold) |
