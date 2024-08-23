@@ -11,7 +11,6 @@
 |----------------+--------------+--------------|
 | [[http://iws.mx/dnd/?view=class790][Ranger (Scout)]] |              |              |
 
-
 | Race | Size | Age | Gender | Height | Weight | Align. | Deity  |
 |------+------+-----+--------+--------+--------+--------+--------|
 | [[http://iws.mx/dnd/?view=race4][Elf]]  | M    |  40 | M      | 6'     |    145 | Good   | Melora |
@@ -24,6 +23,7 @@
 |------------+-----+------+------+------|
 |          4 |   4 |    0 |    0 |    0 |
 #+TBLFM: $3=$halflevel
+#+TBLFM: $2='(org-lookup-first "DEX" '(remote(Abilities,@2$1..@>$1)) '(remote(Abilities,@2$3..@>$3)))))
 #+TBLFM: $1=($2 + $3 + $4 + $5)
 
 | Speed | Base | Armor | Item | Temp |
@@ -156,10 +156,8 @@
 |  +4 | Theivery      | DEX   |       |    4 |       |      |      |
 #+TBLFM: $5='(blank-if-zero (org-lookup-first $3 '(remote(Abilities,@2$1..@>$1)) '(remote(Abilities,@2$4..@>$4))))
 #+TBLFM: $1='(concat "+" (int-to-string (+ $5 $6 $7 $8 $4)));N
-- Bonuses
-  - Ranger class feature adds +2 Nature and +2 Perception
-  - Lindoma's Group Diplomacy adds +1 to Diplomacy
-
+- Ranger class feature adds +2 Nature and +2 Perception
+- Lindoma's Group Diplomacy adds +1 to Diplomacy
 
 * Powers
 ** Attack
